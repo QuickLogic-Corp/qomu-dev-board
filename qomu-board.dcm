@@ -1,0 +1,35 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Conn_01x06_Female
+D Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP LDO-SOT23
+D LDO Regulator in SOT-23 package
+K sot23
+$ENDCMP
+#
+$CMP Oscillator
+D Oscillator (MEMS or Crystal)
+$ENDCMP
+#
+$CMP PADS
+D Captouch Pads
+$ENDCMP
+#
+$CMP RGB-LED
+D RGB LED
+$ENDCMP
+#
+$CMP SPI-Flash
+D SPI ROM 8SOIC
+$ENDCMP
+#
+$CMP USB-B
+D USB connector
+K usb
+$ENDCMP
+#
+#End Doc Library
