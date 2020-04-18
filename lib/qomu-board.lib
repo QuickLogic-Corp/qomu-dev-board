@@ -173,7 +173,9 @@ DEF EOS-S3 IC 0 40 Y Y 1 F N
 F0 "IC" 1750 -3000 50 H V C CNN
 F1 "EOS-S3" 1650 50 50 H V C CNN
 F2 "qomu-board:42-WLCSP" 1650 -3100 50 H I C CNN
-F3 "https://www.quicklogic.com/wp-content/uploads/2019/05/QL_EOS_S3_Sensor_Processing_Platform_Datasheet_V1.0_No_NDA_Required.pdf" 1550 -3450 50 H I C CNN
+F3 "" 1750 -3000 50 H I C CNN
+F4 "Quicklogic" 0 0 50 H I C CNN "Manufacturer"
+F5 "EOS-S3-42-WLCSP" 0 0 50 H I C CNN "MPN"
 DRAW
 T 900 650 -800 50 0 0 0 "BANK A" Normal 0 C C
 T 900 650 -2700 50 0 1 0 "BANK B" Normal 0 C C
@@ -553,7 +555,8 @@ F0 "R" 30 20 50 H V L CNN
 F1 "R_22R_0201" 30 -40 50 H V L CNN
 F2 "qomu-board-footprints:R_0201_0603Metric" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-F4 "MCRE000100 " 0 0 50 H I C CNN "Manufacturer"
+F4 "Multicomp" 0 0 50 H I C CNN "Manufacturer"
+F5 "MCRE000100 " 0 0 50 H V C CNN "MPN"
 $FPLIST
  R_*
 $ENDFPLIST
@@ -602,7 +605,7 @@ ENDDEF
 #
 # TP_SMD_0_75MM
 #
-DEF ~TP_SMD_0_75MM TP 0 0 N Y 1 F N
+DEF TP_SMD_0_75MM TP 0 0 N Y 1 F N
 F0 "TP" -100 50 50 H V R CNN
 F1 "TP_SMD_0_75MM" 0 -100 50 H I C CNN
 F2 "qomu-board-footprints:Testpoint_smd_0_75mm" 200 200 60 H I L CNN
@@ -636,7 +639,7 @@ ENDDEF
 DEF antmicro_logo N 0 40 Y Y 1 F N
 F0 "N" 0 350 50 H V C CNN
 F1 "antmicro_logo" 0 -200 50 H V C CNN
-F2 "qomu-board-footprints:antmicro-logo_midlayer" -100 250 50 H I C CNN
+F2 "qomu-board-footprints:antmicro-logo_midlayer_4mm" -100 250 50 H I C CNN
 F3 "" 0 350 50 H I C CNN
 DRAW
 T 0 50 50 79 0 0 0 Logo Normal 0 C C
@@ -649,6 +652,18 @@ DEF oshw_logo N 0 40 Y Y 1 F N
 F0 "N" 20 40 50 H V C CNN
 F1 "oshw_logo" 30 -150 50 H V C CNN
 F2 "qomu-board-footprints:OSHW-Logo2_7.3x6mm_Copper_Mask" 20 -240 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 30 -40 79 0 1 1 Logo Normal 0 C C
+ENDDRAW
+ENDDEF
+#
+# ql_logo
+#
+DEF ql_logo N 0 40 Y Y 1 F N
+F0 "N" 20 40 50 H V C CNN
+F1 "ql_logo" 30 -150 50 H V C CNN
+F2 "qomu-board-footprints:Ql_logo_mid_9mm" 20 -240 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
 T 0 30 -40 79 0 1 1 Logo Normal 0 C C

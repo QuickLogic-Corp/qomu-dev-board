@@ -1,15 +1,16 @@
 EESchema Schematic File Version 4
-EELAYER 26 0
+LIBS:qomu-board-cache
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Qomu Board"
 Date ""
-Rev ""
-Comp "Antmicro Ltd. (www.antmicro.com)"
-Comment1 ""
-Comment2 ""
+Rev "1.1"
+Comp ""
+Comment1 "www.antmicro.com"
+Comment2 "Antmicro Ltd."
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -82,12 +83,12 @@ $Comp
 L qomu-board:R_22R_0201 R12
 U 1 1 5BDB00B1
 P 9750 1850
-F 0 "R12" V 9750 1850 50  0000 C CNN
-F 1 "22R" V 9850 1850 50  0000 C CNN
+F 0 "R12" V 9850 1850 50  0000 C CNN
+F 1 "22R" V 9850 2050 50  0000 C CNN
 F 2 "qomu-board-footprints:R_0201_0603Metric" H 9750 1850 50  0001 C CNN
-F 3 "Multicomp" H 9750 1850 50  0001 C CNN
-F 4 "ANY" H 1000 50  50  0001 C CNN "MPN"
-F 5 "MCRE000100 " H 0   0   50  0001 C CNN "Manufacturer"
+F 3 "" H 9750 1850 50  0001 C CNN
+F 4 "MCRE000100" H 1000 50  50  0001 C CNN "MPN"
+F 5 "Multicomp" H 0   0   50  0001 C CNN "Manufacturer"
 	1    9750 1850
 	0    1    1    0   
 $EndComp
@@ -250,7 +251,7 @@ L qomu-board:D_Small-Device D6
 U 1 1 5C1C9C2F
 P 9500 1450
 F 0 "D6" V 9500 1500 50  0000 L CNN
-F 1 "D5V0L1B2LP3-7" V 9500 550 50  0000 L CNN
+F 1 "D5V0L1B2LP3-7" V 9550 550 50  0000 L CNN
 F 2 "qomu-board-footprints:X1-DFN1006-2" V 9500 1450 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf" V 9500 1450 50  0001 C CNN
 F 4 "Diodes Inc." V 9500 1450 50  0001 C CNN "Manufacturer"
@@ -268,7 +269,7 @@ L qomu-board:D_Small-Device D7
 U 1 1 5C1D8578
 P 9600 1450
 F 0 "D7" V 9600 1300 50  0000 L CNN
-F 1 "D5V0L1B2LP3-7" V 9500 650 50  0000 L CNN
+F 1 "D5V0L1B2LP3-7" V 9550 650 50  0000 L CNN
 F 2 "qomu-board-footprints:X1-DFN1006-2" V 9600 1450 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf" V 9600 1450 50  0001 C CNN
 F 4 "Diodes Inc." V 9600 1450 50  0001 C CNN "Manufacturer"
@@ -366,12 +367,12 @@ $Comp
 L qomu-board:R_22R_0201 R11
 U 1 1 5DC79766
 P 9750 1750
-F 0 "R11" V 9750 1750 50  0000 C CNN
-F 1 "22R" V 9650 1750 50  0000 C CNN
+F 0 "R11" V 9650 1750 50  0000 C CNN
+F 1 "22R" V 9650 1950 50  0000 C CNN
 F 2 "qomu-board-footprints:R_0201_0603Metric" H 9750 1750 50  0001 C CNN
-F 3 "Multicomp" H 9750 1750 50  0001 C CNN
-F 4 "ANY" H 1000 -50 50  0001 C CNN "MPN"
-F 5 "MCRE000100 " H 0   0   50  0001 C CNN "Manufacturer"
+F 3 "" H 9750 1750 50  0001 C CNN
+F 4 "MCRE000100 " H 1000 -50 50  0001 C CNN "MPN"
+F 5 "Multicomp" H 0   0   50  0001 C CNN "Manufacturer"
 	1    9750 1750
 	0    1    1    0   
 $EndComp
@@ -590,9 +591,1596 @@ F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
 	1    7400 3300
 	-1   0    0    1   
 $EndComp
+Text Label 3650 5250 0    50   ~ 0
+SPI_SS
+Text Label 5050 3200 0    50   ~ 0
+SPI_SS
+Wire Wire Line
+	5600 3000 5700 3000
+Wire Wire Line
+	5600 3100 5700 3100
+Wire Wire Line
+	9850 1750 10350 1750
+Wire Wire Line
+	9850 1850 10350 1850
+Text Label 9950 1750 0    50   ~ 0
+R_USB_N
+Text Label 9950 1850 0    50   ~ 0
+R_USB_P
+Text Label 3650 4550 0    50   ~ 0
+R_USB_N
+Text Label 3650 4850 0    50   ~ 0
+R_USB_P
+Wire Wire Line
+	3550 4550 4000 4550
+Text Label 3650 4250 0    50   ~ 0
+PU_CTRL_USBP
+Wire Wire Line
+	9600 2100 10350 2100
+Wire Notes Line
+	600  2300 4450 2300
+Wire Notes Line
+	4450 7700 600  7700
+Wire Notes Line
+	600  7700 600  2300
+Wire Notes Line
+	4600 4000 7600 4000
+Wire Notes Line
+	7600 4000 7600 6350
+Wire Notes Line
+	7600 6350 4600 6350
+Wire Notes Line
+	4600 6350 4600 4000
+Wire Notes Line
+	7750 4000 11100 4000
+Wire Notes Line
+	11100 4000 11100 6350
+Wire Notes Line
+	11100 6350 7750 6350
+Wire Notes Line
+	7750 6350 7750 4000
+Wire Wire Line
+	9600 1250 10100 1250
+Text Notes 4650 3850 0    50   ~ 0
+Flash memory
+Text Notes 7800 6300 0    50   ~ 0
+Accelerometer
+Text Notes 650  7650 0    50   ~ 0
+EOS S3
+$Comp
+L qomu-board:MC3635 U5
+U 1 1 5E2FC133
+P 9400 4500
+F 0 "U5" H 9725 4565 50  0000 C CNN
+F 1 "MC3635" H 9725 4474 50  0000 C CNN
+F 2 "qomu-board:MC3635" H 9400 4350 50  0001 C CNN
+F 3 "https://mcubemems.com/wp-content/uploads/2019/06/MC3635-Datasheet-APS-048-0044v1.6.pdf" H 9850 3400 50  0001 C CNN
+F 4 "MC3635" H 0   0   50  0001 C CNN "MPN"
+F 5 "mCube" H 0   0   50  0001 C CNN "Manufacturer"
+	1    9400 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4650 4000 4650
+$Comp
+L qomu-board:C_100n_0201 C4
+U 1 1 5DE4FACB
+P 10600 5550
+F 0 "C4" H 10400 5500 50  0000 L CNN
+F 1 "100n" H 10300 5600 50  0000 L CNN
+F 2 "qomu-board-footprints:C_0201_0603Metric" H 10600 5550 50  0001 C CNN
+F 3 "" H 10600 5550 50  0001 C CNN
+F 4 "GRM033R60J104KE19D " H 0   0   50  0001 C CNN "MPN"
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+	1    10600 5550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9300 5050 9100 5050
+Wire Wire Line
+	9100 5050 9100 5650
+Wire Wire Line
+	9300 5350 9200 5350
+Wire Wire Line
+	9200 5350 9200 4800
+Connection ~ 9200 4800
+$Comp
+L qomu-board:GND #PWR017
+U 1 1 5DEB67F5
+P 10600 5650
+F 0 "#PWR017" H 10600 5400 50  0001 C CNN
+F 1 "GND" H 10605 5477 50  0000 C CNN
+F 2 "" H 10600 5650 50  0001 C CNN
+F 3 "" H 10600 5650 50  0001 C CNN
+	1    10600 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 5450 8850 5450
+Wire Wire Line
+	8850 4700 8850 4900
+Wire Wire Line
+	8850 5100 8850 5450
+Connection ~ 8850 5450
+Wire Wire Line
+	8850 5450 9300 5450
+$Comp
+L qomu-board:LDO-X2SON U2
+U 1 1 5BF61C95
+P 1900 1200
+F 0 "U2" H 1750 1700 50  0000 C CNN
+F 1 "MIC5504-3.3YMT" H 2000 1600 50  0000 C CNN
+F 2 "qomu-board-footprints:Texas_X2SON-4_1x1mm_P0.65mm" H 1900 1200 50  0001 C CNN
+F 3 "" H 1900 1200 50  0001 C CNN
+F 4 "MIC5504-3.3YMT" H 250 -100 50  0001 C CNN "MPN"
+F 5 "Microchip" H 250 -100 50  0001 C CNN "Manufacturer"
+	1    1900 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 900  2900 900 
+Wire Wire Line
+	1000 900  1000 950 
+Wire Wire Line
+	1000 900  1500 900 
+Wire Wire Line
+	1600 1150 1500 1150
+Wire Wire Line
+	1500 1150 1500 900 
+Connection ~ 1500 900 
+Wire Wire Line
+	1500 900  1600 900 
+Wire Wire Line
+	1000 1150 1000 1200
+$Comp
+L qomu-board:GND #PWR010
+U 1 1 5DE54C6B
+P 2900 1250
+F 0 "#PWR010" H 2900 1000 50  0001 C CNN
+F 1 "GND" H 2905 1077 50  0000 C CNN
+F 2 "" H 2900 1250 50  0001 C CNN
+F 3 "" H 2900 1250 50  0001 C CNN
+	1    2900 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1150 2900 1250
+Wire Wire Line
+	2900 900  2900 950 
+$Comp
+L qomu-board:GND #PWR016
+U 1 1 5DEBE893
+P 7400 3400
+F 0 "#PWR016" H 7400 3150 50  0001 C CNN
+F 1 "GND" H 7405 3227 50  0000 C CNN
+F 2 "" H 7400 3400 50  0001 C CNN
+F 3 "" H 7400 3400 50  0001 C CNN
+	1    7400 3400
+	1    0    0    -1  
+$EndComp
+Text Label 8250 5250 0    50   ~ 0
+ACC_INT
+Wire Wire Line
+	5600 3100 5600 3000
+Wire Wire Line
+	5600 2700 5700 2700
+Connection ~ 5600 3000
+Wire Wire Line
+	5600 3000 5600 2700
+Text Label 3650 3450 0    50   ~ 0
+ACC_INT
+Text Notes 3400 950  0    50   ~ 0
+2x 3.3V@300mA
+Text Notes 9050 2550 0    50   ~ 0
+5mA/channel
+Wire Wire Line
+	1300 4300 1500 4300
+Wire Wire Line
+	3550 3450 3950 3450
+Text Notes 5800 3650 0    50   ~ 0
+operating current\nmax. 20mA
+Text Notes 650  5950 0    50   ~ 0
+Maximum power consumption for A and B rails:\nLDO mode: 65mA (VCCIOA) 114mA (VCCIOB)\nLDO bypass mode: 77mA (VCCIOA) 269mA (VCCIOB) 
+Text Notes 9050 6150 0    50   ~ 0
+operating current  for 1V8 supply\nmax. 36mA\nlow-power mode: max. 2.8mA\n
+$Comp
+L qomu-board:C_100n_0201 C3
+U 1 1 5DDD75D2
+P 1650 6850
+F 0 "C3" H 1700 6750 50  0000 L CNN
+F 1 "100n" H 1700 6650 50  0000 L CNN
+F 2 "qomu-board-footprints:C_0201_0603Metric" H 1650 6850 50  0001 C CNN
+F 3 "" H 1650 6850 50  0001 C CNN
+F 4 "GRM033R60J104KE19D " H 0   0   50  0001 C CNN "MPN"
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+	1    1650 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 6950 1650 7100
+$Comp
+L qomu-board:GND #PWR03
+U 1 1 5DDF07D6
+P 1650 7100
+F 0 "#PWR03" H 1650 6850 50  0001 C CNN
+F 1 "GND" H 1655 6927 50  0000 C CNN
+F 2 "" H 1650 7100 50  0001 C CNN
+F 3 "" H 1650 7100 50  0001 C CNN
+	1    1650 7100
+	1    0    0    -1  
+$EndComp
+Text Notes 1450 6850 1    50   ~ 0
+AVDD
+Text Notes 2550 6850 1    50   ~ 0
+VCCIOA
+Text Notes 2000 6850 1    50   ~ 0
+LDO_VIN
+Text Notes 3150 6850 1    50   ~ 0
+VCCIOB
+$Comp
+L qomu-board:C_100n_0201 C6
+U 1 1 5DEA6187
+P 2150 6850
+F 0 "C6" H 2200 6750 50  0000 L CNN
+F 1 "100n" H 2200 6650 50  0000 L CNN
+F 2 "qomu-board-footprints:C_0201_0603Metric" H 2150 6850 50  0001 C CNN
+F 3 "" H 2150 6850 50  0001 C CNN
+F 4 "GRM033R60J104KE19D " H 0   0   50  0001 C CNN "MPN"
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+	1    2150 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 6950 2150 7100
+$Comp
+L qomu-board:GND #PWR07
+U 1 1 5DEA618E
+P 2150 7100
+F 0 "#PWR07" H 2150 6850 50  0001 C CNN
+F 1 "GND" H 2155 6927 50  0000 C CNN
+F 2 "" H 2150 7100 50  0001 C CNN
+F 3 "" H 2150 7100 50  0001 C CNN
+	1    2150 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:C_100n_0201 C8
+U 1 1 5DEAC065
+P 2700 6850
+F 0 "C8" H 2750 6750 50  0000 L CNN
+F 1 "100n" H 2750 6650 50  0000 L CNN
+F 2 "qomu-board-footprints:C_0201_0603Metric" H 2700 6850 50  0001 C CNN
+F 3 "" H 2700 6850 50  0001 C CNN
+F 4 "GRM033R60J104KE19D " H 0   0   50  0001 C CNN "MPN"
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+	1    2700 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 6950 2700 7100
+$Comp
+L qomu-board:GND #PWR09
+U 1 1 5DEAC06C
+P 2700 7100
+F 0 "#PWR09" H 2700 6850 50  0001 C CNN
+F 1 "GND" H 2705 6927 50  0000 C CNN
+F 2 "" H 2700 7100 50  0001 C CNN
+F 3 "" H 2700 7100 50  0001 C CNN
+	1    2700 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:C_100n_0201 C10
+U 1 1 5DEB1E5E
+P 3350 6850
+F 0 "C10" H 3200 6750 50  0000 L CNN
+F 1 "100n" H 3200 6650 50  0000 L CNN
+F 2 "qomu-board-footprints:C_0201_0603Metric" H 3350 6850 50  0001 C CNN
+F 3 "" H 3350 6850 50  0001 C CNN
+F 4 "GRM033R60J104KE19D " H 0   0   50  0001 C CNN "MPN"
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+	1    3350 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:GND #PWR012
+U 1 1 5DEB1E65
+P 3500 7100
+F 0 "#PWR012" H 3500 6850 50  0001 C CNN
+F 1 "GND" H 3505 6927 50  0000 C CNN
+F 2 "" H 3500 7100 50  0001 C CNN
+F 3 "" H 3500 7100 50  0001 C CNN
+	1    3500 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:C_100n_0201 C11
+U 1 1 5DEB7AF4
+P 3650 6850
+F 0 "C11" H 3700 6750 50  0000 L CNN
+F 1 "100n" H 3700 6650 50  0000 L CNN
+F 2 "qomu-board-footprints:C_0201_0603Metric" H 3650 6850 50  0001 C CNN
+F 3 "" H 3650 6850 50  0001 C CNN
+F 4 "GRM033R60J104KE19D " H 0   0   50  0001 C CNN "MPN"
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+	1    3650 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 6750 3350 6750
+Wire Wire Line
+	3500 6350 3500 6750
+Wire Wire Line
+	3500 6750 3650 6750
+Connection ~ 3500 6750
+Wire Wire Line
+	3350 6950 3350 7000
+Wire Wire Line
+	3350 7000 3500 7000
+Wire Wire Line
+	3650 7000 3650 6950
+Wire Wire Line
+	3500 7100 3500 7000
+Connection ~ 3500 7000
+Wire Wire Line
+	3500 7000 3650 7000
+$Comp
+L qomu-board:LDO-X2SON U1
+U 1 1 5DEFF8FE
+P 1900 1700
+F 0 "U1" H 1750 1650 50  0000 C CNN
+F 1 "MIC5504-3.3YMT" H 2000 1550 50  0000 C CNN
+F 2 "qomu-board-footprints:Texas_X2SON-4_1x1mm_P0.65mm" H 1900 1700 50  0001 C CNN
+F 3 "" H 1900 1700 50  0001 C CNN
+F 4 "MIC5504-3.3YMT" H 250 400 50  0001 C CNN "MPN"
+F 5 "Microchip" H 250 400 50  0001 C CNN "Manufacturer"
+	1    1900 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:C_2u2_0201 C7
+U 1 1 5DF1CD1E
+P 2700 1600
+F 0 "C7" H 2750 1500 50  0000 L CNN
+F 1 "2u2/10V" H 2750 1400 50  0000 L CNN
+F 2 "qomu-board-footprints:C_0201_0603Metric" H 2700 1600 50  0001 C CNN
+F 3 "" H 2700 1600 50  0001 C CNN
+F 4 "CL03A225MP3CRNC " H 0   0   50  0001 C CNN "MPN"
+F 5 "Samsung" H 0   0   50  0001 C CNN "Manufacturer"
+	1    2700 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:GND #PWR08
+U 1 1 5DF1D33C
+P 2700 1900
+F 0 "#PWR08" H 2700 1650 50  0001 C CNN
+F 1 "GND" H 2705 1727 50  0000 C CNN
+F 2 "" H 2700 1900 50  0001 C CNN
+F 3 "" H 2700 1900 50  0001 C CNN
+	1    2700 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1700 2700 1900
+Wire Wire Line
+	2200 1550 2350 1550
+Connection ~ 2350 1550
+Wire Wire Line
+	2350 1550 2350 1650
+Wire Wire Line
+	2200 1650 2350 1650
+Connection ~ 2350 1650
+Wire Wire Line
+	2350 1650 2350 1900
+Wire Wire Line
+	1600 1400 1500 1400
+Wire Wire Line
+	1500 1400 1500 1150
+Connection ~ 1500 1150
+Wire Wire Line
+	1500 1650 1600 1650
+Connection ~ 1500 1400
+Wire Wire Line
+	1500 1400 1500 1650
+$Comp
+L qomu-board:GND #PWR01
+U 1 1 5DF42981
+P 800 1200
+F 0 "#PWR01" H 800 950 50  0001 C CNN
+F 1 "GND" H 805 1027 50  0000 C CNN
+F 2 "" H 800 1200 50  0001 C CNN
+F 3 "" H 800 1200 50  0001 C CNN
+	1    800  1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:C_2u2_0201 C1
+U 1 1 5DF42987
+P 800 1050
+F 0 "C1" H 850 1150 50  0000 L CNN
+F 1 "2u2/10V" H 1100 1000 50  0000 L CNN
+F 2 "qomu-board-footprints:C_0201_0603Metric" H 800 1050 50  0001 C CNN
+F 3 "" H 800 1050 50  0001 C CNN
+F 4 "CL03A225MP3CRNC " H 0   0   50  0001 C CNN "MPN"
+F 5 "Samsung" H 0   0   50  0001 C CNN "Manufacturer"
+	1    800  1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  1150 800  1200
+Wire Wire Line
+	1000 900  800  900 
+Wire Wire Line
+	800  900  800  950 
+Connection ~ 1000 900 
+Text Label 2400 1400 0    50   ~ 0
+VCCIOB
+Wire Wire Line
+	2700 1400 2700 1500
+Wire Wire Line
+	2200 1400 2700 1400
+Text Label 800  3250 0    50   ~ 0
+VCCIOB
+Text Label 3500 6600 1    50   ~ 0
+VCCIOB
+$Comp
+L qomu-board:R_10k_0201 R5
+U 1 1 5DDE81B7
+P 4200 3250
+F 0 "R5" V 4150 3100 50  0000 C CNN
+F 1 "10k" V 4300 3250 50  0000 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 4200 3250 50  0001 C CNN
+F 3 "" H 4200 3250 50  0001 C CNN
+F 4 "ERJ1GNF1002C " H -4550 1550 50  0001 C CNN "MPN"
+F 5 "Panasonic" H 350 0   50  0001 C CNN "Manufacturer"
+	1    4200 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L qomu-board:R_10k_0201 R2
+U 1 1 5DDE8D8D
+P 4200 3150
+F 0 "R2" V 4250 3300 50  0000 C CNN
+F 1 "10k" V 4300 3150 50  0000 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 4200 3150 50  0001 C CNN
+F 3 "" H 4200 3150 50  0001 C CNN
+F 4 "ERJ1GNF1002C " H -4550 1450 50  0001 C CNN "MPN"
+F 5 "Panasonic" H 350 0   50  0001 C CNN "Manufacturer"
+	1    4200 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3550 3150 4100 3150
+Wire Wire Line
+	3550 3250 4100 3250
+$Comp
+L qomu-board:GND #PWR014
+U 1 1 5DE56F16
+P 4300 3350
+F 0 "#PWR014" H 4300 3100 50  0001 C CNN
+F 1 "GND" H 4305 3177 50  0000 C CNN
+F 2 "" H 4300 3350 50  0001 C CNN
+F 3 "" H 4300 3350 50  0001 C CNN
+	1    4300 3350
+	1    0    0    -1  
+$EndComp
+Text Notes 2200 2500 0    50   ~ 0
+FBIO_8 and FBIO_9 are bootstrap pins for HS oscillator.\nThey should be pulled-down for internal HSO
+$Comp
+L qomu-board:R_4k7_0201 R8
+U 1 1 5DE58338
+P 7950 5100
+F 0 "R8" V 7850 5150 50  0000 C CNN
+F 1 "4k7" V 7850 5000 50  0000 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 7950 5100 50  0001 C CNN
+F 3 "" H 7950 5100 50  0001 C CNN
+F 4 "CRCW02014K70FNED" H -800 3400 50  0001 C CNN "MPN"
+F 5 "Vishay" H 0   0   50  0001 C CNN "Manufacturer"
+	1    7950 5100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7950 5250 7950 5200
+Wire Wire Line
+	7950 5250 9300 5250
+Wire Wire Line
+	7950 5000 7950 4700
+Wire Wire Line
+	7950 4700 8400 4700
+Wire Wire Line
+	750  3250 1500 3250
+Wire Wire Line
+	1500 3150 1350 3150
+Wire Wire Line
+	1350 3150 1350 3000
+Connection ~ 1350 3000
+NoConn ~ 1500 3450
+NoConn ~ 1500 3550
+NoConn ~ 1500 4100
+$Comp
+L qomu-board:+3V3 #PWR0102
+U 1 1 5DF228AE
+P 1100 2800
+F 0 "#PWR0102" H 1100 2800 50  0001 C CNN
+F 1 "+3V3" H 1085 2923 50  0000 C CNN
+F 2 "" H 1100 2800 50  0001 C CNN
+F 3 "" H 1100 2800 50  0001 C CNN
+	1    1100 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:+3V3 #PWR0103
+U 1 1 5DF22FAC
+P 2900 850
+F 0 "#PWR0103" H 2900 850 50  0001 C CNN
+F 1 "+3V3" H 2885 973 50  0000 C CNN
+F 2 "" H 2900 850 50  0001 C CNN
+F 3 "" H 2900 850 50  0001 C CNN
+	1    2900 850 
+	1    0    0    -1  
+$EndComp
+Connection ~ 2900 900 
+$Comp
+L qomu-board:+3V3 #PWR0104
+U 1 1 5DF23435
+P 5600 2550
+F 0 "#PWR0104" H 5600 2550 50  0001 C CNN
+F 1 "+3V3" H 5585 2673 50  0000 C CNN
+F 2 "" H 5600 2550 50  0001 C CNN
+F 3 "" H 5600 2550 50  0001 C CNN
+	1    5600 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2700 5600 2600
+Connection ~ 5600 2700
+$Comp
+L qomu-board:+3V3 #PWR0105
+U 1 1 5DF2D4C9
+P 8400 4650
+F 0 "#PWR0105" H 8400 4650 50  0001 C CNN
+F 1 "+3V3" H 8385 4773 50  0000 C CNN
+F 2 "" H 8400 4650 50  0001 C CNN
+F 3 "" H 8400 4650 50  0001 C CNN
+	1    8400 4650
+	1    0    0    -1  
+$EndComp
+Connection ~ 8400 4700
+Wire Wire Line
+	8400 4700 8650 4700
+$Comp
+L qomu-board:+3V3 #PWR0106
+U 1 1 5DF2D809
+P 9200 4500
+F 0 "#PWR0106" H 9200 4500 50  0001 C CNN
+F 1 "+3V3" H 9185 4623 50  0000 C CNN
+F 2 "" H 9200 4500 50  0001 C CNN
+F 3 "" H 9200 4500 50  0001 C CNN
+	1    9200 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 4550 9200 4700
+Connection ~ 9200 4700
+$Comp
+L qomu-board:+3V3 #PWR0107
+U 1 1 5DF404ED
+P 10600 5300
+F 0 "#PWR0107" H 10600 5300 50  0001 C CNN
+F 1 "+3V3" H 10585 5423 50  0000 C CNN
+F 2 "" H 10600 5300 50  0001 C CNN
+F 3 "" H 10600 5300 50  0001 C CNN
+	1    10600 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:+3V3 #PWR0108
+U 1 1 5DF40AED
+P 1650 6600
+F 0 "#PWR0108" H 1650 6600 50  0001 C CNN
+F 1 "+3V3" H 1635 6723 50  0000 C CNN
+F 2 "" H 1650 6600 50  0001 C CNN
+F 3 "" H 1650 6600 50  0001 C CNN
+	1    1650 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 6650 1650 6750
+Wire Wire Line
+	10600 5350 10600 5450
+$Comp
+L qomu-board:+3V3 #PWR0109
+U 1 1 5DF4ADC0
+P 2150 6600
+F 0 "#PWR0109" H 2150 6600 50  0001 C CNN
+F 1 "+3V3" H 2135 6723 50  0000 C CNN
+F 2 "" H 2150 6600 50  0001 C CNN
+F 3 "" H 2150 6600 50  0001 C CNN
+	1    2150 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 6650 2150 6750
+$Comp
+L qomu-board:+3V3 #PWR0110
+U 1 1 5DF53D7E
+P 2700 6600
+F 0 "#PWR0110" H 2700 6600 50  0001 C CNN
+F 1 "+3V3" H 2685 6723 50  0000 C CNN
+F 2 "" H 2700 6600 50  0001 C CNN
+F 3 "" H 2700 6600 50  0001 C CNN
+	1    2700 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 6650 2700 6750
+$Comp
+L qomu-board:+VBUS #PWR0111
+U 1 1 5DF5D3D4
+P 800 850
+F 0 "#PWR0111" H 800 850 50  0001 C CNN
+F 1 "+VBUS" H 785 973 50  0000 C CNN
+F 2 "" H 800 850 50  0001 C CNN
+F 3 "" H 800 850 50  0001 C CNN
+	1    800  850 
+	1    0    0    -1  
+$EndComp
+Connection ~ 800  900 
+$Comp
+L qomu-board:+VBUS #PWR0112
+U 1 1 5DF5DCED
+P 9200 900
+F 0 "#PWR0112" H 9200 900 50  0001 C CNN
+F 1 "+VBUS" H 9185 1023 50  0000 C CNN
+F 2 "" H 9200 900 50  0001 C CNN
+F 3 "" H 9200 900 50  0001 C CNN
+	1    9200 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:+3V3 #PWR0113
+U 1 1 5DF60B5F
+P 7400 3100
+F 0 "#PWR0113" H 7400 3100 50  0001 C CNN
+F 1 "+3V3" H 7385 3223 50  0000 C CNN
+F 2 "" H 7400 3100 50  0001 C CNN
+F 3 "" H 7400 3100 50  0001 C CNN
+	1    7400 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3150 7400 3200
+$Comp
+L qomu-board:+3V3 #PWR0114
+U 1 1 5DF6A5E8
+P 8150 2650
+F 0 "#PWR0114" H 8150 2650 50  0001 C CNN
+F 1 "+3V3" H 8135 2773 50  0000 C CNN
+F 2 "" H 8150 2650 50  0001 C CNN
+F 3 "" H 8150 2650 50  0001 C CNN
+	1    8150 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 4800 5450 4800
+Wire Wire Line
+	5450 4800 5450 4900
+Wire Wire Line
+	5550 5100 5450 5100
+Connection ~ 5450 5100
+Wire Wire Line
+	5450 5100 5450 5200
+Wire Wire Line
+	5550 4900 5450 4900
+Connection ~ 5450 4900
+Wire Wire Line
+	5450 4900 5450 5100
+Wire Wire Line
+	5550 4700 5200 4700
+Wire Wire Line
+	4900 4700 4900 4800
+Connection ~ 5200 4700
+Wire Wire Line
+	5200 4700 4900 4700
+Wire Wire Line
+	4900 5000 4900 5200
+Wire Wire Line
+	5200 4750 5200 4700
+Wire Wire Line
+	5200 5150 5200 5200
+Wire Wire Line
+	4900 4450 4900 4700
+Connection ~ 4900 4700
+Wire Wire Line
+	5950 5100 7400 5100
+Wire Wire Line
+	5950 4800 6400 4800
+Wire Wire Line
+	5950 4700 6700 4700
+Wire Wire Line
+	6400 4650 6400 4800
+Connection ~ 6400 4800
+Wire Wire Line
+	6400 4800 7400 4800
+Wire Wire Line
+	6700 4650 6700 4700
+Connection ~ 6700 4700
+Wire Wire Line
+	6700 4700 7400 4700
+Text Label 7000 4700 0    50   ~ 0
+SWD_IO
+Text Label 7000 4800 0    50   ~ 0
+SWD_CLK
+Wire Wire Line
+	6950 5950 6800 5950
+Wire Wire Line
+	6800 5650 6950 5650
+Wire Wire Line
+	6950 5650 6950 5600
+Wire Wire Line
+	6800 5850 7350 5850
+Wire Wire Line
+	6800 5750 7350 5750
+Text Label 3650 5450 0    50   ~ 0
+UART_TX
+$Comp
+L qomu-board:SD05C.TCT D8
+U 1 1 5DED4186
+P 5200 4950
+F 0 "D8" V 5350 4900 60  0000 R CNN
+F 1 "SD05C.TCT" H 5400 5100 60  0000 R CNN
+F 2 "qomu-board-footprints:SOD-323-SD05" H 5400 5150 60  0001 L CNN
+F 3 "https://www.mouser.com/datasheet/2/761/sdxxc-1277747.pdf" H 5400 5250 60  0001 L CNN
+F 4 "Semtec" H 5400 5550 60  0001 L CNN "Manufacturer"
+F 5 "SD05C.TCT" H 5400 5450 60  0001 L CNN "MPN"
+	1    5200 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L qomu-board:825437-4 J2
+U 1 1 5DED4C12
+P 6650 5650
+F 0 "J2" V 6550 5650 50  0000 C CNN
+F 1 "825437-4" H 6800 5550 50  0000 C CNN
+F 2 "qomu-board-footprints:TE_825437-4" H 6850 5950 60  0001 L CNN
+F 3 "https://www.te.com/usa-en/product-825437-4.datasheet.pdf" H 6850 6050 60  0001 L CNN
+F 4 "825437-4" H 6850 6150 60  0001 L CNN "MPN"
+F 5 "TE Connectivity" H 6850 6250 60  0001 L CNN "Manufacturer"
+	1    6650 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L qomu-board:FTSH-105-01-L-DV-K J1
+U 1 1 5DED6D58
+P 5750 4900
+F 0 "J1" H 5700 5350 50  0000 C CNN
+F 1 "FTSH-105-01-L-DV-K" H 5500 5250 50  0000 C CNN
+F 2 "qomu-board-footprints:PinHeader_2x5_P1.27_SMD" H 5950 5100 60  0001 L CNN
+F 3 "http://suddendocs.samtec.com/prints/ftsh-1xx-xx-xxx-dv-xxx-xxx-mkt.pdf" H 5950 5200 60  0001 L CNN
+F 4 "FTSH-105-01-L-DV-K" H 5950 5400 60  0001 L CNN "MPN"
+F 5 "Samtec Inc." H 5950 6000 60  0001 L CNN "Manufacturer"
+	1    5750 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:R_10k_0201 R15
+U 1 1 5DEA3DDA
+P 6700 4550
+F 0 "R15" H 6750 4450 50  0000 C CNN
+F 1 "10k" V 6600 4550 50  0000 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 6700 4550 50  0001 C CNN
+F 3 "" H 6700 4550 50  0001 C CNN
+F 4 "ERJ1GNF1002C " H -2050 2850 50  0001 C CNN "MPN"
+F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
+	1    6700 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L qomu-board:R_10k_0201 R13
+U 1 1 5DEA73A8
+P 6400 4550
+F 0 "R13" H 6450 4450 50  0000 C CNN
+F 1 "10k" V 6300 4550 50  0000 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 6400 4550 50  0001 C CNN
+F 3 "" H 6400 4550 50  0001 C CNN
+F 4 "ERJ1GNF1002C " H -2350 2850 50  0001 C CNN "MPN"
+F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
+	1    6400 4550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6700 4400 6700 4450
+Wire Wire Line
+	6400 4450 6400 4400
+Connection ~ 6400 4400
+Wire Wire Line
+	6400 4400 6700 4400
+$Comp
+L qomu-board:C_100n_0201 C12
+U 1 1 5DED905E
+P 4900 4900
+F 0 "C12" H 4750 5000 50  0000 L CNN
+F 1 "100n" V 4800 4650 50  0000 L CNN
+F 2 "qomu-board-footprints:C_0201_0603Metric" H 4900 4900 50  0001 C CNN
+F 3 "" H 4900 4900 50  0001 C CNN
+F 4 "GRM033R60J104KE19D " H 0   0   50  0001 C CNN "MPN"
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+	1    4900 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 5950 6950 6000
+$Comp
+L qomu-board:+3V3 #PWR0115
+U 1 1 5DF00C49
+P 6950 5550
+F 0 "#PWR0115" H 6950 5550 50  0001 C CNN
+F 1 "+3V3" H 6935 5673 50  0000 C CNN
+F 2 "" H 6950 5550 50  0001 C CNN
+F 3 "" H 6950 5550 50  0001 C CNN
+	1    6950 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:GND #PWR0116
+U 1 1 5DF012DB
+P 6950 6000
+F 0 "#PWR0116" H 6950 5750 50  0001 C CNN
+F 1 "GND" H 6955 5827 50  0000 C CNN
+F 2 "" H 6950 6000 50  0001 C CNN
+F 3 "" H 6950 6000 50  0001 C CNN
+	1    6950 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:GND #PWR0117
+U 1 1 5DF05494
+P 4900 5200
+F 0 "#PWR0117" H 4900 4950 50  0001 C CNN
+F 1 "GND" H 4905 5027 50  0000 C CNN
+F 2 "" H 4900 5200 50  0001 C CNN
+F 3 "" H 4900 5200 50  0001 C CNN
+	1    4900 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:GND #PWR0118
+U 1 1 5DF05792
+P 5200 5200
+F 0 "#PWR0118" H 5200 4950 50  0001 C CNN
+F 1 "GND" H 5205 5027 50  0000 C CNN
+F 2 "" H 5200 5200 50  0001 C CNN
+F 3 "" H 5200 5200 50  0001 C CNN
+	1    5200 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:GND #PWR0119
+U 1 1 5DF05A2B
+P 5450 5200
+F 0 "#PWR0119" H 5450 4950 50  0001 C CNN
+F 1 "GND" H 5455 5027 50  0000 C CNN
+F 2 "" H 5450 5200 50  0001 C CNN
+F 3 "" H 5450 5200 50  0001 C CNN
+	1    5450 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:+3V3 #PWR0120
+U 1 1 5DF11E3D
+P 4900 4400
+F 0 "#PWR0120" H 4900 4400 50  0001 C CNN
+F 1 "+3V3" H 4885 4523 50  0000 C CNN
+F 2 "" H 4900 4400 50  0001 C CNN
+F 3 "" H 4900 4400 50  0001 C CNN
+	1    4900 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:+3V3 #PWR0121
+U 1 1 5DF1217B
+P 6400 4350
+F 0 "#PWR0121" H 6400 4350 50  0001 C CNN
+F 1 "+3V3" H 6385 4473 50  0000 C CNN
+F 2 "" H 6400 4350 50  0001 C CNN
+F 3 "" H 6400 4350 50  0001 C CNN
+	1    6400 4350
+	1    0    0    -1  
+$EndComp
+Text Label 7250 5100 2    50   ~ 0
+RST_N
+Wire Wire Line
+	6500 1600 6500 1250
+Wire Wire Line
+	6350 1600 6350 1350
+Wire Wire Line
+	6200 1600 6200 1450
+Connection ~ 6200 1450
+Wire Wire Line
+	6050 1600 6050 1550
+Connection ~ 6050 1550
+Wire Wire Line
+	6050 1550 6950 1550
+$Comp
+L qomu-board:GND #PWR0122
+U 1 1 5DFAF08B
+P 6350 1800
+F 0 "#PWR0122" H 6350 1550 50  0001 C CNN
+F 1 "GND" H 6355 1627 50  0000 C CNN
+F 2 "" H 6350 1800 50  0001 C CNN
+F 3 "" H 6350 1800 50  0001 C CNN
+	1    6350 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:GND #PWR0123
+U 1 1 5DFAED08
+P 6050 1800
+F 0 "#PWR0123" H 6050 1550 50  0001 C CNN
+F 1 "GND" H 6055 1627 50  0000 C CNN
+F 2 "" H 6050 1800 50  0001 C CNN
+F 3 "" H 6050 1800 50  0001 C CNN
+	1    6050 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:GND #PWR0124
+U 1 1 5DFBB669
+P 6200 1800
+F 0 "#PWR0124" H 6200 1550 50  0001 C CNN
+F 1 "GND" H 6205 1627 50  0000 C CNN
+F 2 "" H 6200 1800 50  0001 C CNN
+F 3 "" H 6200 1800 50  0001 C CNN
+	1    6200 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:GND #PWR0125
+U 1 1 5DFBB8A5
+P 6500 1800
+F 0 "#PWR0125" H 6500 1550 50  0001 C CNN
+F 1 "GND" H 6505 1627 50  0000 C CNN
+F 2 "" H 6500 1800 50  0001 C CNN
+F 3 "" H 6500 1800 50  0001 C CNN
+	1    6500 1800
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4600 2200 7600 2200
+Wire Notes Line
+	4600 2300 7600 2300
+Wire Notes Line
+	7600 2300 7600 3900
+Wire Notes Line
+	4600 3900 4600 2300
+Wire Notes Line
+	4600 3900 7600 3900
+Text Notes 4650 6300 0    50   ~ 0
+Programming and debug headers
+Wire Wire Line
+	3550 2950 3950 2950
+Wire Wire Line
+	3550 2850 3950 2850
+Text Label 3650 2850 0    50   ~ 0
+SWD_IO
+Text Label 3650 2950 0    50   ~ 0
+SWD_CLK
+Wire Wire Line
+	3550 5450 4000 5450
+Wire Wire Line
+	3550 5550 4000 5550
+Text Label 3650 5550 0    50   ~ 0
+UART_RX
+NoConn ~ 5550 5000
+Text Label 7000 5850 0    50   ~ 0
+UART_RX
+Text Label 7000 5750 0    50   ~ 0
+UART_TX
+$Comp
+L qomu-board:R_100R_0201 R16
+U 1 1 5DF394C7
+P 9500 2700
+F 0 "R16" V 9450 2550 50  0000 C CNN
+F 1 "100R" V 9450 2900 50  0000 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 9500 2700 50  0001 C CNN
+F 3 "" H 9500 2700 50  0001 C CNN
+F 4 "MCRE000116 " H 1000 500 50  0001 C CNN "MPN"
+F 5 "Multicomp" H 0   0   50  0001 C CNN "Manufacturer"
+	1    9500 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L qomu-board:R_100R_0201 R17
+U 1 1 5DF6B65E
+P 9500 2800
+F 0 "R17" V 9450 2650 50  0000 C CNN
+F 1 "100R" V 9450 3000 50  0000 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 9500 2800 50  0001 C CNN
+F 3 "" H 9500 2800 50  0001 C CNN
+F 4 "MCRE000116 " H 1000 600 50  0001 C CNN "MPN"
+F 5 "Multicomp" H 0   0   50  0001 C CNN "Manufacturer"
+	1    9500 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L qomu-board:R_220R_0201 R18
+U 1 1 5DF6BA6D
+P 9500 2900
+F 0 "R18" V 9450 2750 50  0000 C CNN
+F 1 "220R" V 9450 3100 50  0000 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 9500 2900 50  0001 C CNN
+F 3 "" H 9500 2900 50  0001 C CNN
+F 4 "MCRE000124" H 1000 700 50  0001 C CNN "MPN"
+F 5 "Multicomp" H 0   0   50  0001 C CNN "Manufacturer"
+	1    9500 2900
+	0    1    1    0   
+$EndComp
+Text Label 10750 3300 0    50   ~ 0
+LED_B
+Text Label 10750 3400 0    50   ~ 0
+LED_G
+Text Label 10750 3500 0    50   ~ 0
+LED_R
+$Comp
+L qomu-board:RV1C002UN Q2
+U 1 1 5DF91114
+P 10200 3100
+F 0 "Q2" H 10100 3250 50  0000 L CNN
+F 1 "RV1C002UN" V 10400 2850 50  0000 L CNN
+F 2 "qomu-board-footprints:VML0806" H 10400 2700 50  0001 L BNN
+F 3 "https://d1d2qsbl8m0m72.cloudfront.net/en/products/databook/datasheet/discrete/transistor/mosfet/rv1c002un-e.pdf" H 10425 2925 50  0001 L BNN
+F 4 "RV1C002UN" H 10425 3075 50  0001 L BNN "Field4"
+F 5 "Nch 20V 180mA Small Signal MOSFET" H 10400 2850 50  0001 L BNN "Field5"
+F 6 "None" H 10400 2775 50  0001 L BNN "Field6"
+F 7 "Unavailable" H 10400 2925 50  0001 L BNN "Field7"
+F 8 "Rohm" H 10425 3000 50  0001 L BNN "Field8"
+F 9 "RV1C002UN" H 0   0   50  0001 C CNN "MPN"
+F 10 "ROHM Semiconductor" H 0   0   50  0001 C CNN "Manufacturer"
+	1    10200 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L qomu-board:RV1C002UN Q3
+U 1 1 5DF95B3F
+P 10600 3100
+F 0 "Q3" H 10500 3250 50  0000 L CNN
+F 1 "RV1C002UN" V 10800 2850 50  0000 L CNN
+F 2 "qomu-board-footprints:VML0806" H 10800 2700 50  0001 L BNN
+F 3 "https://d1d2qsbl8m0m72.cloudfront.net/en/products/databook/datasheet/discrete/transistor/mosfet/rv1c002un-e.pdf" H 10825 2925 50  0001 L BNN
+F 4 "RV1C002UN" H 10825 3075 50  0001 L BNN "Field4"
+F 5 "Nch 20V 180mA Small Signal MOSFET" H 10800 2850 50  0001 L BNN "Field5"
+F 6 "None" H 10800 2775 50  0001 L BNN "Field6"
+F 7 "Unavailable" H 10800 2925 50  0001 L BNN "Field7"
+F 8 "Rohm" H 10825 3000 50  0001 L BNN "Field8"
+F 9 "RV1C002UN" H 0   0   50  0001 C CNN "MPN"
+F 10 "ROHM Semiconductor" H 0   0   50  0001 C CNN "Manufacturer"
+	1    10600 3100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 2900 9600 2900
+Wire Wire Line
+	9600 2800 10100 2800
+Wire Wire Line
+	10100 2800 10100 2900
+Wire Wire Line
+	10500 2900 10500 2700
+Wire Wire Line
+	10500 2700 9600 2700
+$Comp
+L qomu-board:RV1C002UN Q1
+U 1 1 5DF27508
+P 9800 3100
+F 0 "Q1" H 9700 3250 50  0000 L CNN
+F 1 "RV1C002UN" V 10050 2800 50  0000 L CNN
+F 2 "qomu-board-footprints:VML0806" H 10000 2700 50  0001 L BNN
+F 3 "https://d1d2qsbl8m0m72.cloudfront.net/en/products/databook/datasheet/discrete/transistor/mosfet/rv1c002un-e.pdf" H 10025 2925 50  0001 L BNN
+F 4 "RV1C002UN" H 10025 3075 50  0001 L BNN "Field4"
+F 5 "Nch 20V 180mA Small Signal MOSFET" H 10000 2850 50  0001 L BNN "Field5"
+F 6 "None" H 10000 2775 50  0001 L BNN "Field6"
+F 7 "Unavailable" H 10000 2925 50  0001 L BNN "Field7"
+F 8 "Rohm" H 10025 3000 50  0001 L BNN "Field8"
+F 9 "RV1C002UN" H 0   0   50  0001 C CNN "MPN"
+F 10 "ROHM Semiconductor" H 0   0   50  0001 C CNN "Manufacturer"
+	1    9800 3100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 3200 10700 3300
+Wire Wire Line
+	10700 3300 11000 3300
+Wire Wire Line
+	10300 3200 10300 3400
+Wire Wire Line
+	10300 3400 11000 3400
+Wire Wire Line
+	9900 3200 9900 3500
+Wire Wire Line
+	9900 3500 11000 3500
+$Comp
+L qomu-board:GND #PWR0126
+U 1 1 5E018B96
+P 9700 3600
+F 0 "#PWR0126" H 9700 3350 50  0001 C CNN
+F 1 "GND" H 9705 3427 50  0000 C CNN
+F 2 "" H 9700 3600 50  0001 C CNN
+F 3 "" H 9700 3600 50  0001 C CNN
+	1    9700 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:GND #PWR0127
+U 1 1 5E060D94
+P 10100 3600
+F 0 "#PWR0127" H 10100 3350 50  0001 C CNN
+F 1 "GND" H 10105 3427 50  0000 C CNN
+F 2 "" H 10100 3600 50  0001 C CNN
+F 3 "" H 10100 3600 50  0001 C CNN
+	1    10100 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:GND #PWR0128
+U 1 1 5E0610BA
+P 10500 3600
+F 0 "#PWR0128" H 10500 3350 50  0001 C CNN
+F 1 "GND" H 10505 3427 50  0000 C CNN
+F 2 "" H 10500 3600 50  0001 C CNN
+F 3 "" H 10500 3600 50  0001 C CNN
+	1    10500 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 3300 9700 3600
+Wire Wire Line
+	10100 3300 10100 3600
+Wire Wire Line
+	10500 3300 10500 3600
+Text Label 3650 4750 0    50   ~ 0
+LED_B
+Text Label 3650 4350 0    50   ~ 0
+LED_R
+Wire Wire Line
+	3550 4350 4000 4350
+Wire Wire Line
+	3550 4450 4000 4450
+Wire Wire Line
+	3550 4750 4000 4750
+Wire Wire Line
+	6500 1250 6950 1250
+Wire Wire Line
+	5800 1100 5800 1250
+Wire Wire Line
+	5800 1250 6500 1250
+Connection ~ 6500 1250
+Wire Wire Line
+	6350 1350 5700 1350
+Wire Wire Line
+	5700 1350 5700 1100
+Connection ~ 6350 1350
+Wire Wire Line
+	5600 1450 5600 1100
+Wire Wire Line
+	5600 1450 6200 1450
+Wire Wire Line
+	4300 3150 4300 3250
+Connection ~ 4300 3250
+Wire Wire Line
+	4300 3250 4300 3350
+Text Label 3650 3050 0    50   ~ 0
+TOUCH_1
+Text Label 3650 5350 0    50   ~ 0
+TOUCH_3
+Text Label 3650 4650 0    50   ~ 0
+TOUCH_4
+Wire Wire Line
+	3550 3350 3950 3350
+Wire Wire Line
+	3550 3050 3950 3050
+NoConn ~ 3550 3950
+$Comp
+L qomu-board:R_10k_0201 R6
+U 1 1 5E151CF7
+P 5750 5850
+F 0 "R6" V 5700 6000 50  0000 C CNN
+F 1 "10k" V 5850 6000 50  0000 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 5750 5850 50  0001 C CNN
+F 3 "" H 5750 5850 50  0001 C CNN
+F 4 "ERJ1GNF1002C " H -3000 4150 50  0001 C CNN "MPN"
+F 5 "Panasonic" H -650 1300 50  0001 C CNN "Manufacturer"
+	1    5750 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L qomu-board:+3V3 #PWR011
+U 1 1 5E1531DB
+P 5450 5600
+F 0 "#PWR011" H 5450 5600 50  0001 C CNN
+F 1 "+3V3" H 5600 5650 50  0000 C CNN
+F 2 "" H 5450 5600 50  0001 C CNN
+F 3 "" H 5450 5600 50  0001 C CNN
+	1    5450 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:C_8p_0201 C14
+U 1 1 5E00A59A
+P 1100 4100
+F 0 "C14" H 1201 4146 50  0000 L CNN
+F 1 "8p" H 1201 4055 50  0000 L CNN
+F 2 "qomu-board-footprints:C_0201_0603Metric" H 1256 4494 50  0001 C CNN
+F 3 "" H 1100 4100 50  0001 C CNN
+F 4 "Murata" H 1112 4654 50  0001 C CNN "Manufacturer"
+F 5 "GRM0335C1E8R0DA01D" H 1132 4578 50  0001 C CNN "MPN"
+	1    1100 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:C_8p_0201 C13
+U 1 1 5E00BE50
+P 800 4100
+F 0 "C13" H 901 4146 50  0000 L CNN
+F 1 "8p" H 901 4055 50  0000 L CNN
+F 2 "qomu-board-footprints:C_0201_0603Metric" H 956 4494 50  0001 C CNN
+F 3 "" H 800 4100 50  0001 C CNN
+F 4 "Murata" H 812 4654 50  0001 C CNN "Manufacturer"
+F 5 "GRM0335C1E8R0DA01D" H 832 4578 50  0001 C CNN "MPN"
+	1    800  4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 3850 1100 3850
+Wire Wire Line
+	800  3950 800  3850
+Wire Wire Line
+	800  3950 800  4000
+Connection ~ 800  3950
+Wire Wire Line
+	1500 3950 800  3950
+Wire Wire Line
+	1100 3850 1100 4000
+Connection ~ 1100 3850
+$Comp
+L qomu-board:ECS-_327-12_5-1210-TR XTAL1
+U 1 1 5DFFBEFA
+P 950 3850
+F 0 "XTAL1" H 1250 3900 50  0000 C CNN
+F 1 "ECS-_327-12_5-1210-TR" V 693 3450 50  0000 C CNN
+F 2 "qomu-board-footprints:XTAL_ECS-.327-12.5-1210-TR" H 1150 4050 60  0001 L CNN
+F 3 "https://ecsxtal.com/store/pdf/ECX-1210.pdf" H 1150 4150 60  0001 L CNN
+F 4 "ECS-.327-12.5-1210-TR" H 1158 4224 60  0001 L CNN "MPN"
+F 5 "ECS Inc." H 1174 4302 60  0001 L CNN "Manufacturer"
+	1    950  3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:GND #PWR0129
+U 1 1 5E06B803
+P 800 4200
+F 0 "#PWR0129" H 800 3950 50  0001 C CNN
+F 1 "GND" H 805 4027 50  0000 C CNN
+F 2 "" H 800 4200 50  0001 C CNN
+F 3 "" H 800 4200 50  0001 C CNN
+	1    800  4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:GND #PWR0130
+U 1 1 5E06BB21
+P 1100 4200
+F 0 "#PWR0130" H 1100 3950 50  0001 C CNN
+F 1 "GND" H 1105 4027 50  0000 C CNN
+F 2 "" H 1100 4200 50  0001 C CNN
+F 3 "" H 1100 4200 50  0001 C CNN
+	1    1100 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 5350 4000 5350
+Wire Wire Line
+	3550 4850 4000 4850
+$Comp
+L qomu-board:TP_SMD_0_75MM TP2
+U 1 1 5E378204
+P 4100 3850
+F 0 "TP2" V 4100 3800 50  0000 R CNN
+F 1 "TP_SMD_0_75MM" H 4100 3750 50  0001 C CNN
+F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 4300 4050 60  0001 L CNN
+F 3 "" H 4300 4150 60  0001 L CNN
+	1    4100 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L qomu-board:EOS-S3 IC1
+U 1 1 5DCB0652
+P 1600 2700
+F 0 "IC1" H 1650 2850 50  0000 C CNN
+F 1 "EOS-S3" H 1750 2750 50  0000 C CNN
+F 2 "qomu-board:42-WLCSP" H 3250 -400 50  0001 C CNN
+F 3 "https://dev.antmicro.com/attachments/download/9063/ql-eos-s3-datasheet.pdf" H 3350 -300 50  0001 C CNN
+F 4 "Quicklogic" H 1600 2700 50  0001 C CNN "Manufacturer"
+F 5 "EOS-S3-42-WLCSP" H 1600 2700 50  0001 C CNN "MPN"
+	1    1600 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 5750 5450 5750
+Wire Wire Line
+	5450 5750 5450 5650
+Wire Wire Line
+	5850 5850 6100 5850
+Wire Wire Line
+	3550 4150 4000 4150
+Wire Wire Line
+	3550 4250 4200 4250
+Text Label 3650 4150 0    50   ~ 0
+C1
+Text Label 6000 5850 0    50   ~ 0
+C1
+Wire Wire Line
+	3550 3850 4000 3850
+Wire Wire Line
+	4000 4150 4000 4050
+$Comp
+L qomu-board:TP_SMD_0_75MM TP3
+U 1 1 5E492FD8
+P 4100 4050
+F 0 "TP3" V 4100 4000 50  0000 R CNN
+F 1 "TP_SMD_0_75MM" H 4100 3950 50  0001 C CNN
+F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 4300 4250 60  0001 L CNN
+F 3 "" H 4300 4350 60  0001 L CNN
+	1    4100 4050
+	0    -1   -1   0   
+$EndComp
+Wire Notes Line
+	4450 2300 4450 7700
+Connection ~ 5450 3200
+Wire Wire Line
+	5450 3200 5050 3200
+$Comp
+L qomu-board:TP_SMD_0_75MM TP5
+U 1 1 5E4D1EDD
+P 5450 3100
+F 0 "TP5" H 5500 3000 50  0000 R CNN
+F 1 "TP_SMD_0_75MM" H 5450 3000 50  0001 C CNN
+F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 5650 3300 60  0001 L CNN
+F 3 "" H 5650 3400 60  0001 L CNN
+	1    5450 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L qomu-board:TP_SMD_0_75MM TP4
+U 1 1 5E4EF31B
+P 5450 2750
+F 0 "TP4" H 5500 2650 50  0000 R CNN
+F 1 "TP_SMD_0_75MM" H 5450 2650 50  0001 C CNN
+F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 5650 2950 60  0001 L CNN
+F 3 "" H 5650 3050 60  0001 L CNN
+	1    5450 2750
+	-1   0    0    1   
+$EndComp
+Connection ~ 5450 2850
+Wire Wire Line
+	5450 2850 5050 2850
+$Comp
+L qomu-board:TP_SMD_0_75MM TP6
+U 1 1 5E509DA9
+P 5450 3400
+F 0 "TP6" H 5400 3300 50  0000 L CNN
+F 1 "TP_SMD_0_75MM" H 5450 3300 50  0001 C CNN
+F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 5650 3600 60  0001 L CNN
+F 3 "" H 5650 3700 60  0001 L CNN
+	1    5450 3400
+	1    0    0    -1  
+$EndComp
+Connection ~ 5450 3300
+Wire Wire Line
+	5450 3300 5050 3300
+$Comp
+L qomu-board:TP_SMD_0_75MM TP7
+U 1 1 5E52A8DA
+P 6700 2750
+F 0 "TP7" H 6750 2650 50  0000 R CNN
+F 1 "TP_SMD_0_75MM" H 6700 2650 50  0001 C CNN
+F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 6900 2950 60  0001 L CNN
+F 3 "" H 6900 3050 60  0001 L CNN
+	1    6700 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L qomu-board:TP_SMD_0_75MM TP1
+U 1 1 5E53D85B
+P 1300 3600
+F 0 "TP1" H 1350 3500 50  0000 R CNN
+F 1 "TP_SMD_0_75MM" H 1300 3500 50  0001 C CNN
+F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 1500 3800 60  0001 L CNN
+F 3 "" H 1500 3900 60  0001 L CNN
+	1    1300 3600
+	-1   0    0    1   
+$EndComp
+Connection ~ 1300 3700
+Wire Wire Line
+	1300 3700 1100 3700
+Connection ~ 6700 2850
+Wire Wire Line
+	6700 2850 7100 2850
+$Comp
+L qomu-board:TP_SMD_0_75MM TP8
+U 1 1 5E562531
+P 6750 3300
+F 0 "TP8" V 6850 3350 50  0000 R CNN
+F 1 "TP_SMD_0_75MM" H 6750 3200 50  0001 C CNN
+F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 6950 3500 60  0001 L CNN
+F 3 "" H 6950 3600 60  0001 L CNN
+	1    6750 3300
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6650 3300
+$Comp
+L qomu-board:TP_SMD_0_75MM TP9
+U 1 1 5E5F7FB2
+P 1100 4600
+F 0 "TP9" H 1150 4500 50  0000 R CNN
+F 1 "TP_SMD_0_75MM" H 1100 4500 50  0001 C CNN
+F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 1300 4800 60  0001 L CNN
+F 3 "" H 1300 4900 60  0001 L CNN
+	1    1100 4600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1100 4700 1300 4700
+Text Notes 5800 3500 0    50   ~ 0
+16Mbit (2Mx8)
+Text Label 3650 3350 0    50   ~ 0
+LED_G
+Text Label 3650 4450 0    50   ~ 0
+TOUCH_2
+$Comp
+L qomu-board:MC-HVT1-S02-G J3
+U 1 1 5DFD1BB7
+P 5250 5750
+F 0 "J3" V 5150 5750 50  0000 C CNN
+F 1 "MC-HVT1-S02-G" V 5650 6100 50  0000 C CNN
+F 2 "qomu-board-footprints:PinHeader_1x2_P1.27mm_Drill.7mm_with_622002115121_plug" H 5450 6050 60  0001 L CNN
+F 3 "" H 5450 6150 60  0001 L CNN
+F 4 "MC-HVT1-S02-G" H 5450 6250 60  0001 L CNN "MPN"
+F 5 "Multicomp" H 5450 6350 60  0001 L CNN "Manufacturer"
+	1    5250 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L qomu-board:TP_SMD_0_75MM TP10
+U 1 1 5E0E4725
+P 4100 3950
+F 0 "TP10" V 4100 3900 50  0000 R CNN
+F 1 "TP_SMD_0_75MM" H 4100 3850 50  0001 C CNN
+F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 4300 4150 60  0001 L CNN
+F 3 "" H 4300 4250 60  0001 L CNN
+	1    4100 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3550 4050 3900 4050
+Wire Wire Line
+	3900 4050 3900 3950
+Wire Wire Line
+	3900 3950 4000 3950
+Text Label 3650 4050 0    50   ~ 0
+F2
+Text Label 3650 3850 0    50   ~ 0
+E1
+$Comp
+L qomu-board:MSS3-V-T_R S1
+U 1 1 5E181EDA
+P 4850 5850
+F 0 "S1" V 5150 5800 50  0000 R CNN
+F 1 "MSS3-V-T_R" V 4550 6050 50  0000 R CNN
+F 2 "qomu-board-footprints:Switch_Slide_MSS3" H 5050 6050 50  0001 L CNN
+F 3 "https://pl.mouser.com/datasheet/2/910/605_MSS34-1571494.pdf" H 5050 6150 60  0001 L CNN
+F 4 "MSS3-V-T/R" H 5050 6350 60  0001 L CNN "MPN"
+F 5 "Diptronics" H 5050 6470 60  0001 L CNN "Manufacturer"
+	1    4850 5850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L qomu-board:R_0R_0201 R7
+U 1 1 5E182D81
+P 6550 4900
+F 0 "R7" V 6500 4650 50  0000 C CNN
+F 1 "0R" V 6500 5050 50  0000 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 6550 4900 50  0001 C CNN
+F 3 "" H 6550 4900 50  0001 C CNN
+F 4 "Multicomp" H 6550 4900 50  0001 C CNN "Manufacturer"
+F 5 "MCRE000086" H 6550 4900 50  0001 C CNN "MPN"
+	1    6550 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L qomu-board:R_0R_0201 R10
+U 1 1 5E19188E
+P 6550 5000
+F 0 "R10" V 6500 4750 50  0000 C CNN
+F 1 "0R" V 6500 5150 50  0000 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 6550 5000 50  0001 C CNN
+F 3 "" H 6550 5000 50  0001 C CNN
+F 4 "Multicomp" H 6550 5000 50  0001 C CNN "Manufacturer"
+F 5 "MCRE000086" H 6550 5000 50  0001 C CNN "MPN"
+	1    6550 5000
+	0    1    1    0   
+$EndComp
+Text Label 7000 4900 0    50   ~ 0
+UART_TX
+Text Label 7000 5000 0    50   ~ 0
+UART_RX
+Wire Wire Line
+	5950 4900 6450 4900
+Wire Wire Line
+	5950 5000 6450 5000
+Wire Wire Line
+	6650 4900 7400 4900
+Wire Wire Line
+	6650 5000 7400 5000
+Text Notes 6050 4900 0    50   ~ 0
+DNP
+Text Notes 6050 5000 0    50   ~ 0
+DNP
+$Comp
+L qomu-board:+3V3 #PWR0131
+U 1 1 5E2379B0
+P 4750 5600
+F 0 "#PWR0131" H 4750 5600 50  0001 C CNN
+F 1 "+3V3" H 4750 5700 50  0000 C CNN
+F 2 "" H 4750 5600 50  0001 C CNN
+F 3 "" H 4750 5600 50  0001 C CNN
+	1    4750 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 6050 5450 6050
+Wire Wire Line
+	5450 6050 5450 5850
+Wire Wire Line
+	5400 5850 5450 5850
+Connection ~ 5450 5850
+Wire Wire Line
+	5450 5850 5650 5850
+$Comp
+L qomu-board:oshw_logo N1
+U 1 1 5E07AA52
+P 4690 6440
+F 0 "N1" H 4884 6443 50  0000 L CNN
+F 1 "oshw_logo" H 4884 6352 50  0000 L CNN
+F 2 "qomu-board-footprints:OSHW-Logo2_7.3x6mm_Copper_Mask" H 4710 6200 50  0001 C CNN
+F 3 "" H 4690 6440 50  0001 C CNN
+	1    4690 6440
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:antmicro_logo N2
+U 1 1 5E1F0AA6
+P 4680 6710
+F 0 "N2" H 4894 6803 50  0000 L CNN
+F 1 "antmicro_logo" H 4894 6712 50  0000 L CNN
+F 2 "qomu-board-footprints:antmicro-logo_midlayer_4mm" H 4580 6960 50  0001 C CNN
+F 3 "" H 4680 7060 50  0001 C CNN
+	1    4680 6710
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:ql_logo N3
+U 1 1 5E1F1C1F
+P 4700 6800
+F 0 "N3" H 4894 6803 50  0000 L CNN
+F 1 "ql_logo" H 4894 6712 50  0000 L CNN
+F 2 "qomu-board-footprints:Ql_logo_mid_9mm" H 4720 6560 50  0001 C CNN
+F 3 "" H 4700 6800 50  0001 C CNN
+	1    4700 6800
+	1    0    0    -1  
+$EndComp
 $Bitmap
-Pos 5750 7400
-Scale 0.800000
+Pos 5680 7330
+Scale 0.870000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 03 52 00 00 01 1A 08 06 00 00 00 1B B2 66 
 2F 00 00 00 04 73 42 49 54 08 08 08 08 7C 08 64 88 00 00 00 09 70 48 59 73 00 00 0A F0 00 00 0A 
@@ -1387,1584 +2975,430 @@ E5 1E 64 EE CA 20 E8 76 32 77 33 64 DD D7 64 ED 35 33 CC 0D A6 76 A5 33 6B 35 4D
 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-Text Label 3650 5250 0    50   ~ 0
-SPI_SS
-Text Label 5050 3200 0    50   ~ 0
-SPI_SS
-Wire Wire Line
-	5600 3000 5700 3000
-Wire Wire Line
-	5600 3100 5700 3100
-Wire Wire Line
-	9850 1750 10350 1750
-Wire Wire Line
-	9850 1850 10350 1850
-Text Label 9950 1750 0    50   ~ 0
-R_USB_N
-Text Label 9950 1850 0    50   ~ 0
-R_USB_P
-Text Label 3650 4550 0    50   ~ 0
-R_USB_N
-Text Label 3650 4850 0    50   ~ 0
-R_USB_P
-Wire Wire Line
-	3550 4550 4000 4550
-Text Label 3650 4250 0    50   ~ 0
-PU_CTRL_USBP
-Wire Wire Line
-	9600 2100 10350 2100
-Wire Notes Line
-	600  2300 4450 2300
-Wire Notes Line
-	4450 7700 600  7700
-Wire Notes Line
-	600  7700 600  2300
-Wire Notes Line
-	4600 4000 7600 4000
-Wire Notes Line
-	7600 4000 7600 6350
-Wire Notes Line
-	7600 6350 4600 6350
-Wire Notes Line
-	4600 6350 4600 4000
-Wire Notes Line
-	7750 4000 11100 4000
-Wire Notes Line
-	11100 4000 11100 6350
-Wire Notes Line
-	11100 6350 7750 6350
-Wire Notes Line
-	7750 6350 7750 4000
-Wire Wire Line
-	9600 1250 10100 1250
-Text Notes 4650 3850 0    50   ~ 0
-Flash memory
-Text Notes 7800 6300 0    50   ~ 0
-Accelerometer
-Text Notes 650  7650 0    50   ~ 0
-EOS S3
-$Comp
-L qomu-board:MC3635 U5
-U 1 1 5E2FC133
-P 9400 4500
-F 0 "U5" H 9725 4565 50  0000 C CNN
-F 1 "MC3635" H 9725 4474 50  0000 C CNN
-F 2 "qomu-board:MC3635" H 9400 4350 50  0001 C CNN
-F 3 "https://mcubemems.com/wp-content/uploads/2019/06/MC3635-Datasheet-APS-048-0044v1.6.pdf" H 9850 3400 50  0001 C CNN
-F 4 "MC3635" H 0   0   50  0001 C CNN "MPN"
-F 5 "mCube" H 0   0   50  0001 C CNN "Manufacturer"
-	1    9400 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3550 4650 4000 4650
-$Comp
-L qomu-board:C_100n_0201 C4
-U 1 1 5DE4FACB
-P 10600 5550
-F 0 "C4" H 10400 5500 50  0000 L CNN
-F 1 "100n" H 10300 5600 50  0000 L CNN
-F 2 "qomu-board-footprints:C_0201_0603Metric" H 10600 5550 50  0001 C CNN
-F 3 "" H 10600 5550 50  0001 C CNN
-F 4 "GRM033R60J104KE19D " H 0   0   50  0001 C CNN "MPN"
-F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
-	1    10600 5550
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9300 5050 9100 5050
-Wire Wire Line
-	9100 5050 9100 5650
-Wire Wire Line
-	9300 5350 9200 5350
-Wire Wire Line
-	9200 5350 9200 4800
-Connection ~ 9200 4800
-$Comp
-L qomu-board:GND #PWR017
-U 1 1 5DEB67F5
-P 10600 5650
-F 0 "#PWR017" H 10600 5400 50  0001 C CNN
-F 1 "GND" H 10605 5477 50  0000 C CNN
-F 2 "" H 10600 5650 50  0001 C CNN
-F 3 "" H 10600 5650 50  0001 C CNN
-	1    10600 5650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8250 5450 8850 5450
-Wire Wire Line
-	8850 4700 8850 4900
-Wire Wire Line
-	8850 5100 8850 5450
-Connection ~ 8850 5450
-Wire Wire Line
-	8850 5450 9300 5450
-$Comp
-L qomu-board:LDO-X2SON U2
-U 1 1 5BF61C95
-P 1900 1200
-F 0 "U2" H 1750 1700 50  0000 C CNN
-F 1 "MIC5504-3.3YMT" H 2000 1600 50  0000 C CNN
-F 2 "qomu-board-footprints:Texas_X2SON-4_1x1mm_P0.65mm" H 1900 1200 50  0001 C CNN
-F 3 "" H 1900 1200 50  0001 C CNN
-F 4 "MIC5504-3.3YMT" H 250 -100 50  0001 C CNN "MPN"
-F 5 "Microchip" H 250 -100 50  0001 C CNN "Manufacturer"
-	1    1900 1200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2200 900  2900 900 
-Wire Wire Line
-	1000 900  1000 950 
-Wire Wire Line
-	1000 900  1500 900 
-Wire Wire Line
-	1600 1150 1500 1150
-Wire Wire Line
-	1500 1150 1500 900 
-Connection ~ 1500 900 
-Wire Wire Line
-	1500 900  1600 900 
-Wire Wire Line
-	1000 1150 1000 1200
-$Comp
-L qomu-board:GND #PWR010
-U 1 1 5DE54C6B
-P 2900 1250
-F 0 "#PWR010" H 2900 1000 50  0001 C CNN
-F 1 "GND" H 2905 1077 50  0000 C CNN
-F 2 "" H 2900 1250 50  0001 C CNN
-F 3 "" H 2900 1250 50  0001 C CNN
-	1    2900 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2900 1150 2900 1250
-Wire Wire Line
-	2900 900  2900 950 
-$Comp
-L qomu-board:GND #PWR016
-U 1 1 5DEBE893
-P 7400 3400
-F 0 "#PWR016" H 7400 3150 50  0001 C CNN
-F 1 "GND" H 7405 3227 50  0000 C CNN
-F 2 "" H 7400 3400 50  0001 C CNN
-F 3 "" H 7400 3400 50  0001 C CNN
-	1    7400 3400
-	1    0    0    -1  
-$EndComp
-Text Label 8250 5250 0    50   ~ 0
-ACC_INT
-Wire Wire Line
-	5600 3100 5600 3000
-Wire Wire Line
-	5600 2700 5700 2700
-Connection ~ 5600 3000
-Wire Wire Line
-	5600 3000 5600 2700
-Text Label 3650 3450 0    50   ~ 0
-ACC_INT
-Text Notes 3400 950  0    50   ~ 0
-2x 3.3V@300mA
-Text Notes 9050 2550 0    50   ~ 0
-5mA/channel
-Wire Wire Line
-	1300 4300 1500 4300
-Wire Wire Line
-	3550 3450 3950 3450
-Text Notes 5800 3650 0    50   ~ 0
-operating current\nmax. 20mA
-Text Notes 650  5950 0    50   ~ 0
-Maximum power consumption for A and B rails:\nLDO mode: 65mA (VCCIOA) 114mA (VCCIOB)\nLDO bypass mode: 77mA (VCCIOA) 269mA (VCCIOB) 
-Text Notes 650  6250 0    50   ~ 0
-The multi-functional IOs have four programmable drive \nstrength states: 2 mA, 4 mA, 8 mA, 12 mA \n(refer to datasheet page 92)
-Text Notes 9050 6150 0    50   ~ 0
-operating current  for 1V8 supply\nmax. 36mA\nlow-power mode: max. 2.8mA\n
-$Comp
-L qomu-board:C_100n_0201 C3
-U 1 1 5DDD75D2
-P 1650 6850
-F 0 "C3" H 1700 6750 50  0000 L CNN
-F 1 "100n" H 1700 6650 50  0000 L CNN
-F 2 "qomu-board-footprints:C_0201_0603Metric" H 1650 6850 50  0001 C CNN
-F 3 "" H 1650 6850 50  0001 C CNN
-F 4 "GRM033R60J104KE19D " H 0   0   50  0001 C CNN "MPN"
-F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
-	1    1650 6850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1650 6950 1650 7100
-$Comp
-L qomu-board:GND #PWR03
-U 1 1 5DDF07D6
-P 1650 7100
-F 0 "#PWR03" H 1650 6850 50  0001 C CNN
-F 1 "GND" H 1655 6927 50  0000 C CNN
-F 2 "" H 1650 7100 50  0001 C CNN
-F 3 "" H 1650 7100 50  0001 C CNN
-	1    1650 7100
-	1    0    0    -1  
-$EndComp
-Text Notes 1450 6850 1    50   ~ 0
-AVDD
-Text Notes 2550 6850 1    50   ~ 0
-VCCIOA
-Text Notes 2000 6850 1    50   ~ 0
-LDO_VIN
-Text Notes 3150 6850 1    50   ~ 0
-VCCIOB
-$Comp
-L qomu-board:C_100n_0201 C6
-U 1 1 5DEA6187
-P 2150 6850
-F 0 "C6" H 2200 6750 50  0000 L CNN
-F 1 "100n" H 2200 6650 50  0000 L CNN
-F 2 "qomu-board-footprints:C_0201_0603Metric" H 2150 6850 50  0001 C CNN
-F 3 "" H 2150 6850 50  0001 C CNN
-F 4 "GRM033R60J104KE19D " H 0   0   50  0001 C CNN "MPN"
-F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
-	1    2150 6850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2150 6950 2150 7100
-$Comp
-L qomu-board:GND #PWR07
-U 1 1 5DEA618E
-P 2150 7100
-F 0 "#PWR07" H 2150 6850 50  0001 C CNN
-F 1 "GND" H 2155 6927 50  0000 C CNN
-F 2 "" H 2150 7100 50  0001 C CNN
-F 3 "" H 2150 7100 50  0001 C CNN
-	1    2150 7100
-	1    0    0    -1  
-$EndComp
-$Comp
-L qomu-board:C_100n_0201 C8
-U 1 1 5DEAC065
-P 2700 6850
-F 0 "C8" H 2750 6750 50  0000 L CNN
-F 1 "100n" H 2750 6650 50  0000 L CNN
-F 2 "qomu-board-footprints:C_0201_0603Metric" H 2700 6850 50  0001 C CNN
-F 3 "" H 2700 6850 50  0001 C CNN
-F 4 "GRM033R60J104KE19D " H 0   0   50  0001 C CNN "MPN"
-F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
-	1    2700 6850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2700 6950 2700 7100
-$Comp
-L qomu-board:GND #PWR09
-U 1 1 5DEAC06C
-P 2700 7100
-F 0 "#PWR09" H 2700 6850 50  0001 C CNN
-F 1 "GND" H 2705 6927 50  0000 C CNN
-F 2 "" H 2700 7100 50  0001 C CNN
-F 3 "" H 2700 7100 50  0001 C CNN
-	1    2700 7100
-	1    0    0    -1  
-$EndComp
-$Comp
-L qomu-board:C_100n_0201 C10
-U 1 1 5DEB1E5E
-P 3350 6850
-F 0 "C10" H 3200 6750 50  0000 L CNN
-F 1 "100n" H 3200 6650 50  0000 L CNN
-F 2 "qomu-board-footprints:C_0201_0603Metric" H 3350 6850 50  0001 C CNN
-F 3 "" H 3350 6850 50  0001 C CNN
-F 4 "GRM033R60J104KE19D " H 0   0   50  0001 C CNN "MPN"
-F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
-	1    3350 6850
-	1    0    0    -1  
-$EndComp
-$Comp
-L qomu-board:GND #PWR012
-U 1 1 5DEB1E65
-P 3500 7100
-F 0 "#PWR012" H 3500 6850 50  0001 C CNN
-F 1 "GND" H 3505 6927 50  0000 C CNN
-F 2 "" H 3500 7100 50  0001 C CNN
-F 3 "" H 3500 7100 50  0001 C CNN
-	1    3500 7100
-	1    0    0    -1  
-$EndComp
-$Comp
-L qomu-board:C_100n_0201 C11
-U 1 1 5DEB7AF4
-P 3650 6850
-F 0 "C11" H 3700 6750 50  0000 L CNN
-F 1 "100n" H 3700 6650 50  0000 L CNN
-F 2 "qomu-board-footprints:C_0201_0603Metric" H 3650 6850 50  0001 C CNN
-F 3 "" H 3650 6850 50  0001 C CNN
-F 4 "GRM033R60J104KE19D " H 0   0   50  0001 C CNN "MPN"
-F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
-	1    3650 6850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3500 6750 3350 6750
-Wire Wire Line
-	3500 6350 3500 6750
-Wire Wire Line
-	3500 6750 3650 6750
-Connection ~ 3500 6750
-Wire Wire Line
-	3350 6950 3350 7000
-Wire Wire Line
-	3350 7000 3500 7000
-Wire Wire Line
-	3650 7000 3650 6950
-Wire Wire Line
-	3500 7100 3500 7000
-Connection ~ 3500 7000
-Wire Wire Line
-	3500 7000 3650 7000
-$Comp
-L qomu-board:LDO-X2SON U1
-U 1 1 5DEFF8FE
-P 1900 1700
-F 0 "U1" H 1750 1650 50  0000 C CNN
-F 1 "MIC5504-3.3YMT" H 2000 1550 50  0000 C CNN
-F 2 "qomu-board-footprints:Texas_X2SON-4_1x1mm_P0.65mm" H 1900 1700 50  0001 C CNN
-F 3 "" H 1900 1700 50  0001 C CNN
-F 4 "MIC5504-3.3YMT" H 250 400 50  0001 C CNN "MPN"
-F 5 "Microchip" H 250 400 50  0001 C CNN "Manufacturer"
-	1    1900 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L qomu-board:C_2u2_0201 C7
-U 1 1 5DF1CD1E
-P 2700 1600
-F 0 "C7" H 2750 1500 50  0000 L CNN
-F 1 "2u2/10V" H 2750 1400 50  0000 L CNN
-F 2 "qomu-board-footprints:C_0201_0603Metric" H 2700 1600 50  0001 C CNN
-F 3 "" H 2700 1600 50  0001 C CNN
-F 4 "CL03A225MP3CRNC " H 0   0   50  0001 C CNN "MPN"
-F 5 "Samsung" H 0   0   50  0001 C CNN "Manufacturer"
-	1    2700 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L qomu-board:GND #PWR08
-U 1 1 5DF1D33C
-P 2700 1900
-F 0 "#PWR08" H 2700 1650 50  0001 C CNN
-F 1 "GND" H 2705 1727 50  0000 C CNN
-F 2 "" H 2700 1900 50  0001 C CNN
-F 3 "" H 2700 1900 50  0001 C CNN
-	1    2700 1900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2700 1700 2700 1900
-Wire Wire Line
-	2200 1550 2350 1550
-Connection ~ 2350 1550
-Wire Wire Line
-	2350 1550 2350 1650
-Wire Wire Line
-	2200 1650 2350 1650
-Connection ~ 2350 1650
-Wire Wire Line
-	2350 1650 2350 1900
-Wire Wire Line
-	1600 1400 1500 1400
-Wire Wire Line
-	1500 1400 1500 1150
-Connection ~ 1500 1150
-Wire Wire Line
-	1500 1650 1600 1650
-Connection ~ 1500 1400
-Wire Wire Line
-	1500 1400 1500 1650
-$Comp
-L qomu-board:GND #PWR01
-U 1 1 5DF42981
-P 800 1200
-F 0 "#PWR01" H 800 950 50  0001 C CNN
-F 1 "GND" H 805 1027 50  0000 C CNN
-F 2 "" H 800 1200 50  0001 C CNN
-F 3 "" H 800 1200 50  0001 C CNN
-	1    800  1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L qomu-board:C_2u2_0201 C1
-U 1 1 5DF42987
-P 800 1050
-F 0 "C1" H 850 1150 50  0000 L CNN
-F 1 "2u2/10V" H 1100 1000 50  0000 L CNN
-F 2 "qomu-board-footprints:C_0201_0603Metric" H 800 1050 50  0001 C CNN
-F 3 "" H 800 1050 50  0001 C CNN
-F 4 "CL03A225MP3CRNC " H 0   0   50  0001 C CNN "MPN"
-F 5 "Samsung" H 0   0   50  0001 C CNN "Manufacturer"
-	1    800  1050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	800  1150 800  1200
-Wire Wire Line
-	1000 900  800  900 
-Wire Wire Line
-	800  900  800  950 
-Connection ~ 1000 900 
-Text Label 2400 1400 0    50   ~ 0
-VCCIOB
-Wire Wire Line
-	2700 1400 2700 1500
-Wire Wire Line
-	2200 1400 2700 1400
-Text Label 800  3250 0    50   ~ 0
-VCCIOB
-Text Label 3500 6600 1    50   ~ 0
-VCCIOB
-$Comp
-L qomu-board:R_10k_0201 R5
-U 1 1 5DDE81B7
-P 4200 3250
-F 0 "R5" V 4150 3100 50  0000 C CNN
-F 1 "10k" V 4300 3250 50  0000 C CNN
-F 2 "qomu-board-footprints:R_0201_0603Metric" H 4200 3250 50  0001 C CNN
-F 3 "" H 4200 3250 50  0001 C CNN
-F 4 "ERJ1GNF1002C " H -4550 1550 50  0001 C CNN "MPN"
-F 5 "Panasonic" H 350 0   50  0001 C CNN "Manufacturer"
-	1    4200 3250
-	0    1    1    0   
-$EndComp
-$Comp
-L qomu-board:R_10k_0201 R2
-U 1 1 5DDE8D8D
-P 4200 3150
-F 0 "R2" V 4250 3300 50  0000 C CNN
-F 1 "10k" V 4300 3150 50  0000 C CNN
-F 2 "qomu-board-footprints:R_0201_0603Metric" H 4200 3150 50  0001 C CNN
-F 3 "" H 4200 3150 50  0001 C CNN
-F 4 "ERJ1GNF1002C " H -4550 1450 50  0001 C CNN "MPN"
-F 5 "Panasonic" H 350 0   50  0001 C CNN "Manufacturer"
-	1    4200 3150
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3550 3150 4100 3150
-Wire Wire Line
-	3550 3250 4100 3250
-$Comp
-L qomu-board:GND #PWR014
-U 1 1 5DE56F16
-P 4300 3350
-F 0 "#PWR014" H 4300 3100 50  0001 C CNN
-F 1 "GND" H 4305 3177 50  0000 C CNN
-F 2 "" H 4300 3350 50  0001 C CNN
-F 3 "" H 4300 3350 50  0001 C CNN
-	1    4300 3350
-	1    0    0    -1  
-$EndComp
-Text Notes 2200 2500 0    50   ~ 0
-FBIO_8 and FBIO_9 are bootstrap pins for HS oscillator.\nThey should be pulled-down for internal HSO
-$Comp
-L qomu-board:R_4k7_0201 R8
-U 1 1 5DE58338
-P 7950 5100
-F 0 "R8" V 7850 5150 50  0000 C CNN
-F 1 "4k7" V 7850 5000 50  0000 C CNN
-F 2 "qomu-board-footprints:R_0201_0603Metric" H 7950 5100 50  0001 C CNN
-F 3 "" H 7950 5100 50  0001 C CNN
-F 4 "CRCW02014K70FNED" H -800 3400 50  0001 C CNN "MPN"
-F 5 "Vishay" H 0   0   50  0001 C CNN "Manufacturer"
-	1    7950 5100
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7950 5250 7950 5200
-Wire Wire Line
-	7950 5250 9300 5250
-Wire Wire Line
-	7950 5000 7950 4700
-Wire Wire Line
-	7950 4700 8400 4700
-Wire Wire Line
-	750  3250 1500 3250
-Wire Wire Line
-	1500 3150 1350 3150
-Wire Wire Line
-	1350 3150 1350 3000
-Connection ~ 1350 3000
-NoConn ~ 1500 3450
-NoConn ~ 1500 3550
-NoConn ~ 1500 4100
-$Comp
-L qomu-board:+3V3 #PWR0102
-U 1 1 5DF228AE
-P 1100 2800
-F 0 "#PWR0102" H 1100 2800 50  0001 C CNN
-F 1 "+3V3" H 1085 2923 50  0000 C CNN
-F 2 "" H 1100 2800 50  0001 C CNN
-F 3 "" H 1100 2800 50  0001 C CNN
-	1    1100 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L qomu-board:+3V3 #PWR0103
-U 1 1 5DF22FAC
-P 2900 850
-F 0 "#PWR0103" H 2900 850 50  0001 C CNN
-F 1 "+3V3" H 2885 973 50  0000 C CNN
-F 2 "" H 2900 850 50  0001 C CNN
-F 3 "" H 2900 850 50  0001 C CNN
-	1    2900 850 
-	1    0    0    -1  
-$EndComp
-Connection ~ 2900 900 
-$Comp
-L qomu-board:+3V3 #PWR0104
-U 1 1 5DF23435
-P 5600 2550
-F 0 "#PWR0104" H 5600 2550 50  0001 C CNN
-F 1 "+3V3" H 5585 2673 50  0000 C CNN
-F 2 "" H 5600 2550 50  0001 C CNN
-F 3 "" H 5600 2550 50  0001 C CNN
-	1    5600 2550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5600 2700 5600 2600
-Connection ~ 5600 2700
-$Comp
-L qomu-board:+3V3 #PWR0105
-U 1 1 5DF2D4C9
-P 8400 4650
-F 0 "#PWR0105" H 8400 4650 50  0001 C CNN
-F 1 "+3V3" H 8385 4773 50  0000 C CNN
-F 2 "" H 8400 4650 50  0001 C CNN
-F 3 "" H 8400 4650 50  0001 C CNN
-	1    8400 4650
-	1    0    0    -1  
-$EndComp
-Connection ~ 8400 4700
-Wire Wire Line
-	8400 4700 8650 4700
-$Comp
-L qomu-board:+3V3 #PWR0106
-U 1 1 5DF2D809
-P 9200 4500
-F 0 "#PWR0106" H 9200 4500 50  0001 C CNN
-F 1 "+3V3" H 9185 4623 50  0000 C CNN
-F 2 "" H 9200 4500 50  0001 C CNN
-F 3 "" H 9200 4500 50  0001 C CNN
-	1    9200 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9200 4550 9200 4700
-Connection ~ 9200 4700
-$Comp
-L qomu-board:+3V3 #PWR0107
-U 1 1 5DF404ED
-P 10600 5300
-F 0 "#PWR0107" H 10600 5300 50  0001 C CNN
-F 1 "+3V3" H 10585 5423 50  0000 C CNN
-F 2 "" H 10600 5300 50  0001 C CNN
-F 3 "" H 10600 5300 50  0001 C CNN
-	1    10600 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L qomu-board:+3V3 #PWR0108
-U 1 1 5DF40AED
-P 1650 6600
-F 0 "#PWR0108" H 1650 6600 50  0001 C CNN
-F 1 "+3V3" H 1635 6723 50  0000 C CNN
-F 2 "" H 1650 6600 50  0001 C CNN
-F 3 "" H 1650 6600 50  0001 C CNN
-	1    1650 6600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1650 6650 1650 6750
-Wire Wire Line
-	10600 5350 10600 5450
-$Comp
-L qomu-board:+3V3 #PWR0109
-U 1 1 5DF4ADC0
-P 2150 6600
-F 0 "#PWR0109" H 2150 6600 50  0001 C CNN
-F 1 "+3V3" H 2135 6723 50  0000 C CNN
-F 2 "" H 2150 6600 50  0001 C CNN
-F 3 "" H 2150 6600 50  0001 C CNN
-	1    2150 6600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2150 6650 2150 6750
-$Comp
-L qomu-board:+3V3 #PWR0110
-U 1 1 5DF53D7E
-P 2700 6600
-F 0 "#PWR0110" H 2700 6600 50  0001 C CNN
-F 1 "+3V3" H 2685 6723 50  0000 C CNN
-F 2 "" H 2700 6600 50  0001 C CNN
-F 3 "" H 2700 6600 50  0001 C CNN
-	1    2700 6600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2700 6650 2700 6750
-$Comp
-L qomu-board:+VBUS #PWR0111
-U 1 1 5DF5D3D4
-P 800 850
-F 0 "#PWR0111" H 800 850 50  0001 C CNN
-F 1 "+VBUS" H 785 973 50  0000 C CNN
-F 2 "" H 800 850 50  0001 C CNN
-F 3 "" H 800 850 50  0001 C CNN
-	1    800  850 
-	1    0    0    -1  
-$EndComp
-Connection ~ 800  900 
-$Comp
-L qomu-board:+VBUS #PWR0112
-U 1 1 5DF5DCED
-P 9200 900
-F 0 "#PWR0112" H 9200 900 50  0001 C CNN
-F 1 "+VBUS" H 9185 1023 50  0000 C CNN
-F 2 "" H 9200 900 50  0001 C CNN
-F 3 "" H 9200 900 50  0001 C CNN
-	1    9200 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L qomu-board:+3V3 #PWR0113
-U 1 1 5DF60B5F
-P 7400 3100
-F 0 "#PWR0113" H 7400 3100 50  0001 C CNN
-F 1 "+3V3" H 7385 3223 50  0000 C CNN
-F 2 "" H 7400 3100 50  0001 C CNN
-F 3 "" H 7400 3100 50  0001 C CNN
-	1    7400 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7400 3150 7400 3200
-$Comp
-L qomu-board:+3V3 #PWR0114
-U 1 1 5DF6A5E8
-P 8150 2650
-F 0 "#PWR0114" H 8150 2650 50  0001 C CNN
-F 1 "+3V3" H 8135 2773 50  0000 C CNN
-F 2 "" H 8150 2650 50  0001 C CNN
-F 3 "" H 8150 2650 50  0001 C CNN
-	1    8150 2650
-	1    0    0    -1  
-$EndComp
-Text Notes 4650 3750 0    50   ~ 0
-TBD - flash memory programming
-Wire Wire Line
-	5550 4800 5450 4800
-Wire Wire Line
-	5450 4800 5450 4900
-Wire Wire Line
-	5550 5100 5450 5100
-Connection ~ 5450 5100
-Wire Wire Line
-	5450 5100 5450 5200
-Wire Wire Line
-	5550 4900 5450 4900
-Connection ~ 5450 4900
-Wire Wire Line
-	5450 4900 5450 5100
-Wire Wire Line
-	5550 4700 5200 4700
-Wire Wire Line
-	4900 4700 4900 4800
-Connection ~ 5200 4700
-Wire Wire Line
-	5200 4700 4900 4700
-Wire Wire Line
-	4900 5000 4900 5200
-Wire Wire Line
-	5200 4750 5200 4700
-Wire Wire Line
-	5200 5150 5200 5200
-Wire Wire Line
-	4900 4450 4900 4700
-Connection ~ 4900 4700
-Wire Wire Line
-	5950 5100 7400 5100
-Wire Wire Line
-	5950 4800 6400 4800
-Wire Wire Line
-	5950 4700 6700 4700
-Wire Wire Line
-	6400 4650 6400 4800
-Connection ~ 6400 4800
-Wire Wire Line
-	6400 4800 7400 4800
-Wire Wire Line
-	6700 4650 6700 4700
-Connection ~ 6700 4700
-Wire Wire Line
-	6700 4700 7400 4700
-Text Label 7000 4700 0    50   ~ 0
-SWD_IO
-Text Label 7000 4800 0    50   ~ 0
-SWD_CLK
-Wire Wire Line
-	6950 5950 6800 5950
-Wire Wire Line
-	6800 5650 6950 5650
-Wire Wire Line
-	6950 5650 6950 5600
-Wire Wire Line
-	6800 5850 7350 5850
-Wire Wire Line
-	6800 5750 7350 5750
-Text Label 3650 5450 0    50   ~ 0
-UART_TX
-$Comp
-L qomu-board:SD05C.TCT D8
-U 1 1 5DED4186
-P 5200 4950
-F 0 "D8" V 5350 4900 60  0000 R CNN
-F 1 "SD05C.TCT" H 5400 5100 60  0000 R CNN
-F 2 "qomu-board-footprints:SOD-323-SD05" H 5400 5150 60  0001 L CNN
-F 3 "https://www.mouser.com/datasheet/2/761/sdxxc-1277747.pdf" H 5400 5250 60  0001 L CNN
-F 4 "Semtec" H 5400 5550 60  0001 L CNN "Manufacturer"
-F 5 "SD05C.TCT" H 5400 5450 60  0001 L CNN "MPN"
-	1    5200 4950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L qomu-board:825437-4 J2
-U 1 1 5DED4C12
-P 6650 5650
-F 0 "J2" V 6550 5650 50  0000 C CNN
-F 1 "825437-4" H 6800 5550 50  0000 C CNN
-F 2 "qomu-board-footprints:TE_825437-4" H 6850 5950 60  0001 L CNN
-F 3 "https://www.te.com/usa-en/product-825437-4.datasheet.pdf" H 6850 6050 60  0001 L CNN
-F 4 "825437-4" H 6850 6150 60  0001 L CNN "MPN"
-F 5 "TE Connectivity" H 6850 6250 60  0001 L CNN "Manufacturer"
-	1    6650 5650
-	0    1    1    0   
-$EndComp
-$Comp
-L qomu-board:FTSH-105-01-L-DV-K J1
-U 1 1 5DED6D58
-P 5750 4900
-F 0 "J1" H 5700 5350 50  0000 C CNN
-F 1 "FTSH-105-01-L-DV-K" H 5500 5250 50  0000 C CNN
-F 2 "qomu-board-footprints:PinHeader_2x5_P1.27_SMD" H 5950 5100 60  0001 L CNN
-F 3 "http://suddendocs.samtec.com/prints/ftsh-1xx-xx-xxx-dv-xxx-xxx-mkt.pdf" H 5950 5200 60  0001 L CNN
-F 4 "FTSH-105-01-L-DV-K" H 5950 5400 60  0001 L CNN "MPN"
-F 5 "Samtec Inc." H 5950 6000 60  0001 L CNN "Manufacturer"
-	1    5750 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L qomu-board:R_10k_0201 R15
-U 1 1 5DEA3DDA
-P 6700 4550
-F 0 "R15" H 6750 4450 50  0000 C CNN
-F 1 "10k" V 6600 4550 50  0000 C CNN
-F 2 "qomu-board-footprints:R_0201_0603Metric" H 6700 4550 50  0001 C CNN
-F 3 "" H 6700 4550 50  0001 C CNN
-F 4 "ERJ1GNF1002C " H -2050 2850 50  0001 C CNN "MPN"
-F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
-	1    6700 4550
-	-1   0    0    1   
-$EndComp
-$Comp
-L qomu-board:R_10k_0201 R13
-U 1 1 5DEA73A8
-P 6400 4550
-F 0 "R13" H 6450 4450 50  0000 C CNN
-F 1 "10k" V 6300 4550 50  0000 C CNN
-F 2 "qomu-board-footprints:R_0201_0603Metric" H 6400 4550 50  0001 C CNN
-F 3 "" H 6400 4550 50  0001 C CNN
-F 4 "ERJ1GNF1002C " H -2350 2850 50  0001 C CNN "MPN"
-F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
-	1    6400 4550
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6700 4400 6700 4450
-Wire Wire Line
-	6400 4450 6400 4400
-Connection ~ 6400 4400
-Wire Wire Line
-	6400 4400 6700 4400
-$Comp
-L qomu-board:C_100n_0201 C12
-U 1 1 5DED905E
-P 4900 4900
-F 0 "C12" H 4750 5000 50  0000 L CNN
-F 1 "100n" V 4800 4650 50  0000 L CNN
-F 2 "qomu-board-footprints:C_0201_0603Metric" H 4900 4900 50  0001 C CNN
-F 3 "" H 4900 4900 50  0001 C CNN
-F 4 "GRM033R60J104KE19D " H 0   0   50  0001 C CNN "MPN"
-F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
-	1    4900 4900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6950 5950 6950 6000
-$Comp
-L qomu-board:+3V3 #PWR0115
-U 1 1 5DF00C49
-P 6950 5550
-F 0 "#PWR0115" H 6950 5550 50  0001 C CNN
-F 1 "+3V3" H 6935 5673 50  0000 C CNN
-F 2 "" H 6950 5550 50  0001 C CNN
-F 3 "" H 6950 5550 50  0001 C CNN
-	1    6950 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L qomu-board:GND #PWR0116
-U 1 1 5DF012DB
-P 6950 6000
-F 0 "#PWR0116" H 6950 5750 50  0001 C CNN
-F 1 "GND" H 6955 5827 50  0000 C CNN
-F 2 "" H 6950 6000 50  0001 C CNN
-F 3 "" H 6950 6000 50  0001 C CNN
-	1    6950 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L qomu-board:GND #PWR0117
-U 1 1 5DF05494
-P 4900 5200
-F 0 "#PWR0117" H 4900 4950 50  0001 C CNN
-F 1 "GND" H 4905 5027 50  0000 C CNN
-F 2 "" H 4900 5200 50  0001 C CNN
-F 3 "" H 4900 5200 50  0001 C CNN
-	1    4900 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L qomu-board:GND #PWR0118
-U 1 1 5DF05792
-P 5200 5200
-F 0 "#PWR0118" H 5200 4950 50  0001 C CNN
-F 1 "GND" H 5205 5027 50  0000 C CNN
-F 2 "" H 5200 5200 50  0001 C CNN
-F 3 "" H 5200 5200 50  0001 C CNN
-	1    5200 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L qomu-board:GND #PWR0119
-U 1 1 5DF05A2B
-P 5450 5200
-F 0 "#PWR0119" H 5450 4950 50  0001 C CNN
-F 1 "GND" H 5455 5027 50  0000 C CNN
-F 2 "" H 5450 5200 50  0001 C CNN
-F 3 "" H 5450 5200 50  0001 C CNN
-	1    5450 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L qomu-board:+3V3 #PWR0120
-U 1 1 5DF11E3D
-P 4900 4400
-F 0 "#PWR0120" H 4900 4400 50  0001 C CNN
-F 1 "+3V3" H 4885 4523 50  0000 C CNN
-F 2 "" H 4900 4400 50  0001 C CNN
-F 3 "" H 4900 4400 50  0001 C CNN
-	1    4900 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L qomu-board:+3V3 #PWR0121
-U 1 1 5DF1217B
-P 6400 4350
-F 0 "#PWR0121" H 6400 4350 50  0001 C CNN
-F 1 "+3V3" H 6385 4473 50  0000 C CNN
-F 2 "" H 6400 4350 50  0001 C CNN
-F 3 "" H 6400 4350 50  0001 C CNN
-	1    6400 4350
-	1    0    0    -1  
-$EndComp
-Text Label 7250 5100 2    50   ~ 0
-RST_N
-Wire Wire Line
-	6500 1600 6500 1250
-Wire Wire Line
-	6350 1600 6350 1350
-Wire Wire Line
-	6200 1600 6200 1450
-Connection ~ 6200 1450
-Wire Wire Line
-	6050 1600 6050 1550
-Connection ~ 6050 1550
-Wire Wire Line
-	6050 1550 6950 1550
-$Comp
-L qomu-board:GND #PWR0122
-U 1 1 5DFAF08B
-P 6350 1800
-F 0 "#PWR0122" H 6350 1550 50  0001 C CNN
-F 1 "GND" H 6355 1627 50  0000 C CNN
-F 2 "" H 6350 1800 50  0001 C CNN
-F 3 "" H 6350 1800 50  0001 C CNN
-	1    6350 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L qomu-board:GND #PWR0123
-U 1 1 5DFAED08
-P 6050 1800
-F 0 "#PWR0123" H 6050 1550 50  0001 C CNN
-F 1 "GND" H 6055 1627 50  0000 C CNN
-F 2 "" H 6050 1800 50  0001 C CNN
-F 3 "" H 6050 1800 50  0001 C CNN
-	1    6050 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L qomu-board:GND #PWR0124
-U 1 1 5DFBB669
-P 6200 1800
-F 0 "#PWR0124" H 6200 1550 50  0001 C CNN
-F 1 "GND" H 6205 1627 50  0000 C CNN
-F 2 "" H 6200 1800 50  0001 C CNN
-F 3 "" H 6200 1800 50  0001 C CNN
-	1    6200 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L qomu-board:GND #PWR0125
-U 1 1 5DFBB8A5
-P 6500 1800
-F 0 "#PWR0125" H 6500 1550 50  0001 C CNN
-F 1 "GND" H 6505 1627 50  0000 C CNN
-F 2 "" H 6500 1800 50  0001 C CNN
-F 3 "" H 6500 1800 50  0001 C CNN
-	1    6500 1800
-	1    0    0    -1  
-$EndComp
-Wire Notes Line
-	4600 2200 7600 2200
-Wire Notes Line
-	4600 2300 7600 2300
-Wire Notes Line
-	7600 2300 7600 3900
-Wire Notes Line
-	4600 3900 4600 2300
-Wire Notes Line
-	4600 3900 7600 3900
-Text Notes 4650 6300 0    50   ~ 0
-Programming and debug headers
-Wire Wire Line
-	3550 2950 3950 2950
-Wire Wire Line
-	3550 2850 3950 2850
-Text Label 3650 2850 0    50   ~ 0
-SWD_IO
-Text Label 3650 2950 0    50   ~ 0
-SWD_CLK
-Wire Wire Line
-	3550 5450 4000 5450
-Wire Wire Line
-	3550 5550 4000 5550
-Text Label 3650 5550 0    50   ~ 0
-UART_RX
-NoConn ~ 5550 5000
-Text Label 7000 5850 0    50   ~ 0
-UART_RX
-Text Label 7000 5750 0    50   ~ 0
-UART_TX
-$Comp
-L qomu-board:R_100R_0201 R16
-U 1 1 5DF394C7
-P 9500 2700
-F 0 "R16" V 9450 2550 50  0000 C CNN
-F 1 "100R" V 9450 2900 50  0000 C CNN
-F 2 "qomu-board-footprints:R_0201_0603Metric" H 9500 2700 50  0001 C CNN
-F 3 "" H 9500 2700 50  0001 C CNN
-F 4 "MCRE000116 " H 1000 500 50  0001 C CNN "MPN"
-F 5 "Multicomp" H 0   0   50  0001 C CNN "Manufacturer"
-	1    9500 2700
-	0    1    1    0   
-$EndComp
-$Comp
-L qomu-board:R_100R_0201 R17
-U 1 1 5DF6B65E
-P 9500 2800
-F 0 "R17" V 9450 2650 50  0000 C CNN
-F 1 "100R" V 9450 3000 50  0000 C CNN
-F 2 "qomu-board-footprints:R_0201_0603Metric" H 9500 2800 50  0001 C CNN
-F 3 "" H 9500 2800 50  0001 C CNN
-F 4 "MCRE000116 " H 1000 600 50  0001 C CNN "MPN"
-F 5 "Multicomp" H 0   0   50  0001 C CNN "Manufacturer"
-	1    9500 2800
-	0    1    1    0   
-$EndComp
-$Comp
-L qomu-board:R_220R_0201 R18
-U 1 1 5DF6BA6D
-P 9500 2900
-F 0 "R18" V 9450 2750 50  0000 C CNN
-F 1 "220R" V 9450 3100 50  0000 C CNN
-F 2 "qomu-board-footprints:R_0201_0603Metric" H 9500 2900 50  0001 C CNN
-F 3 "" H 9500 2900 50  0001 C CNN
-F 4 "MCRE000124" H 1000 700 50  0001 C CNN "MPN"
-F 5 "Multicomp" H 0   0   50  0001 C CNN "Manufacturer"
-	1    9500 2900
-	0    1    1    0   
-$EndComp
-Text Label 10750 3300 0    50   ~ 0
-LED_B
-Text Label 10750 3400 0    50   ~ 0
-LED_G
-Text Label 10750 3500 0    50   ~ 0
-LED_R
-$Comp
-L qomu-board:RV1C002UN Q2
-U 1 1 5DF91114
-P 10200 3100
-F 0 "Q2" H 10100 3250 50  0000 L CNN
-F 1 "RV1C002UN" V 10400 2850 50  0000 L CNN
-F 2 "qomu-board-footprints:VML0806" H 10400 2700 50  0001 L BNN
-F 3 "https://d1d2qsbl8m0m72.cloudfront.net/en/products/databook/datasheet/discrete/transistor/mosfet/rv1c002un-e.pdf" H 10425 2925 50  0001 L BNN
-F 4 "RV1C002UN" H 10425 3075 50  0001 L BNN "Field4"
-F 5 "Nch 20V 180mA Small Signal MOSFET" H 10400 2850 50  0001 L BNN "Field5"
-F 6 "None" H 10400 2775 50  0001 L BNN "Field6"
-F 7 "Unavailable" H 10400 2925 50  0001 L BNN "Field7"
-F 8 "Rohm" H 10425 3000 50  0001 L BNN "Field8"
-F 9 "RV1C002UN" H 0   0   50  0001 C CNN "MPN"
-F 10 "ROHM Semiconductor" H 0   0   50  0001 C CNN "Manufacturer"
-	1    10200 3100
-	-1   0    0    -1  
-$EndComp
-$Comp
-L qomu-board:RV1C002UN Q3
-U 1 1 5DF95B3F
-P 10600 3100
-F 0 "Q3" H 10500 3250 50  0000 L CNN
-F 1 "RV1C002UN" V 10800 2850 50  0000 L CNN
-F 2 "qomu-board-footprints:VML0806" H 10800 2700 50  0001 L BNN
-F 3 "https://d1d2qsbl8m0m72.cloudfront.net/en/products/databook/datasheet/discrete/transistor/mosfet/rv1c002un-e.pdf" H 10825 2925 50  0001 L BNN
-F 4 "RV1C002UN" H 10825 3075 50  0001 L BNN "Field4"
-F 5 "Nch 20V 180mA Small Signal MOSFET" H 10800 2850 50  0001 L BNN "Field5"
-F 6 "None" H 10800 2775 50  0001 L BNN "Field6"
-F 7 "Unavailable" H 10800 2925 50  0001 L BNN "Field7"
-F 8 "Rohm" H 10825 3000 50  0001 L BNN "Field8"
-F 9 "RV1C002UN" H 0   0   50  0001 C CNN "MPN"
-F 10 "ROHM Semiconductor" H 0   0   50  0001 C CNN "Manufacturer"
-	1    10600 3100
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	9700 2900 9600 2900
-Wire Wire Line
-	9600 2800 10100 2800
-Wire Wire Line
-	10100 2800 10100 2900
-Wire Wire Line
-	10500 2900 10500 2700
-Wire Wire Line
-	10500 2700 9600 2700
-$Comp
-L qomu-board:RV1C002UN Q1
-U 1 1 5DF27508
-P 9800 3100
-F 0 "Q1" H 9700 3250 50  0000 L CNN
-F 1 "RV1C002UN" V 10050 2800 50  0000 L CNN
-F 2 "qomu-board-footprints:VML0806" H 10000 2700 50  0001 L BNN
-F 3 "https://d1d2qsbl8m0m72.cloudfront.net/en/products/databook/datasheet/discrete/transistor/mosfet/rv1c002un-e.pdf" H 10025 2925 50  0001 L BNN
-F 4 "RV1C002UN" H 10025 3075 50  0001 L BNN "Field4"
-F 5 "Nch 20V 180mA Small Signal MOSFET" H 10000 2850 50  0001 L BNN "Field5"
-F 6 "None" H 10000 2775 50  0001 L BNN "Field6"
-F 7 "Unavailable" H 10000 2925 50  0001 L BNN "Field7"
-F 8 "Rohm" H 10025 3000 50  0001 L BNN "Field8"
-F 9 "RV1C002UN" H 0   0   50  0001 C CNN "MPN"
-F 10 "ROHM Semiconductor" H 0   0   50  0001 C CNN "Manufacturer"
-	1    9800 3100
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	10700 3200 10700 3300
-Wire Wire Line
-	10700 3300 11000 3300
-Wire Wire Line
-	10300 3200 10300 3400
-Wire Wire Line
-	10300 3400 11000 3400
-Wire Wire Line
-	9900 3200 9900 3500
-Wire Wire Line
-	9900 3500 11000 3500
-$Comp
-L qomu-board:GND #PWR0126
-U 1 1 5E018B96
-P 9700 3600
-F 0 "#PWR0126" H 9700 3350 50  0001 C CNN
-F 1 "GND" H 9705 3427 50  0000 C CNN
-F 2 "" H 9700 3600 50  0001 C CNN
-F 3 "" H 9700 3600 50  0001 C CNN
-	1    9700 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L qomu-board:GND #PWR0127
-U 1 1 5E060D94
-P 10100 3600
-F 0 "#PWR0127" H 10100 3350 50  0001 C CNN
-F 1 "GND" H 10105 3427 50  0000 C CNN
-F 2 "" H 10100 3600 50  0001 C CNN
-F 3 "" H 10100 3600 50  0001 C CNN
-	1    10100 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L qomu-board:GND #PWR0128
-U 1 1 5E0610BA
-P 10500 3600
-F 0 "#PWR0128" H 10500 3350 50  0001 C CNN
-F 1 "GND" H 10505 3427 50  0000 C CNN
-F 2 "" H 10500 3600 50  0001 C CNN
-F 3 "" H 10500 3600 50  0001 C CNN
-	1    10500 3600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9700 3300 9700 3600
-Wire Wire Line
-	10100 3300 10100 3600
-Wire Wire Line
-	10500 3300 10500 3600
-Text Label 3650 4750 0    50   ~ 0
-LED_B
-Text Label 3650 4350 0    50   ~ 0
-LED_R
-Wire Wire Line
-	3550 4350 4000 4350
-Wire Wire Line
-	3550 4450 4000 4450
-Wire Wire Line
-	3550 4750 4000 4750
-Wire Wire Line
-	6500 1250 6950 1250
-Wire Wire Line
-	5800 1100 5800 1250
-Wire Wire Line
-	5800 1250 6500 1250
-Connection ~ 6500 1250
-Wire Wire Line
-	6350 1350 5700 1350
-Wire Wire Line
-	5700 1350 5700 1100
-Connection ~ 6350 1350
-Wire Wire Line
-	5600 1450 5600 1100
-Wire Wire Line
-	5600 1450 6200 1450
-Wire Wire Line
-	4300 3150 4300 3250
-Connection ~ 4300 3250
-Wire Wire Line
-	4300 3250 4300 3350
-Text Label 3650 3050 0    50   ~ 0
-TOUCH_1
-Text Label 3650 5350 0    50   ~ 0
-TOUCH_3
-Text Label 3650 4650 0    50   ~ 0
-TOUCH_4
-Wire Wire Line
-	3550 3350 3950 3350
-Wire Wire Line
-	3550 3050 3950 3050
-NoConn ~ 3550 3950
-$Comp
-L qomu-board:R_10k_0201 R6
-U 1 1 5E151CF7
-P 5750 5850
-F 0 "R6" V 5700 6000 50  0000 C CNN
-F 1 "10k" V 5850 6000 50  0000 C CNN
-F 2 "qomu-board-footprints:R_0201_0603Metric" H 5750 5850 50  0001 C CNN
-F 3 "" H 5750 5850 50  0001 C CNN
-F 4 "ERJ1GNF1002C " H -3000 4150 50  0001 C CNN "MPN"
-F 5 "Panasonic" H -650 1300 50  0001 C CNN "Manufacturer"
-	1    5750 5850
-	0    1    1    0   
-$EndComp
-$Comp
-L qomu-board:+3V3 #PWR011
-U 1 1 5E1531DB
-P 5450 5600
-F 0 "#PWR011" H 5450 5600 50  0001 C CNN
-F 1 "+3V3" H 5600 5650 50  0000 C CNN
-F 2 "" H 5450 5600 50  0001 C CNN
-F 3 "" H 5450 5600 50  0001 C CNN
-	1    5450 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L qomu-board:C_8p_0201 C14
-U 1 1 5E00A59A
-P 1100 4100
-F 0 "C14" H 1201 4146 50  0000 L CNN
-F 1 "8p" H 1201 4055 50  0000 L CNN
-F 2 "qomu-board-footprints:C_0201_0603Metric" H 1256 4494 50  0001 C CNN
-F 3 "" H 1100 4100 50  0001 C CNN
-F 4 "Murata" H 1112 4654 50  0001 C CNN "Manufacturer"
-F 5 "GRM0335C1E8R0DA01D" H 1132 4578 50  0001 C CNN "MPN"
-	1    1100 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L qomu-board:C_8p_0201 C13
-U 1 1 5E00BE50
-P 800 4100
-F 0 "C13" H 901 4146 50  0000 L CNN
-F 1 "8p" H 901 4055 50  0000 L CNN
-F 2 "qomu-board-footprints:C_0201_0603Metric" H 956 4494 50  0001 C CNN
-F 3 "" H 800 4100 50  0001 C CNN
-F 4 "Murata" H 812 4654 50  0001 C CNN "Manufacturer"
-F 5 "GRM0335C1E8R0DA01D" H 832 4578 50  0001 C CNN "MPN"
-	1    800  4100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1500 3850 1100 3850
-Wire Wire Line
-	800  3950 800  3850
-Wire Wire Line
-	800  3950 800  4000
-Connection ~ 800  3950
-Wire Wire Line
-	1500 3950 800  3950
-Wire Wire Line
-	1100 3850 1100 4000
-Connection ~ 1100 3850
-$Comp
-L qomu-board:ECS-_327-12_5-1210-TR XTAL1
-U 1 1 5DFFBEFA
-P 950 3850
-F 0 "XTAL1" H 1250 3900 50  0000 C CNN
-F 1 "ECS-_327-12_5-1210-TR" V 693 3450 50  0000 C CNN
-F 2 "qomu-board-footprints:XTAL_ECS-.327-12.5-1210-TR" H 1150 4050 60  0001 L CNN
-F 3 "https://ecsxtal.com/store/pdf/ECX-1210.pdf" H 1150 4150 60  0001 L CNN
-F 4 "ECS-.327-12.5-1210-TR" H 1158 4224 60  0001 L CNN "MPN"
-F 5 "ECS Inc." H 1174 4302 60  0001 L CNN "Manufacturer"
-	1    950  3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L qomu-board:GND #PWR0129
-U 1 1 5E06B803
-P 800 4200
-F 0 "#PWR0129" H 800 3950 50  0001 C CNN
-F 1 "GND" H 805 4027 50  0000 C CNN
-F 2 "" H 800 4200 50  0001 C CNN
-F 3 "" H 800 4200 50  0001 C CNN
-	1    800  4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L qomu-board:GND #PWR0130
-U 1 1 5E06BB21
-P 1100 4200
-F 0 "#PWR0130" H 1100 3950 50  0001 C CNN
-F 1 "GND" H 1105 4027 50  0000 C CNN
-F 2 "" H 1100 4200 50  0001 C CNN
-F 3 "" H 1100 4200 50  0001 C CNN
-	1    1100 4200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3550 5350 4000 5350
-Wire Wire Line
-	3550 4850 4000 4850
-$Comp
-L qomu-board:TP_SMD_0_75MM TP2
-U 1 1 5E378204
-P 4100 3850
-F 0 "TP2" V 4100 3800 50  0000 R CNN
-F 1 "TP_SMD_0_75MM" H 4100 3750 50  0001 C CNN
-F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 4300 4050 60  0001 L CNN
-F 3 "" H 4300 4150 60  0001 L CNN
-	1    4100 3850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L qomu-board:EOS-S3 IC1
-U 1 1 5DCB0652
-P 1600 2700
-F 0 "IC1" H 1650 2850 50  0000 C CNN
-F 1 "EOS-S3" H 1750 2750 50  0000 C CNN
-F 2 "qomu-board:42-WLCSP" H 3250 -400 50  0001 C CNN
-F 3 "https://www.quicklogic.com/wp-content/uploads/2019/05/QL_EOS_S3_Sensor_Processing_Platform_Datasheet_V1.0_No_NDA_Required.pdf" H 3350 -300 50  0001 C CNN
-	1    1600 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5400 5750 5450 5750
-Wire Wire Line
-	5450 5750 5450 5650
-Wire Wire Line
-	5850 5850 6100 5850
-Wire Wire Line
-	3550 4150 4000 4150
-Wire Wire Line
-	3550 4250 4200 4250
-Text Label 3650 4150 0    50   ~ 0
-C1
-Text Label 6000 5850 0    50   ~ 0
-C1
-Wire Wire Line
-	3550 3850 4000 3850
-Wire Wire Line
-	4000 4150 4000 4050
-$Comp
-L qomu-board:TP_SMD_0_75MM TP3
-U 1 1 5E492FD8
-P 4100 4050
-F 0 "TP3" V 4100 4000 50  0000 R CNN
-F 1 "TP_SMD_0_75MM" H 4100 3950 50  0001 C CNN
-F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 4300 4250 60  0001 L CNN
-F 3 "" H 4300 4350 60  0001 L CNN
-	1    4100 4050
-	0    -1   -1   0   
-$EndComp
-Wire Notes Line
-	4450 2300 4450 7700
-Connection ~ 5450 3200
-Wire Wire Line
-	5450 3200 5050 3200
-$Comp
-L qomu-board:TP_SMD_0_75MM TP5
-U 1 1 5E4D1EDD
-P 5450 3100
-F 0 "TP5" H 5500 3000 50  0000 R CNN
-F 1 "TP_SMD_0_75MM" H 5450 3000 50  0001 C CNN
-F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 5650 3300 60  0001 L CNN
-F 3 "" H 5650 3400 60  0001 L CNN
-	1    5450 3100
-	-1   0    0    1   
-$EndComp
-$Comp
-L qomu-board:TP_SMD_0_75MM TP4
-U 1 1 5E4EF31B
-P 5450 2750
-F 0 "TP4" H 5500 2650 50  0000 R CNN
-F 1 "TP_SMD_0_75MM" H 5450 2650 50  0001 C CNN
-F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 5650 2950 60  0001 L CNN
-F 3 "" H 5650 3050 60  0001 L CNN
-	1    5450 2750
-	-1   0    0    1   
-$EndComp
-Connection ~ 5450 2850
-Wire Wire Line
-	5450 2850 5050 2850
-$Comp
-L qomu-board:TP_SMD_0_75MM TP6
-U 1 1 5E509DA9
-P 5450 3400
-F 0 "TP6" H 5400 3300 50  0000 L CNN
-F 1 "TP_SMD_0_75MM" H 5450 3300 50  0001 C CNN
-F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 5650 3600 60  0001 L CNN
-F 3 "" H 5650 3700 60  0001 L CNN
-	1    5450 3400
-	1    0    0    -1  
-$EndComp
-Connection ~ 5450 3300
-Wire Wire Line
-	5450 3300 5050 3300
-$Comp
-L qomu-board:TP_SMD_0_75MM TP7
-U 1 1 5E52A8DA
-P 6700 2750
-F 0 "TP7" H 6750 2650 50  0000 R CNN
-F 1 "TP_SMD_0_75MM" H 6700 2650 50  0001 C CNN
-F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 6900 2950 60  0001 L CNN
-F 3 "" H 6900 3050 60  0001 L CNN
-	1    6700 2750
-	-1   0    0    1   
-$EndComp
-$Comp
-L qomu-board:TP_SMD_0_75MM TP1
-U 1 1 5E53D85B
-P 1300 3600
-F 0 "TP1" H 1350 3500 50  0000 R CNN
-F 1 "TP_SMD_0_75MM" H 1300 3500 50  0001 C CNN
-F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 1500 3800 60  0001 L CNN
-F 3 "" H 1500 3900 60  0001 L CNN
-	1    1300 3600
-	-1   0    0    1   
-$EndComp
-Connection ~ 1300 3700
-Wire Wire Line
-	1300 3700 1100 3700
-Connection ~ 6700 2850
-Wire Wire Line
-	6700 2850 7100 2850
-$Comp
-L qomu-board:TP_SMD_0_75MM TP8
-U 1 1 5E562531
-P 6750 3300
-F 0 "TP8" V 6850 3350 50  0000 R CNN
-F 1 "TP_SMD_0_75MM" H 6750 3200 50  0001 C CNN
-F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 6950 3500 60  0001 L CNN
-F 3 "" H 6950 3600 60  0001 L CNN
-	1    6750 3300
-	0    -1   -1   0   
-$EndComp
-Connection ~ 6650 3300
-$Comp
-L qomu-board:TP_SMD_0_75MM TP9
-U 1 1 5E5F7FB2
-P 1100 4600
-F 0 "TP9" H 1150 4500 50  0000 R CNN
-F 1 "TP_SMD_0_75MM" H 1100 4500 50  0001 C CNN
-F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 1300 4800 60  0001 L CNN
-F 3 "" H 1300 4900 60  0001 L CNN
-	1    1100 4600
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1100 4700 1300 4700
-Text Notes 5800 3500 0    50   ~ 0
-16Mbit (2Mx8)
-Text Notes 2750 5800 0    50   ~ 0
-TBD: Consider adding a testpad to FBIO20
-Text Label 3650 3350 0    50   ~ 0
-LED_G
-Text Label 3650 4450 0    50   ~ 0
-TOUCH_2
-$Comp
-L qomu-board:MC-HVT1-S02-G J3
-U 1 1 5DFD1BB7
-P 5250 5750
-F 0 "J3" V 5150 5750 50  0000 C CNN
-F 1 "MC-HVT1-S02-G" V 5650 6100 50  0000 C CNN
-F 2 "qomu-board-footprints:PinHeader_1x2_P1.27mm_Drill.7mm_with_622002115121_plug" H 5450 6050 60  0001 L CNN
-F 3 "" H 5450 6150 60  0001 L CNN
-F 4 "MC-HVT1-S02-G" H 5450 6250 60  0001 L CNN "MPN"
-F 5 "Multicomp" H 5450 6350 60  0001 L CNN "Manufacturer"
-	1    5250 5750
-	0    1    1    0   
-$EndComp
-$Comp
-L qomu-board:TP_SMD_0_75MM TP10
-U 1 1 5E0E4725
-P 4100 3950
-F 0 "TP10" V 4100 3900 50  0000 R CNN
-F 1 "TP_SMD_0_75MM" H 4100 3850 50  0001 C CNN
-F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 4300 4150 60  0001 L CNN
-F 3 "" H 4300 4250 60  0001 L CNN
-	1    4100 3950
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3550 4050 3900 4050
-Wire Wire Line
-	3900 4050 3900 3950
-Wire Wire Line
-	3900 3950 4000 3950
-Text Label 3650 4050 0    50   ~ 0
-F2
-Text Label 3650 3850 0    50   ~ 0
-E1
-$Comp
-L qomu-board:MSS3-V-T_R S1
-U 1 1 5E181EDA
-P 4850 5850
-F 0 "S1" V 5150 5800 50  0000 R CNN
-F 1 "MSS3-V-T_R" V 4550 6050 50  0000 R CNN
-F 2 "qomu-board-footprints:Switch_Slide_MSS3" H 5050 6050 50  0001 L CNN
-F 3 "https://pl.mouser.com/datasheet/2/910/605_MSS34-1571494.pdf" H 5050 6150 60  0001 L CNN
-F 4 "MSS3-V-T/R" H 5050 6350 60  0001 L CNN "MPN"
-F 5 "Diptronics" H 5050 6470 60  0001 L CNN "Manufacturer"
-	1    4850 5850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L qomu-board:R_0R_0201 R7
-U 1 1 5E182D81
-P 6550 4900
-F 0 "R7" V 6500 4650 50  0000 C CNN
-F 1 "0R" V 6500 5050 50  0000 C CNN
-F 2 "qomu-board-footprints:R_0201_0603Metric" H 6550 4900 50  0001 C CNN
-F 3 "" H 6550 4900 50  0001 C CNN
-F 4 "Multicomp" H 6550 4900 50  0001 C CNN "Manufacturer"
-F 5 "MCRE000086" H 6550 4900 50  0001 C CNN "MPN"
-	1    6550 4900
-	0    1    1    0   
-$EndComp
-$Comp
-L qomu-board:R_0R_0201 R10
-U 1 1 5E19188E
-P 6550 5000
-F 0 "R10" V 6500 4750 50  0000 C CNN
-F 1 "0R" V 6500 5150 50  0000 C CNN
-F 2 "qomu-board-footprints:R_0201_0603Metric" H 6550 5000 50  0001 C CNN
-F 3 "" H 6550 5000 50  0001 C CNN
-F 4 "Multicomp" H 6550 5000 50  0001 C CNN "Manufacturer"
-F 5 "MCRE000086" H 6550 5000 50  0001 C CNN "MPN"
-	1    6550 5000
-	0    1    1    0   
-$EndComp
-Text Label 7000 4900 0    50   ~ 0
-UART_TX
-Text Label 7000 5000 0    50   ~ 0
-UART_RX
-Wire Wire Line
-	5950 4900 6450 4900
-Wire Wire Line
-	5950 5000 6450 5000
-Wire Wire Line
-	6650 4900 7400 4900
-Wire Wire Line
-	6650 5000 7400 5000
-Text Notes 6050 4900 0    50   ~ 0
-DNP
-Text Notes 6050 5000 0    50   ~ 0
-DNP
-$Comp
-L qomu-board:+3V3 #PWR0131
-U 1 1 5E2379B0
-P 4750 5600
-F 0 "#PWR0131" H 4750 5600 50  0001 C CNN
-F 1 "+3V3" H 4750 5700 50  0000 C CNN
-F 2 "" H 4750 5600 50  0001 C CNN
-F 3 "" H 4750 5600 50  0001 C CNN
-	1    4750 5600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4850 6050 5450 6050
-Wire Wire Line
-	5450 6050 5450 5850
-Wire Wire Line
-	5400 5850 5450 5850
-Connection ~ 5450 5850
-Wire Wire Line
-	5450 5850 5650 5850
-$Comp
-L qomu-board:oshw_logo N1
-U 1 1 5E07AA52
-P 4900 6600
-F 0 "N1" H 5094 6603 50  0000 L CNN
-F 1 "oshw_logo" H 5094 6512 50  0000 L CNN
-F 2 "qomu-board-footprints:OSHW-Logo2_7.3x6mm_Copper_Mask" H 4920 6360 50  0001 C CNN
-F 3 "" H 4900 6600 50  0001 C CNN
-	1    4900 6600
-	1    0    0    -1  
-$EndComp
-$Comp
-L qomu-board:antmicro_logo N2
-U 1 1 5E07B16A
-P 5700 6700
-F 0 "N2" H 5914 6793 50  0000 L CNN
-F 1 "antmicro_logo" H 5914 6702 50  0000 L CNN
-F 2 "qomu-board-footprints:antmicro-logo_midlayer" H 5600 6950 50  0001 C CNN
-F 3 "" H 5700 7050 50  0001 C CNN
-	1    5700 6700
-	1    0    0    -1  
-$EndComp
+$Bitmap
+Pos 6200 6780
+Scale 0.370000
+Data
+89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 04 CA 00 00 01 62 08 06 00 00 00 07 84 34 
+1D 00 00 00 04 73 42 49 54 08 08 08 08 7C 08 64 88 00 00 20 00 49 44 41 54 78 9C ED DD 5F 8B 64 
+E9 7D 27 F8 AF C6 42 F2 DA D8 55 32 D6 CC 98 35 AA 70 0A 09 2C 90 AB 44 AE 99 DD C4 6C 86 2E 66 
+AE 06 3A 05 05 45 5D 55 F6 2B E8 F2 E5 5C 75 F6 2B 50 F5 CD 5E 8E A2 2E 4C 51 90 C6 D9 78 7D 33 
+86 55 F4 EE 92 BB C3 38 51 F6 18 B4 60 AF 52 D1 42 06 CB 12 52 B6 86 19 2C 63 B3 7B 71 E2 54 9C 
+8C CA CC CA 3F E7 C4 F9 13 9F 0F 1C 22 2B 2B EB C4 53 19 11 27 CE F9 C6 EF F9 3D 09 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 AC 9B 7B 
+49 DE 49 F2 ED 24 3F 4B F2 FF 2D 6D DF 4E F2 CD 24 F7 DB 1A 20 00 50 8B 3B 49 9E 24 F9 93 24 DF 
+CF EB EF F9 DF 4F F2 AD 24 6F B5 35 40 00 00 68 CB BD 14 27 C3 CB 27 C9 97 6D DF 8E C0 0C 00 FA 
+E8 DD 9C FF 81 D8 45 DB F7 53 84 6A 00 00 30 78 4F 72 BD 93 E5 E5 ED 9D D5 0F 19 00 B8 81 FB 49 
+BE 93 9B BF E7 7F 3B 45 25 1A 00 00 0C D2 93 DC FC 64 B9 BA 7D 6B D5 03 07 00 AE E5 7E 6E F7 C1 
+58 B9 7D 27 C2 32 00 00 06 E8 7E EA 09 C9 CA 4D 0F 13 00 E8 AE DB 54 92 2D 6F 7F B2 E2 B1 43 E3 
+3E D5 F6 00 00 7A E8 4E 92 07 2D 8F E1 C3 96 EF 9F 61 F9 76 92 71 8D FB 3B 4D F2 B9 1A F7 47 3B 
+EE 25 D9 AD 61 3F D3 0C FF 98 B5 9D FA 5E 43 EF D5 B4 1F 80 F3 3C 49 32 A9 79 9F E3 0C FF 38 CF 
+1A 11 94 01 EB EE 7E 92 BB 59 5C E0 8C E6 DB F2 D7 7D 31 3D E7 EB E3 14 C1 85 13 18 CE 73 27 C5 
+F3 A3 6E 3B 49 3E 68 60 BF AC CE 76 CE 1E 53 6E 6A 2F C3 0F 7F DE 4D F1 FF AC 83 F3 73 A0 49 75 
+7F 38 96 14 C1 DB DB 35 EF 13 5A F3 E9 B6 07 00 B0 42 E5 27 FE 0F E6 DB A8 CD C1 34 64 7C C1 D7 
+A5 59 8A E0 EC 38 EB 51 E5 C1 9B 35 55 1D 39 8E A0 0C 00 BA 66 DC 93 7D 42 6B 04 65 C0 90 DD 4B 
+51 D5 B2 13 6F E0 A5 D1 7C DB 99 FF F9 34 45 60 76 90 E4 79 2B 23 A2 6D 4D 05 65 6D 4F 4F 06 00 
+56 63 D4 F6 00 A0 4E FF AC ED 01 00 34 60 3B 45 63 D1 59 92 67 11 92 5D E6 6E 8A D0 6C 92 62 F5 
+A3 77 63 F5 22 00 00 60 4D 09 CA 80 21 D9 4E D1 77 61 9A 45 C5 14 57 77 37 45 8F 9D 59 04 66 EB 
+E4 B8 A1 FD CE 1A DA 2F 00 00 34 C6 D4 4B E0 52 27 5B 9B D5 15 1E 1F A4 98 AA 37 4B 32 DA 38 3C 
+EA CA 54 BD 3B 29 2A A2 84 63 F5 28 03 B3 DD 14 BF D3 8F DA 1C 0C 8D 6B 2A 28 6B 6A BF 00 C0 CD 
+4D 53 FF 6C 8B 69 CD FB 83 56 09 CA 60 4D 9D 6C 6D 96 AB 3D DE CD 22 08 1B CD FF 7C 3C FF 7A 56 
+DD 36 0E 8F AA 8D DF BB D2 04 7E 3B 45 7F AD BB 6D 0F 64 80 46 29 9E 0B BB D1 BF 6C C8 3E 49 F1 
+1A AA 3B 68 3E A8 79 7F 00 C0 ED 4D D2 CC AA 97 30 18 82 32 18 98 93 AD CD 7B 59 34 D4 1C CF 6F 
+47 59 84 60 0F 52 84 1F 65 13 F7 57 B7 1B 87 47 7D AB 1C 7A 12 6F CC AB 30 49 F1 5C B2 EC F7 70 
+ED A5 DE A0 EC 59 92 8F 6B DC 1F 00 50 8F E7 49 9E A6 BE 45 77 66 F1 81 2A 03 23 28 83 1E A9 84 
+60 D5 2A B0 F1 FC F6 41 CE 56 55 4D 53 84 60 C7 F3 AF 67 49 8E 37 0E 8F 3E 69 7C A0 AB 21 24 5B 
+AD DD 14 CF A5 F7 5B 1E 07 CD F8 28 C5 63 3C A9 61 5F C7 49 FE B0 86 FD 00 00 CD D8 4D 71 7D 70 
+DB 19 19 A7 D1 FA 84 01 12 94 41 47 54 7A 81 5D 25 04 2B 4D B3 08 C3 26 19 5E 18 76 91 ED 08 C9 
+DA F0 2C C5 73 AD 2B D3 6E A9 57 F9 69 F0 E4 16 FB 38 48 71 F2 0D 00 74 D7 47 29 AE 33 A6 B9 79 
+58 36 8B 5E B6 0C 94 A0 0C 56 A4 D2 13 6C 74 C1 76 91 59 8A 70 E2 B8 F2 F5 6C E3 F0 68 5D A7 35 
+DD 89 DE 47 6D 3A 48 F1 7C 1D 7A 18 BB AE 9E A7 38 CE EC E5 7A FD 4B CA 7F 63 EA 05 00 F4 C3 47 
+29 CE E9 9E E5 FA 1F 72 3D 4B F1 BE EF 7C 90 41 12 94 41 4D 2A D3 22 CB AD 5A 1D 76 95 4F 6A AA 
+41 D8 71 8A 9E 61 2A 77 5E F7 2C 1A F7 B7 A9 5C 11 D3 D4 BA E1 FA 30 C9 D7 53 54 6E EE A6 08 CC 
+46 E7 FC 5C D9 DF F0 20 02 32 00 E8 A3 4F 52 F4 A0 DD CB 62 B5 F3 8B 7A 97 4D 53 BC E7 4F 22 20 
+63 E0 3E D5 F6 00 A0 4F 4E B6 36 B7 B3 08 BF 46 B9 5A 45 D8 B2 E5 40 6C D6 C3 26 FA 6D B9 97 E2 
+77 47 FB 46 D1 AC 7D DD 94 55 B1 89 E9 B7 EB 62 3B C5 85 D1 6D ED 25 79 AF 86 FD 74 D9 BB 29 FE 
+9F 75 70 7E 0E B4 AD BA 38 D8 71 04 63 AC 19 15 65 50 51 E9 13 36 CA D9 AA B0 F1 0D 76 27 10 AB 
+DF 5E DB 03 E0 95 DD 0C FF C2 97 B3 1C BF 00 60 3D 7C 1C 1F 88 B2 C6 04 65 AC 9D 9A C3 B0 E4 FC 
+95 25 5D 50 D6 EF 4E AC AA D3 25 BB 11 94 01 DD F1 CD 5C 3C 5D E8 A6 4E 93 7C A3 E6 7D 02 00 1D 
+27 28 63 B0 96 A6 49 DE 36 0C 2B 55 9B EA 4F B3 1E 2B 4C 76 C5 4E DA E9 4D 56 06 A1 5D 33 CA F5 
+A6 FC 36 71 FF F7 A3 CA 08 68 DF B7 52 FF 6A AB A7 B9 FD 39 03 00 D0 43 82 32 7A AD 52 1D 56 56 
+88 55 2B C5 6E 6B 9A CA F4 49 8D F5 5B 37 6E 78 FF B3 2C 1E F3 72 EB 4B 08 5A F6 91 A8 BE 0E C6 
+2B B8 DF 71 AE 17 94 3D 49 3D AF CD 49 86 3B 1D E0 5E EA B9 E0 9F 46 1F B1 52 B5 CF 0A 85 21 3D 
+37 9A 0C C9 7C 10 C0 9B 74 E9 F8 32 CB 70 DF 1B AF A3 BC 36 68 C3 69 1C 37 DA D6 E6 E3 DF 55 7D 
+BA A6 E9 0C 41 19 BD 50 59 51 72 9C 45 10 36 AE F1 2E A6 A9 04 24 A6 4E 76 52 13 6F 7A A7 29 56 
+D1 9C A4 DF 27 97 65 1F 89 E5 8B DF ED 14 95 78 BB 69 A6 1A 6F 9C E4 FD 6B FC FC 6E EA 79 DD 4E 
+D3 EF C7 EB 32 A3 D4 D3 8B 6F 2F C3 0A 43 DE E4 5E 16 1F 9A D4 55 41 3C 64 43 69 16 2F 24 63 55 
+B6 73 F6 1C F4 AA 2B 9A B7 65 5A B9 9D A5 38 BF 1D CA 73 BA FA 21 79 F5 58 3F BE E0 E7 DB 32 5B 
+DA A6 11 66 D6 A5 7C 0E 8C D3 9F D7 64 9B C6 59 AF 73 C2 5A 08 CA E8 94 4A 85 D8 38 CD 04 62 C9 
+22 10 9B 46 28 D6 27 75 07 65 93 24 4F 33 EC 4F 58 3E 9C 6F 7F 98 E4 9D 14 E1 49 9D 27 11 4E 48 
+86 A5 AE 1E 4F 5F AF 61 1F 6F 52 F6 2C 1C 67 F1 7E C1 7A 11 92 D1 A4 FB 59 7C B8 D3 C7 EA 94 F1 
+D2 6D 52 3C BF A7 F3 ED 20 FD 09 6C EE 65 71 AC 1F A7 3F C7 FB 51 CE 1F 6B F5 71 98 A6 BD E3 CD 
+FD 14 1F 16 DF D6 D3 AC E6 FF 50 7E F8 3B 4E 3F 5F 93 F4 8C A0 8C D6 CC 7B 88 8D F2 7A 15 40 9D 
+66 39 1B 8A 49 D3 FB E9 5E CD FB 9B 24 79 BB E6 7D 76 DD FB 59 9C 1C 8F 6A DA E7 B8 A6 FD D0 0D 
+AB 9A B2 7B 1B 6F A5 B8 78 B5 B0 C7 7A 13 92 D1 84 32 1C DB CD 30 3F 08 BA 9B E2 D8 B9 93 22 20 
+39 9E DF 1E A4 7B 1F 1A DE CB A2 22 7E 68 A1 48 F5 71 48 16 D5 66 07 49 3E 58 F1 38 C6 35 ED A7 
+29 F7 52 04 71 BB 0D DF 0F BC 46 50 46 E3 96 A6 4D 56 FB 89 35 61 9A B3 C1 58 5F 3E 2D E3 72 A3 
+1A F7 35 CB FA 85 64 A5 8F 52 9C 98 75 71 71 02 B8 CC 93 14 15 91 A3 76 87 41 07 08 C9 A8 DB 93 
+14 17 E3 43 0B 64 DE E4 41 8A 0F 0E CB 36 14 CF D2 7E 60 B6 9D E2 B1 58 A7 0F 43 46 59 04 B4 B3 
+14 81 D9 B3 F4 A7 E2 AF 09 F7 53 BC E7 AF D3 F3 80 8E 11 94 51 AB 93 AD CD FB 59 04 61 E3 34 3B 
+5F BC 5A BA AC 5A 8C AB 9A B4 3D 80 96 7D 94 E2 35 33 6E 77 18 70 25 E5 D4 90 71 CB E3 A0 1B 84 
+64 D4 49 00 5F B8 9B E2 F7 F0 34 C5 F1 F6 BD 16 C6 B0 3D 1F C3 B8 85 FB EE 92 51 8A C7 E1 69 16 
+81 D9 3A 5D DF DC C9 E2 B9 08 AD 12 94 71 63 95 50 AC DC C6 0D DF E5 2C 67 83 31 27 B5 DC 84 6A 
+2A 41 19 FD F0 4E EA E9 9F C2 30 08 C9 A8 CB 76 8A 63 CB BA 55 90 BD 49 19 98 95 53 1E 57 F1 BA 
+10 8C 5C AC 9C 9E 39 4D F1 78 0C BD C2 EC 7E EA 6D 0F 02 B7 22 28 E3 4A E6 D3 27 C7 59 5D 28 96 
+9C 0D C6 A6 A6 51 52 93 D3 B6 07 00 BC 51 13 A1 08 FD 25 24 A3 2E DF 8C 50 E6 4D 1E A4 38 F7 DE 
+49 B3 D5 4C F7 53 54 F9 0B 2C 2F 37 4E 71 4D B4 97 76 AA FD 56 E1 49 CC F8 A0 63 04 65 BC 66 69 
+E5 C9 71 56 B7 DC EE 2C 82 31 80 75 27 24 A3 EA DD 08 C9 B8 BD 7B 29 AA 55 84 32 57 73 37 8B 4A 
+A6 E7 0D EC FF FE 7C FF 1A B4 5F DD 5E 16 55 66 43 BA 46 12 92 D1 49 82 32 CA 29 94 E3 2C C2 B1 
+D1 0A EF FE 20 8B 60 CC 09 2B C0 7A FB 66 84 64 2C 94 3D A4 EA 24 24 5B 3F 42 99 9B 9B A4 68 59 
+51 E7 EB C5 E3 71 73 0F 52 3C 1E E3 0C E3 18 B6 1D 21 19 1D 25 28 5B 43 27 5B 9B DB 59 7D B5 58 
+A9 5C 91 F2 40 F3 7D 00 2A CA D5 CE 20 69 A6 CA 40 48 B6 7E 84 32 B7 37 4D F1 21 7A 1D 2B 62 DE 
+8B C7 E3 B6 CA 6A BF 71 FA 7D 2C BB 93 A2 60 02 3A 49 50 36 70 F3 69 94 E3 9C 0D C6 56 A9 5C 99 
+F2 20 A6 53 02 70 B1 49 DB 03 A0 33 84 64 D4 A1 BC 10 17 CA DC CE DD 14 AF C7 6F D4 B0 AF 49 3C 
+1E 75 28 C3 B2 07 E9 EF 34 CC BD 78 2E D0 61 82 B2 81 E9 40 30 96 14 BD C6 CA 60 EC 83 16 EE 1F 
+80 7E 79 27 56 BA A2 20 24 A3 2E 56 D0 AB CF 4E 8A AA DF DB CC 06 79 12 2B 6E D7 E9 6E 8A E7 F8 
+D7 DA 1E C8 0D DC 8B 0A 72 3A 4E 50 36 00 27 5B 9B 6F A5 DD 60 2C 29 A6 54 1E A4 98 52 E9 44 14 
+80 EB 70 C2 4C 22 24 A3 3E 42 99 FA ED 25 F9 FA 2D FF 3D F5 7A 90 62 C1 93 BE AD 86 E9 3D 9F CE 
+13 94 F5 D0 BC F9 FE 4E 16 E1 58 5B 8E 53 9C D0 1E 98 52 09 C0 0D BD 15 55 1F 08 C9 A8 D7 5E DB 
+03 18 A0 71 8A 4A A0 9B 9C F3 3F 89 E3 7C 53 9E 26 79 96 7A 7A C8 AD CA 6E DB 03 80 37 11 94 F5 
+C0 7C 3A 65 19 8C ED A4 DD F9 DC C2 31 00 EA 34 6E 7B 00 B4 4E 48 46 9D 84 32 CD D9 CD CD AA 97 
+76 6A 1E 07 0B 77 53 3C 2E EF B7 3C 8E AB DA 8E DE 64 F4 80 A0 AC A3 2A 55 63 3B 69 6F 3A 65 69 
+96 E2 04 76 22 1C 03 A0 66 E3 06 F7 3D 9B 6F D3 73 BE 47 37 08 C9 A8 DB AA A7 75 4D 73 F6 B8 72 
+9C E2 39 D8 A4 F1 D2 D7 77 B3 9A EB 85 9D 5C 3F 28 2B 3F F0 6F CA 6C BE 55 7F EF A7 F3 3F AF CA 
+B8 F2 F5 83 14 41 ED 2A AF DF 9E A6 3F 41 D9 B8 C1 7D 97 8F 7B 9B CF 85 2E 5A F7 FF FF 8D 08 CA 
+3A 64 DE 6B AC 0C C7 DA 4E DA 4F 53 F4 1C 7B A6 E7 18 00 0D AA FB 62 62 9A 79 E5 73 FA 35 15 65 
+1D 09 C9 A8 DB 9D 34 1F 50 1C A4 38 CE 4C D3 DE F3 AC DA 54 BF 1A 5C 6D 67 31 0B A5 89 DF C3 4D 
+F6 D9 C4 38 A6 29 8E 1D D3 74 63 D5 C7 8B 16 39 B8 9F B3 8B AC 35 75 7D 37 CA CD A7 C5 AE 5A DD 
+CF 87 59 8A A9 A7 07 E9 C7 FF 9F 9E 10 94 B5 A8 32 A5 B2 DC BA 60 9A A2 72 EC 79 DB 03 01 60 F0 
+EE D7 B8 AF D3 14 EF A5 B7 59 95 8D D5 11 92 D1 84 71 43 FB 9D A6 1F 01 FC 87 59 1C 03 EF A7 A8 
+34 DA AD F9 3E AE BB FA E5 B8 C6 FB EE DB 71 FE A3 F9 56 56 7B 95 45 11 BB 0D DC D7 38 49 1F AE 
+DF 46 35 EE AB 4F 95 74 F4 8C A0 6C C5 3A 1A 8E 9D A6 78 F3 7F 66 6A 25 00 2B 54 D7 A7 EB 02 92 
+7E 11 92 D1 94 BA AB 55 8E 53 5C 8C F7 25 98 A9 FA 28 C9 DB 29 AA 6D A6 A9 EF 78 7B DD FD 38 CE 
+2F 7C 30 DF F6 52 3C 2E 75 5E 0B 8E 6A DC 57 93 EA 7A 8D 0A C9 68 94 A0 6C 05 3A 1A 8E 25 AA C7 
+00 18 86 83 F4 FB E2 69 9D 08 C9 68 52 9D 41 D9 24 45 D0 D4 77 1F A5 78 7D D4 D5 A7 E8 41 8A B0 
+E7 3A 3F 5F 87 49 86 F3 1A FF 38 C9 37 92 BC 93 22 30 AB C3 38 37 5B 68 A1 8F 4E 23 24 A3 61 82 
+B2 06 75 AC E7 58 D5 24 45 40 D6 C7 4F C7 00 60 D9 AC ED 01 70 25 4D 84 64 C7 29 2E 10 BB 3C 1D 
+8E D5 A9 EB 7C FB 38 C3 08 C9 4A 1F A5 F8 80 7C DC EE 30 6E E5 A0 ED 01 34 E0 FD 2C 7A CA 71 75 
+9A D3 D3 38 41 59 CD 4E B6 36 EF A5 28 05 DD 49 B7 4A 60 CB E6 FC 7B A6 57 02 00 2B 26 24 A3 4F 
+EA AA F2 E9 92 69 04 32 5D 74 10 8F 0B 74 8E A0 AC 26 27 5B 9B 4F 52 34 66 1C B7 3B 92 D7 9C A6 
+78 B3 7F B6 71 78 E4 44 12 00 58 B5 9D 34 D3 3B 6A 1C 21 19 CD 98 B5 3D 00 D6 86 EA 28 E8 20 41 
+D9 2D 54 AA C7 76 D3 AD A9 95 89 80 8C 06 BC 78 B9 5F 5D 76 FD EE E3 47 0F AF D3 A3 02 80 F5 24 
+24 03 00 7A 43 50 76 03 27 5B 9B DB 59 4C AF EC A2 49 4C B1 E4 1A 5E BC DC BF 9F 22 EC BD 9B C5 
+05 CD 28 C5 27 AA A7 F3 EF 9F A6 B8 38 39 7D FC E8 E1 50 9A A9 02 D0 2F 42 32 00 A0 51 82 B2 6B 
+98 4F AF 7C 9A FA 3F 19 AD CB 34 C9 D3 8D C3 23 21 06 49 92 17 2F F7 EF A5 08 BC AA 01 D8 83 2C 
+42 B1 A4 12 80 A5 78 0E 4D 1F 3F 7A 68 A1 07 00 BA 46 48 06 00 34 4E 50 76 05 F3 80 6C 2F DD 6A 
+CE 5F 75 9A 64 77 E3 F0 C8 34 B8 35 F2 E2 E5 FE F6 FC CB 6A F0 55 86 61 E3 CA 8F 4E 73 36 0C 7B 
+96 64 F6 F8 D1 43 15 87 00 F4 85 90 0C 00 58 09 41 D9 25 7A 10 90 25 45 E8 B1 A7 0F D9 B0 54 A6 
+42 96 21 D8 28 AF 57 86 55 4D B3 A8 08 9B A5 78 DE 1E 3F 7E F4 D0 F3 02 80 BE 13 92 01 00 2B 23 
+28 3B C7 BC 07 D9 24 DD 0E C8 54 91 F5 54 A5 21 FE 79 15 60 E3 73 FE 49 69 96 45 08 56 56 88 A9 
+0C 03 60 C8 84 64 00 C0 4A 09 CA 2A E6 AB 58 4E 72 79 58 D1 05 D3 24 3B AA C8 BA E9 9C 20 6C F9 
+F6 4D A6 59 84 62 65 18 A6 EF 1C 00 EB 46 48 06 00 AC 9C A0 2C C9 C9 D6 E6 9D 14 4D FA F7 5A 1E 
+CA 55 EC 6D 1C 1E BD D7 F6 20 D6 5D A5 3F D8 38 D7 0F C2 4A D3 2C 02 B1 69 54 87 01 40 49 48 06 
+00 B4 62 ED 83 B2 9E 4C B3 2C ED 6E 1C 1E 3D 6F 7B 10 EB A0 52 15 36 9A 6F CB 95 61 D7 31 8D 40 
+0C 00 AE E3 38 42 32 00 A0 05 6B 1D 94 9D 6C 6D 7E 33 45 25 59 D7 9D A6 98 6A F9 61 DB 03 19 92 
+4B C2 B0 F1 0D 77 79 9C C5 74 C9 69 04 62 00 70 53 BB F3 DB B7 DB 1C 04 00 B0 7E D6 32 28 9B F7 
+22 3B C8 F5 A6 C9 B5 69 BC 71 78 A4 47 D5 0D CD A7 49 8E 52 4F 18 96 2C 1A E9 97 DB EC F1 A3 87 
+42 4C 00 A8 D7 EE FC 56 58 06 00 AC CC DA 05 65 F3 A9 96 07 B9 FE F4 B9 B6 EC 0A C9 DE EC C5 CB 
+FD 7B 29 82 B0 71 16 53 24 6F 32 4D 72 D9 2C 67 43 B1 63 55 62 00 B0 32 BB F3 5B 61 19 00 B0 12 
+6B 15 94 9D 6C 6D 3E 49 D1 8F AC 2F F6 F4 24 3B EB C5 CB FD FB 59 54 86 8D B2 08 C7 EA 30 CB 22 
+10 9B A6 08 C5 F4 47 01 80 76 ED CE 6F 85 65 00 40 E3 D6 26 28 EB 61 48 76 BC CE AB 5B 2E 05 62 
+0F 2A 5F D7 65 16 A1 18 00 F4 C5 EE FC 56 58 06 00 34 6A 2D 82 B2 1E 86 64 C9 E2 84 70 D0 2A 0D 
+F5 C7 A9 BF 42 AC 54 F6 14 9B C6 F4 49 00 E8 AB DD F9 AD B0 0C 00 68 CC E0 83 B2 93 AD CD FB 49 
+9E B5 3D 8E 6B 9A 0C B1 2F 59 A5 A9 FE 83 D4 D7 43 EC 3C CB 95 62 83 FB 5D 02 C0 9A DA 9D DF 0A 
+CB 00 80 46 0C 3A 28 3B D9 DA BC 93 7E 35 EE 2F ED B5 3D 80 DB A8 54 89 2D 6F 4D 99 56 36 53 28 
+01 60 D8 76 E7 B7 C2 32 00 A0 76 83 0E CA 52 04 4E A3 96 C7 70 5D C7 1B 87 47 BD 99 16 B8 34 75 
+B2 DA 4F AC 29 A7 A9 04 63 AA C5 00 60 2D ED CE 6F 85 65 00 40 AD 06 1B 94 9D 6C 6D DE 4B F2 B4 
+ED 71 DC C0 41 DB 03 B8 48 0B A1 58 22 18 03 80 BE 3B 4E 33 95 E5 BB F3 5B 61 19 00 50 9B C1 06 
+65 E9 EF F4 C5 E3 B6 07 50 9A F7 14 2B 03 B1 71 56 53 9D 27 18 03 80 61 39 48 D1 2F 76 D2 C0 BE 
+77 E7 B7 C2 32 00 A0 16 43 0E CA 76 DA 1E C0 0D 9D B6 71 A7 2F 5E EE DF CB D9 6A B1 F1 0A EF 7E 
+9A E2 24 5A 30 C6 2A 8C 92 7C D8 F6 20 5A D6 B7 BE 8D 40 FF 3D 9F DF 4E 1A D8 F7 EE FC 56 58 06 
+00 DC DA 20 83 B2 F9 4A 97 2E 04 2F F1 E2 E5 FE FD 14 61 D8 38 AB 99 42 59 55 AE 48 79 F0 F8 D1 
+C3 75 0F 2C 58 BD 07 59 5C B0 AD AB 71 DB 03 00 D6 92 B0 EC 6A DE 4A F2 41 DB 83 60 70 46 6D 0F 
+00 A0 2F 06 19 94 A5 D9 15 16 9B D6 48 C0 37 9F 46 39 AE 6C AB 54 4E A7 2C AB C6 7A B3 58 01 83 
+B4 9B 62 6A F6 BA AE 8E FA 24 FD 3E 46 0E DD B8 ED 01 F4 D4 A8 ED 01 70 65 C2 B2 37 7B 1A 41 59 
+DB 76 32 AC EA F3 3B E9 EF 6C 9B D2 38 C3 7A 4C B8 39 E7 B1 34 6E A8 41 D9 A8 ED 01 DC C2 83 D4 
+70 72 D4 72 30 96 24 B3 2C 82 31 27 7B DC 56 9D 27 46 77 53 04 B7 E3 AC 5F 58 F6 4E 8A 3E 41 75 
+69 AB A7 E2 D3 0C F7 64 79 DC F6 00 7A 6A 27 C5 F3 62 DD 5E D3 7D 35 C4 B0 AC CE D6 19 E3 24 DF 
+4A FF 03 BF 3E 7B 9A E2 3D 6E 08 15 E8 77 52 9C F7 B4 35 DB A6 AE D7 C6 D3 14 C7 0C 1F B8 73 37 
+C5 07 BF 43 78 7D D2 51 43 0D CA FA 6C 27 C9 7B D7 FD 47 1D 08 C6 92 E2 84 62 12 BD C6 68 C6 2C 
+F5 85 E0 0F 52 3C 5F 77 33 DC C0 A5 EA AD 14 27 98 E3 9A F7 3B BB E6 CF 1F D7 34 86 9D 14 A1 DF 
+FB 35 EC AB 4B BE 19 41 D9 4D AD 73 00 DE 57 43 0B CB EA FE E0 60 37 C5 7B DE 6E 04 03 D7 51 D7 
+FB 4C 52 3C 37 1F A4 DF 55 E8 DB 29 3E 20 AB B3 02 E7 BA CF F5 E3 D4 53 CD 56 1E E7 77 B3 1E E7 
+6E 5C EE 59 8A F3 50 CF 05 1A 31 D4 A0 6C D6 F6 00 6E E1 C1 C9 D6 E6 BD 8D C3 A3 4B 4F 8A 2A 3D 
+C6 76 D2 EE 85 D5 34 45 E5 D8 81 29 95 34 6C 9A C5 C5 4F 1D 46 F3 7D 96 01 EF 41 86 73 31 72 3F 
+8B 45 39 76 D2 DC A7 C8 D7 3D 59 AE B3 E2 E2 59 8A FF DB 5E FA 7F 92 B4 9D E2 FF 31 6E 77 18 AD 
+A8 F3 39 F1 20 C5 FB FF B3 F9 D6 D7 0B DB 75 32 A4 B0 AC 89 0A DB 71 16 15 FA 93 14 EF 59 9E D7 
+97 9B D5 BC BF A7 29 9E 4B E5 CA AD 7D F9 20 B8 A9 0F C8 92 EB 1F B7 67 35 DE F7 28 C5 EB 60 92 
+E2 31 31 6B A5 7F A6 A9 E7 79 59 06 A7 93 14 E7 50 43 39 87 A7 23 86 1A 94 B5 35 1D A8 2E 7B 59 
+3A B1 7B F1 72 BF EC 2D 30 4E B3 17 BE 57 31 CD FC 0D EA F1 A3 87 4E D8 58 95 69 EA 0D CA 4A 0F 
+B2 B8 B0 3E CD 62 B1 89 F2 EB D2 69 DA 3D 41 DE 3E E7 7B A3 2C AA EC 1E A4 38 2E 8C 57 33 9C 24 
+C5 49 EA 75 D4 7D 6C 1E A7 78 AC 66 F3 B1 4C E7 F7 D1 F5 93 A5 3B 59 54 FF EE A4 99 76 01 D3 06 
+F6 D9 84 BA 5F 53 77 53 BC 87 EE E5 EC 73 A2 EF 61 EA 90 0D 25 2C FB 24 C5 73 AD 89 DE 39 3B 59 
+54 E4 4C E7 F7 73 9C E2 D8 D7 F6 7B 53 D7 34 71 0D 70 37 C5 73 69 37 C5 EF BB 7A 6C E9 CA EF 7E 
+55 1F 90 25 D7 3F 9E 4E 1B 18 C3 6E 16 8F C7 34 8B D7 C4 69 1C EF BB AE CE 0F C8 92 C5 73 E1 38 
+67 5F 9B AE 51 B9 95 4F B5 3D 80 A6 9C 6C 6D 7E 3F 3D EF 55 F6 1F DF F9 77 C9 E2 E4 A8 ED A6 85 
+AF AA 6E 54 8E D1 92 3B A9 FF CD 95 9B 9B 25 F9 9D 6B FE 9B 7B 59 5D C5 6F 79 C2 BC 1C 78 B6 61 
+94 C5 FB D1 78 85 F7 79 DD 63 F5 B7 53 CF F8 AE 7B 6E F1 9D AC E6 3D 6E 96 C5 F3 6F BA 82 FB EB 
+B2 AB B6 78 D8 4E 3D BF AB BD 2B DC E7 93 34 13 96 65 BE DF 55 84 65 DF 4C 51 C5 D3 15 D3 B6 07 
+50 93 49 AE D7 8B E8 67 59 ED 07 CA D3 A5 DB 55 19 CD B7 F1 0A EF 73 9A E4 EB 37 F8 77 AB 3A CE 
+9F 67 7A CD 9F 2F 3F 78 EC 9B 69 AE F7 D8 D4 75 7C 1F E7 7A E1 E4 BB 29 DE 13 56 61 3A BF 9D A5 
+DF 33 CE 6E 6B 92 EE 7F 88 DC 39 43 AD 28 4B 16 65 98 BD F4 5F 7F F3 9F B7 7D 61 97 14 07 94 49 
+92 89 70 8C 0E F8 24 C5 F3 71 B7 DD 61 30 37 B9 C1 BF F9 38 F5 F6 9A BB 4C F5 84 BC EF 2B 7D 5D 
+D7 2C FD 3A 21 9A 66 35 17 50 A3 AC 3E B0 EC AA 6B F7 42 5D 81 21 54 96 4D D2 AD A0 6C DC F6 00 
+6A 32 BD E6 CF 1F 64 B5 E7 0A E3 A5 DB 21 BB 6E 25 79 E9 59 9A 0B C2 DF 64 DC D2 FD 72 BE 83 AC 
+EE 1A 7D BC A2 FB E9 BA 69 FA 75 5E D8 09 FF AC ED 01 34 A8 9C 46 D5 4B BF FA 93 BF CB 17 3E FC 
+F3 B6 EE 7E 92 64 FC F8 D1 C3 DF 79 FC E8 E1 7B 42 32 3A 64 AF ED 01 90 A4 38 B6 DE 74 F5 CC 49 
+8D E3 E0 7C 37 BD 90 69 CB A4 ED 01 D0 19 CF D3 DC 71 7E 37 C5 4A 92 4D FA 28 C3 A9 E2 EA B3 BD 
+B6 07 30 60 93 1B FE BB 83 F4 F8 BA 8C 5A 7D 94 F5 AE EE A2 27 06 1B 94 6D 1C 1E 7D 92 9B 5F C8 
+75 C2 6F 1D FF 45 7E F3 BB FF 79 55 77 57 AE 00 78 F7 F1 A3 87 6F 3F 7E F4 D0 FC 7E BA E8 E3 F4 
+FC 75 3D 10 B7 69 94 3E A9 71 1C 9C AF 6F AF 11 27 CD 54 BD 97 E6 8E 13 BB 69 3E 2C DB 6B 78 FF 
+BC D9 C7 F1 5E D3 84 49 6E FE DE FF 49 BC 36 58 98 B4 3D 00 78 93 C1 06 65 49 B2 71 78 F4 5E DA 
+EF 4D 73 2B 5F FC F3 3F 6B 3A 2C 9B A4 A8 1E FB DA E3 47 0F 9F 6B CE 4F 0F EC C5 45 75 9B 8E 73 
+BB 69 5B C2 CE 66 4D D3 CF F2 FA BD B6 07 40 A7 BC 9D FE 86 65 1F A6 7F 55 9D 43 F4 34 2A 98 EA 
+74 9A DB 4F 2B 7E 3F 2A 2E 29 F4 7A E6 17 EB 61 D0 41 D9 DC 4E 7A FE 42 6C 20 2C 3B 4D 71 51 A2 
+7A 8C 3E FA 24 03 78 5D F7 D4 69 EA E9 FB B2 17 61 67 53 BA D4 1F E9 3A 9E A7 E7 1F 6C 51 BB 3E 
+87 65 BB F1 1E D5 B6 4F A2 A7 69 9D 9E A6 9E 55 04 9D BF 91 14 CF 25 1F 9A D2 69 83 0F CA 36 0E 
+8F 3E 4E D1 C8 AF D7 07 E5 9A C2 B2 59 92 DD C7 8F 1E 7E 6E DE 7B 4C F5 18 7D F5 51 FA 1B 08 F4 
+D9 D3 14 BF FB DB 72 01 D3 8C BD D4 F3 F8 B4 65 B7 ED 01 D0 39 7D 0D CB 3E C9 00 CE 3D 07 E0 83 
+38 AE D4 61 92 EB AD 3A 7A 19 AF 0D 4A BD 9F F9 C5 B0 0D 3E 28 4B 92 8D C3 A3 8F 32 80 83 F2 17 
+FF FC CF 6E DA E0 7F 96 22 20 FB 9D C7 8F 1E D6 F5 46 07 6D 7B 1E 9F 4C AE D2 6E EA 3B 51 4E 8A 
+E9 49 BB 35 EE 6F DD 4D D3 CD 95 0C AF E3 A3 78 4E F0 BA BE 86 65 3E D0 E9 86 E7 F1 38 DC C6 24 
+F5 AF 16 5B 5E 97 CD 6A DE 2F FD B3 1B E7 F1 74 D4 5A 04 65 C9 70 C2 B2 DF 3A FE 8B FC EE FE 1F 
+E5 97 7E F1 F7 57 F9 F1 59 04 64 0C DB 07 71 B2 D5 B4 D3 14 BF E3 26 8E 21 CF 23 18 A9 C3 71 8A 
+D0 78 08 9E 47 93 5F 5E D7 D7 B0 EC 79 06 70 EE 39 00 EF C7 7B CD 4D 4C 52 7F 48 56 FA 28 C9 83 
+E8 59 B6 EE 06 71 7D CE 30 7D BA ED 01 AC D2 C6 E1 D1 47 27 5B 9B E3 14 07 FE 07 ED 8E E6 E6 7E 
+FD 6F 7E 90 07 FF FE 7F C9 C9 BF F9 B7 F9 D9 17 BF 7C DE 8F CC 92 EC 09 C7 B8 89 93 AD CD FB 49 
+EE CE FF 38 9E DF 9E CE BF 77 9C 64 94 E2 39 76 BA 71 78 D4 85 FE 76 E5 C9 D6 5E 7C 6A 5C B7 69 
+8A 8B 8B 26 9B C3 3F 4F F1 FC 9A 64 F1 BC E3 EA A6 29 42 B2 21 4D A5 7F 3B C5 B1 46 FF 12 AA CA 
+0B F6 DD 06 F6 5D EE B3 89 50 E0 C3 14 EF 51 07 E9 F1 B9 E7 00 94 7D 10 27 F1 38 5C C5 5E 9A AF 
+52 FE 24 C9 D7 93 BC 33 BF 3F E7 00 EB A9 0C CB A6 F1 1C A0 43 3E D5 F6 00 DA 70 B2 B5 79 27 C5 
+1B 65 EF 3F 81 FF E9 C6 97 72 F2 6F FE 6D FE E9 B3 BF 9C 14 17 9B CF 1E 3F 7A D8 F7 E9 37 34 A0 
+12 80 DD CD E2 24 F1 C1 FC CF 65 10 36 9B 6F C7 F3 EF 1D 6F 1C 1E F5 E9 02 7C 3B C5 C9 D6 B8 DD 
+61 F4 5E B9 BA D5 2A C3 F6 7B 99 AF C2 BB C2 FB EC BB BD D4 7B 21 F3 ED D4 F3 FB AF EB DC 62 3B 
+45 B8 E0 C4 B9 7E 57 7D 8C B6 53 4F C5 C7 5E EA 7B AE 7E 2B CD 55 07 4D D2 5C 05 4D 92 BC 9B E2 
+D8 EA 39 7D 3D 7B A9 F7 58 E7 71 B8 D8 2C C5 EB 6B D5 1F 84 DE 49 F1 E1 C8 EE 8A EF 77 48 A6 29 
+82 C7 AB AA EB F8 3E 4E 3D CF 17 E7 81 CD 19 67 F5 AF E9 DE 5B CB A0 AC 74 B2 B5 39 88 4F 30 FE 
+F1 33 9F CD 0F FF A7 FF 79 F6 A3 07 FF C3 03 0D FA D7 CF 3C F8 2D 83 AF F1 FC 76 34 DF AA A1 58 
+19 7E 4D E7 B7 C7 29 AA C2 FA DC FC FB 22 02 B3 DB DB CD 6A 83 B2 D2 5B 29 4E 96 47 2D DC 77 5F 
+4C 53 DF C2 0A 55 5D 0B CA 92 E2 E2 69 2F AA 45 EB D6 E7 A0 2C E9 77 58 76 2F C5 EF 63 B7 C1 FB 
+18 9A BD D4 5F DD E4 71 38 EB 34 C5 7B 6F DB 1F B6 DF 4B F1 98 08 32 AF 6F 9A 7E 07 65 A5 27 29 
+9E 8B 1E FF FA 8C 23 28 BB B6 B5 0E CA 92 E4 64 6B 73 48 E9 F5 34 C9 5E 47 A6 C3 51 83 0B 42 B0 
+B2 0A 6C 94 D7 C3 84 69 16 21 D8 6C BE F5 AD 2A AC 4E F7 52 9C 6C ED 44 F0 72 13 BB 69 27 2C 4B 
+8A C0 EC 69 86 71 6C AE CB 34 C5 85 5D 53 C7 F8 2E 06 65 25 17 B5 F5 EA 7B 50 96 F4 3B 2C 4B 16 
+81 C0 6E BC 3F BD C9 5E 9A 0B 70 D6 3D 98 99 A5 78 BE 3F 4B F7 A6 F0 3F 49 71 FE D6 FB 19 40 2B 
+32 CD 30 82 B2 A4 F8 90 EC 69 1C 1F EB 32 8E A0 EC DA D6 3E 28 2B 0D A5 BA 6C 6E 92 22 30 6B B2 
+AF 10 35 A8 4C 87 5C 0E BF CA ED 3C E7 55 86 CD 3C DE 6F 74 3F 8B 13 2E FD 49 AE 6E 37 ED 85 65 
+49 71 11 B3 33 1F C7 3A 3E 6E B3 14 D3 0F 27 A9 BF 82 6C 59 97 83 B2 D2 9D 2C 9E 0F E3 06 EF 67 
+E8 86 10 94 25 FD 0F CB 4A 6F A5 78 3E FB 50 E7 7C 7B 59 4D A5 D3 3A 05 33 93 14 EF 2D 1F B4 3C 
+8E AB 28 8F FB E3 F9 36 6A 71 2C 5D 36 CD 70 82 B2 AA B7 B2 78 5D 0E E1 3A BD 0D E3 08 CA AE 4D 
+50 56 71 B2 B5 79 E7 F4 DE C6 F1 DD 8F 4F 46 6D 8F A5 26 93 24 4F D7 B8 9A A8 75 27 5B 9B DB F3 
+2F C7 17 DC 5E 66 9A 45 55 D8 34 C3 9D 26 D9 86 B2 52 6F 3C BF 1D 65 3D 43 98 AB 7A 96 E4 0F DB 
+1E 44 8A D0 6C 9C C5 E3 36 C4 C7 6C 96 E2 F5 7E 9C E2 22 66 95 01 78 1F 82 B2 AA 3B 59 3C 1F C6 
+19 E6 F3 A1 29 43 09 CA 92 E1 84 65 A5 7B 39 FB FE 54 7E 90 B6 CE F6 B2 FA 29 81 65 78 39 CE 30 
+8E 2D C7 29 5E CB D3 F4 23 1C BB 4C F9 1A 29 5F 27 A3 08 CF 92 E1 06 65 55 DB 39 FB BA 5C F7 63 
+E3 55 8D 23 28 BB 36 41 D9 DC 8B 97 FB DB 29 4E 88 46 9F F9 F9 69 BE F8 1F FE 2C BF FE 37 3F 68 
+79 54 B5 28 57 93 7B A6 E2 A8 7E E7 54 84 8D E7 7F 35 BE E0 9F 2C 2B 2B C2 CA A9 92 C7 59 EF A9 
+92 6D 5B 7E 3C AB 3D DE 72 CE 9F D7 C9 24 AB BF 60 BC 8A ED 2C 4E 92 2F 9B 96 DC 25 65 55 E8 F2 
+34 E9 B6 4F 62 FA 16 94 9D A7 FA 7C 28 B7 75 7E DD 5E 64 48 41 59 32 BC B0 6C 59 F9 E1 CE 28 AF 
+57 9D AF C3 C5 E2 5E DA ED 9D 55 FE FE AB 1F AC 75 F5 B8 32 CB D9 45 99 A6 F3 AF D7 E1 BC B2 3C 
+87 1B E5 EC 39 C0 B8 85 B1 5C 47 5D AF E1 83 24 DF B8 C6 CF F7 31 28 5B 76 2F C5 63 3D CE D9 D7 
+E4 B8 9D E1 74 D6 38 ED 9F 63 F6 CE DA 07 65 2F 5E EE 5F D8 28 F8 D7 7E F8 71 7E FB FF FE 3F 87 
+12 98 25 A6 64 5E 5B A5 47 58 79 F0 1D E5 EC 49 D2 55 09 C4 68 D2 FD AC 66 59 ED 49 DA BF 60 BC 
+89 ED 37 FF 48 A3 66 59 6D 65 D8 4D 95 17 19 B7 D5 F5 93 B1 B6 9F 0F 5D 70 D5 C7 E8 7E 8A 8A D2 
+DB 9A A4 F9 29 DC DF 4C 73 C1 C5 B3 F4 A7 0A A7 AE D7 71 97 CC D2 ED 63 68 79 B1 DE 96 D3 34 3F 
+35 9F E6 D4 F5 21 D5 5E AE 17 28 57 FB 20 DF 46 D7 83 D8 B6 5F 9F 5D D0 F5 C7 A8 93 D6 3A 28 AB 
+56 91 5D F6 73 03 0C CC 0E 52 54 98 75 FD 62 66 25 2A 61 D8 28 67 43 B0 F1 0D 77 39 8D 40 8C D5 
+13 96 01 00 F4 4B 5B 41 19 70 89 B5 0D CA 5E BC DC FF 66 AE B9 DC FC AF FC F8 47 F9 97 DF F9 4F 
+F9 FC FF F3 97 0D 8D 6A E5 8E 53 04 66 6D 36 EA 5E 99 79 BF B0 51 EA 09 C3 92 4A 10 96 45 20 D6 
+E5 4F 3C 19 3E 61 19 00 40 7F D4 15 94 3D 4D F2 7E 0D FB 01 B2 86 41 D9 7C AA E5 41 6E 71 40 FA 
+CC CF 4F 8B C0 EC BB 7F 99 4F FF C3 2F 6A 1B 5B 8B 06 D3 C7 AC D2 33 6C 9C 9B 4F 93 3C CF 34 67 
+2B C4 54 E3 D1 55 77 52 3C 5F 9B EE 9D 32 89 B0 0C 00 E0 36 EA 0A CA C6 E9 7E EB 03 E8 8D B5 0A 
+CA 5E BC DC BF 9F E2 E2 AE 96 0B C8 5F FA C5 DF E7 73 DF FB AB FC CB EF FC A7 FC EA 4F FE AE 8E 
+5D 76 C1 34 F3 25 A3 BB 3C 5D 70 5E 1D 56 F6 0D AB 7B D5 C2 69 CE 56 89 E9 FB 40 DF AC 2A 2C 9B 
+A6 58 AE BB B3 C7 0A 00 80 0E FB 59 EA 99 09 30 4A B7 7B F9 41 AF AC 4D 50 36 0F C9 A6 69 68 4A 
+52 39 2D F3 73 DF FB AB 21 55 99 1D 24 99 B4 59 3D B5 34 5D 72 9C D7 57 B2 B9 AD 69 84 62 0C D3 
+AA C2 B2 E3 14 AF 4D 61 19 00 C0 D5 DD 4F 71 1E 55 87 B5 B9 AE 87 55 58 8B 17 54 D3 21 59 D5 40 
+AB CC 66 59 84 66 8D 04 49 F3 29 93 A3 2C 2A C4 CA 2A B1 3A 95 81 D8 34 42 31 D6 83 B0 0C 00 A0 
+9B AE DD 33 FB 02 D3 24 5F AF 61 3F C0 DC E0 83 B2 79 4F B2 69 9A BF 50 7C CD 67 7E 7E 9A CF 7F 
+F7 2F F3 F9 EF FE 65 3E FB 5F 06 73 FD 78 9C C5 D4 CC 6B 97 F7 56 56 98 1C E7 6C 30 56 B7 D3 2C 
+AA C5 A6 7A 8A B1 C6 84 65 00 00 DD 72 27 45 31 42 1D 85 1C CF 92 FC 61 0D FB 01 E6 D6 21 28 FB 
+93 14 3D 74 5A F5 2B 3F FE 51 7E F3 BB FF 39 BF F1 BD BF 5E 9B D0 6C A9 4A 6C 9C 7A 9A EA 5F 36 
+96 69 16 C1 98 39 FA B0 20 2C 03 00 E8 8E 3A AF 51 77 92 7C 50 D3 BE 80 0C 3C 28 7B F1 72 FF 49 
+8A 20 A7 53 06 1A 9A CD 52 4C CF 4C 16 C1 58 93 A6 95 ED B8 CB 0B 0F 40 47 08 CB 00 00 DA F7 AD 
+24 BB 35 EE EF 6E 9C 77 41 AD 06 1B 94 CD A7 5C CE B2 82 BE 64 B7 31 D0 D0 38 2B 8A 8E 00 00 14 
+1E 49 44 41 54 AC 6E E5 34 CA 69 8A 50 CC 34 4A B8 99 55 86 65 BB 49 F4 01 04 00 28 6C A7 98 26 
+59 E7 79 D8 71 92 AF D5 B8 3F 20 C9 A7 DB 1E 40 83 76 D3 F1 90 2C 49 FE DB E7 FF 45 7E B0 FD AF 
+F3 83 ED 7F 9D 5F F9 F1 8F F2 DB FF D7 FF 3E F9 DC F7 FF DF A6 FA 76 F5 45 35 18 9B 6A BA 0F B5 
+F9 24 8B 69 D0 4D 3B 5D C1 7D 00 00 74 D5 76 8A EB D1 71 8A E9 91 A3 06 EE 63 D2 C0 3E 61 ED 0D 
+B9 A2 EC FB 69 E6 60 D4 B4 F1 E3 47 0F 3F 9C 37 BD DF 99 6F E3 F4 20 F4 BB A5 69 16 C1 98 8A 31 
+00 00 A0 49 EF 26 D9 6B 7B 10 B7 34 4A A2 37 33 D4 6C 90 15 65 2F 5E EE DF 4B 3F 43 B2 57 E6 3D 
+B7 9E CF B7 9C 6C 6D 6E 67 F1 69 C4 D0 AA CD 9E 46 E5 18 00 00 C0 55 4D 23 24 83 46 0C 32 28 CB 
+F0 82 A4 CC AB AC 3E 4C F2 5E A5 DA 6C 3C DF 46 AD 0D AC 1E CF 92 E4 64 6B B3 3A E5 F2 DC 95 34 
+01 00 00 28 AE A1 80 FA 09 CA BA 67 9C 22 10 BB D0 39 D5 66 F7 B2 A8 36 1B A7 BF D3 34 EF 66 31 
+DD F4 D9 C9 D6 E6 2C 67 A7 64 0A CE 00 00 80 75 37 4B F2 41 DB 83 80 A1 1A 6A 50 D6 67 D7 0E F9 
+E6 01 D2 F3 93 AD CD E3 14 21 D3 D3 F4 37 2C AB 1A A5 58 94 61 37 49 E6 C1 D9 71 34 F9 07 00 00 
+D6 D7 D3 B6 07 00 43 36 D4 A0 AC CF AB AD ED BC 78 B9 7F E7 F1 A3 87 9F BC E9 07 4F B6 36 EF 67 
+31 FD 72 9C 61 84 63 97 19 CD B7 9D E4 CC 54 CD E3 58 04 00 00 00 18 BE 69 54 93 41 A3 86 1A 94 
+1D B7 3D 80 5B 7A 9A E4 BD E5 6F 0E B0 37 D9 6D 55 A7 6A E6 64 6B 33 A9 54 9C 25 39 36 5D 13 00 
+00 18 88 D3 CC 67 DB 00 CD F9 54 DB 03 68 CA 8B 97 FB 3F 4B 7F 2B AC 4E 93 8C 1E 3F 7A F8 C9 BC 
+6A AC 0C 83 FA DC 7B AD 2D AA CE 00 00 80 65 EF 26 D9 6B 7B 10 D7 B4 13 D5 64 D0 B8 A1 56 94 25 
+C9 41 FA 9B B6 DF BD FB BD BF 9A 9E 6C 6D 8E D2 7E D8 77 9C 22 6C 1A B7 3C 8E 9B BA A8 EA EC D5 
+26 3C 03 00 00 3A 6E 37 42 32 58 89 21 07 65 93 F4 37 28 CB E9 17 BF FC E0 A7 1B 5F CA 6F 9C FC 
+75 2B 77 9F E2 F7 37 A9 36 CC 3F D9 DA DC 4E 51 D5 56 DD FA E8 CC D8 85 67 00 00 40 87 ED 26 79 
+DE F6 20 60 5D 0C 76 EA 65 92 BC 78 B9 FF AD F4 38 2C FB A5 5F FC 7D 7E 77 FF 8F F2 AB 3F F9 BB 
+55 DD E5 41 8A 70 EC CA 9F 54 0C 28 3C 3B 8F F0 0C 00 00 86 A9 0F 53 2F CB 9E 64 2A C9 60 85 86 
+1E 94 DD 49 32 4B FB D3 17 6F EC 33 3F 3F CD 57 FF E8 DF E7 D3 FF F0 8B A6 EE E2 34 C9 B3 14 01 
+59 2D 8D EF 2B E1 D9 68 7E 3B AE 63 BF 1D 31 CB 22 3C 9B 26 99 59 30 00 00 00 7A A7 EB 41 D9 B3 
+14 E3 FB A4 E5 71 C0 DA 19 74 50 96 24 2F 5E EE BF 95 A2 52 AA B7 7E E5 C7 3F CA EF EE FF 51 DD 
+61 D9 71 92 67 1B 87 47 2B 29 E1 9D 2F 4A 30 CA 22 38 1B 65 38 AB 76 9E E6 6C F5 D9 4C F5 19 00 
+00 74 5A 17 83 B2 E3 CC 5B E0 44 40 06 AD 19 7C 50 96 24 2F 5E EE 3F 49 71 B0 E9 AD CF FC FC 34 
+5F FE D3 3F AE 63 1A E6 41 8A 80 AC F5 20 E7 64 6B F3 4E CE 4E D9 1C 65 78 D5 67 B3 2C 56 DD 9C 
+55 7B BE 01 00 00 AD E9 42 50 56 9D A9 32 4D 62 A6 0A 74 C0 5A 04 65 49 FF FB 95 25 45 CF B2 2F 
+FF E9 1F E7 D7 FF E6 07 37 F9 E7 93 24 7B 7D 98 26 78 B2 B5 79 2F 8B D0 6C 94 E1 05 68 C7 39 3B 
+85 53 80 06 00 00 AB D5 54 50 56 CE 36 A9 3A 9E 7F FF B4 F2 B5 F3 7F E8 A8 B5 09 CA 92 E4 C5 CB 
+FD 2E 7C 6A 70 6B 5F F8 F0 CF F3 5B C7 7F 71 D5 1F 9F A4 27 01 D9 9B AC 41 80 36 CB A2 02 6D 16 
+53 38 01 00 00 60 A5 D6 2A 28 4B 86 31 0D 33 49 7E ED 87 1F E7 CB 7F FA C7 97 F5 2D 9B 64 20 01 
+D9 9B 54 02 B4 EA 02 02 0F D2 E3 45 1C 96 54 7B A0 9D C6 22 02 00 00 00 D0 88 B5 0B CA 92 E4 C5 
+CB FD FB 29 C2 86 5E 07 29 BF F4 8B BF CF C6 7F F8 5F F3 1B 27 7F 5D FD F6 34 45 40 A6 12 29 AF 
+56 E0 1C 65 11 A0 DD CD B0 AA D0 AA E1 59 19 A8 09 D1 00 00 00 E0 06 D6 32 28 4B 92 17 2F F7 EF 
+A4 68 6C 3F 6E 79 28 B7 F6 B9 EF FD 55 BE F0 7F FC 6F B3 5F FE E4 67 4F 37 0E 8F 3E 68 7B 3C 7D 
+50 59 48 60 94 C5 14 CE BB F3 EF 0D 85 10 0D 00 00 00 AE 61 6D 83 B2 D2 8B 97 FB EF A4 E8 5B D6 
+EB EA B2 14 41 C8 B3 C7 8F 1E BE D7 F6 40 FA EE 9C 10 6D C8 95 68 D5 30 2D 2A 11 01 00 00 58 67 
+6B 1F 94 25 C9 8B 97 FB F7 92 3C 4B B2 D3 F6 58 6A 30 4B B2 F7 F8 D1 C3 E7 6D 0F 64 A8 E6 D3 39 
+CB EA B3 F2 76 34 DF 86 A0 1A A0 9D B9 B5 3A 27 00 00 00 43 26 28 AB 78 F1 72 FF AD 14 81 D9 A8 
+E5 A1 D4 61 9A 22 30 53 21 B4 42 95 85 05 2E DA 86 40 90 06 00 00 C0 20 09 CA E6 E6 D3 ED F6 92 
+3C FD E1 BF FA 83 FC ED D7 7E 3F FF F4 D9 5F 6E 79 54 B5 98 46 60 D6 19 E7 04 69 CB 95 69 43 31 
+5D BA 7D 15 A8 6D 1C 1E 7D D2 C6 80 00 00 00 E0 4D 04 65 49 4E B6 36 DF 4A 32 49 A5 4F D9 3F 7E 
+E6 B3 F9 DB AF FD FE D0 02 B3 67 8F 1F 3D D4 EC BF E3 E6 53 3B 93 45 4F B4 32 48 1B 65 38 55 69 
+B3 F9 56 56 A3 25 95 50 4D 98 06 00 00 40 1B D6 3A 28 9B 57 91 4D 72 49 6F B2 01 06 66 B3 E8 61 
+D6 6B 95 C5 06 92 61 87 69 E7 86 68 F3 EF 9B E6 09 00 00 40 ED D6 36 28 9B 57 ED 1C E4 8A AB 5D 
+0E 30 30 3B 4D D1 8F 6D F2 F8 D1 C3 8F DB 1E 0C F5 AB 54 A6 95 21 5A 75 7A 67 F9 BD 21 78 15 9E 
+65 11 AC 09 D4 00 00 00 B8 B6 B5 0C CA 4E B6 36 DF 4D D1 8F EC 46 7E FC BB 5F CD 0F FF C7 3F C8 
+3F FC FA 50 72 86 4C 52 04 66 FA 98 AD 99 A5 EA B4 6A 78 36 9E DF 8E 32 9C 0A B5 D9 7C 4B 16 15 
+6A D5 70 6D B6 71 78 24 34 06 00 00 58 63 6B 17 94 9D 6C 6D 7E 2B C9 6E 1D FB FA F9 7F FF 85 FC 
+ED D7 7E 3F 3F FB E2 97 EB D8 5D 17 CC B2 A8 32 D3 23 8A 33 4E B6 36 EF E7 F5 CA B4 51 16 41 5A 
+F5 EB BE 2B 2B D2 96 BF 9E 96 3F B0 71 78 24 58 06 00 00 18 98 B5 09 CA E6 95 33 D3 34 B0 B2 E0 
+2F 7E ED 4E 7E FC 95 AF E6 C7 5F F9 EA 90 AA CC 0E 52 04 66 9A FF 73 6D 95 50 2D 39 BF 52 6D F9 
+EB BE 9B 5E E1 6B 8B 14 00 00 00 74 DC 5A 04 65 4D 86 64 CB 7E BA F1 A5 FC E4 2B BF 37 A4 2A B3 
+D3 14 A1 D9 B3 C7 8F 1E EA F5 44 23 2A FD D4 92 B3 C1 DA 28 8B 2A B5 6A 25 5B DF CD B2 98 06 5A 
+9D FE 99 9C 0D D7 4C 07 05 00 00 58 A1 75 09 CA 6A 9B 6E 79 55 FF F8 99 CF E6 C7 5F F9 6A 7E F2 
+95 DF CB 7F FB FC BF 58 E5 5D 37 69 96 45 A5 99 D0 8C 56 5D 12 AE 2D 07 6A 43 5A B8 60 5A F9 7A 
+39 60 9B 65 11 BE 25 2A D8 00 00 00 AE 6D F0 41 D9 6D 1B F7 D7 61 A0 53 33 67 11 9A D1 33 4B 8B 
+17 24 AF F7 55 5B 0E D5 86 14 B2 55 7B AD 5D E5 CF AA D9 00 00 80 B5 33 E8 A0 6C DE 27 E9 F8 8D 
+3F B8 42 FF F5 37 FF 79 7E F2 95 DF CB 4F BF F8 25 A1 19 F4 CC 52 EF B5 E4 F5 20 6D 94 D7 17 34 
+18 37 3A A8 D5 9A 2E FD 79 96 B3 55 6C C9 EB 81 5B A2 BA 0D 00 00 E8 89 A1 07 65 DF 49 87 7B 1A 
+95 A1 D9 CF 7F FB 0B 43 9B 9E 39 4D 72 60 21 00 78 DD C9 D6 E6 BD BC 1E A6 9D 57 B9 36 3E E7 9F 
+9F F7 BD BE 3A 2F 50 5B 9E 4E 5A 9A E5 F5 40 2E 11 C0 01 00 00 35 1B 6C 50 76 B2 B5 F9 24 C9 A4 
+ED 71 5C D5 2F 7E ED 4E 7E FA C5 2F E5 6F FE D5 1F CC FE E9 97 FF BB 51 DB E3 A9 D1 C1 7C 9B 3E 
+7E F4 D0 34 2E A8 D9 39 55 6E C9 C5 0B 1F 8C F2 7A 48 77 D9 CF F7 D5 2C E7 07 6B 6F FA BB 8B 82 
+BA 57 7F BF 71 78 A4 6A 16 00 00 06 6C C8 41 D9 B7 D3 CF EA 8B F1 7F 7C E7 DF 1D 27 D9 99 6F E3 
+0C AB 47 D2 34 45 B5 D9 87 2D 8F 05 B8 82 0B 82 B8 D2 65 3D DC AE 12 BE 8D 6F 38 AC 2E 7B 53 D8 
+56 35 BD E6 BE CF AB C2 BB 0E 41 1F 00 00 BC C1 20 83 B2 79 C3 EE DB 5C 4C B4 69 BC 71 78 74 26 
+44 7A F1 72 7F 3B 8B D0 6C 48 55 1F 07 29 2E 14 A7 7A 9B 01 E7 59 5A DD F4 32 37 A9 8A 1B E5 FC 
+0A BB EB 1A D7 B0 8F 21 B8 4E 48 78 99 59 2E AE FA BB C8 9B 42 44 8B 53 00 00 70 25 43 0D CA B6 
+73 FD 4F EA BB E2 B5 A0 AC EA C5 CB FD 3B 59 84 66 E3 D4 73 91 D7 05 B3 CC 43 B3 98 A6 09 00 00 
+00 B4 60 A8 41 D9 BB 49 F6 DA 1E C7 0D 3D DD 38 3C 7A FF AA 3F FC E2 E5 FE FD 2C 42 B3 71 86 33 
+4D 73 16 C1 19 00 00 00 B0 42 82 B2 EE 99 6C 1C 1E BD 7D D3 7F 5C 09 CE CA AA B3 A1 98 45 70 06 
+00 00 00 34 48 50 D6 3D A7 1B 87 47 9F AB 6B 67 6B 50 71 76 1C 3D CE 00 00 00 80 1A 0C 35 28 EB 
+73 8F B2 24 D9 DD 38 3C 7A DE C4 8E 2B C1 D9 83 0C AB C7 59 D9 44 7A 3A DF 8E 1F 3F 7A F8 49 9B 
+03 02 00 00 00 FA 65 A8 41 59 9F 57 BD 4C 8A D5 B9 7E 67 15 77 F4 E2 E5 FE BD 2C 42 B3 F2 76 28 
+8E B3 08 CF 8E 55 9D 01 00 00 00 97 19 64 50 96 24 27 5B 9B DF 4E BF 43 9F 6B 35 F5 AF D3 8B 97 
+FB DB 39 1B 9E 8D DA 18 47 43 A6 59 4C D9 3C D6 EB 0C 00 00 00 28 0D 39 28 7B 92 64 D2 F6 38 6E 
+E1 34 C9 83 8D C3 A3 D6 83 9C 17 2F F7 EF 64 11 9C 8D E7 5F 0F A5 D7 59 75 CA A6 F0 0C 00 00 00 
+D6 D8 60 83 B2 24 39 D9 DA FC 4E 8A 50 A7 AF 8E 93 8C 37 0E 8F 3A D7 6B AB 32 65 B3 5A 79 26 3C 
+03 00 00 00 7A 6B E8 41 59 DF 9B FA 27 C9 C1 C6 E1 D1 37 DA 1E C4 55 9C 13 9E 8D 32 9C 69 9B 65 
+78 F6 6A D3 F3 0C 00 00 00 86 65 D0 41 59 92 9C 6C 6D BE 9B 64 AF ED 71 DC D2 64 E3 F0 E8 ED B6 
+07 71 13 4B D3 36 47 59 04 69 43 51 06 67 B3 58 6D 13 00 00 00 7A 6D F0 41 59 92 9C 6C 6D FE 49 
+92 9D B6 C7 71 4B 93 14 0D FE 07 11 C2 BC 78 B9 7F 3F 8B 85 02 C6 19 E6 D4 CD 57 21 DA E3 47 0F 
+3F 6C 77 48 00 00 00 C0 9B AC 4B 50 76 27 45 B5 4F DF 2B 99 3A DB B3 AC 0E 95 EA B3 32 40 2B BF 
+1E 4A 80 36 CB A2 F2 6C 16 01 1A 00 00 00 74 CA 5A 04 65 C9 A0 C2 B2 59 92 9D 8D C3 A3 B5 E9 8F 
+B5 66 01 DA AB 6A 34 53 38 01 00 00 60 B5 D6 26 28 4B 5E 85 65 CF 92 EC B6 3C 94 3A 3C DD 38 3C 
+7A BF ED 41 B4 69 29 40 BB 9B E1 2E 20 30 4B 25 48 B3 88 00 00 00 00 34 63 AD 82 B2 D2 40 1A FC 
+27 45 70 B2 BB 71 78 F4 71 DB 03 E9 9A 17 2F F7 B7 53 84 67 CB 41 DA 50 1C A7 08 D2 A6 A9 04 6A 
+8F 1F 3D F4 5C 00 00 00 80 1B 5A CB A0 2C 49 4E B6 36 B7 93 1C A4 FF D3 F7 4E 93 EC AD 7B 75 D9 
+55 55 AA D0 46 59 2C 24 50 06 6A 43 31 CD EB D5 68 42 34 00 00 00 78 83 B5 0D CA 92 57 53 31 27 
+E9 FF 8A 98 49 11 8E 3C 5D A7 DE 65 75 7B F1 72 FF 5E 16 3D D0 EE 66 7D 2A D1 4C E7 04 00 00 80 
+AC 79 50 56 3A D9 DA 7C 2B 45 60 D6 F7 EA B2 A4 F8 7F 3C 1D EA CA 98 6D 39 A7 12 6D 79 1B 82 D9 
+05 9B 85 05 00 00 00 58 0B 82 B2 B9 79 75 D9 5E 92 A7 2D 0F A5 0E A7 29 16 2D 78 26 30 5B 8D 17 
+2F F7 EF E7 6C 15 DA F2 ED 10 94 D5 68 CB B7 A6 75 02 00 00 30 08 82 B2 25 27 5B 9B F7 53 84 4C 
+E3 96 87 52 07 81 59 47 AC 49 90 36 5B DA 4C ED 04 00 00 A0 57 04 65 17 98 37 FB 7F 96 61 34 79 
+17 98 75 5C A5 3F 5A B9 2D 87 69 43 31 9D DF AA 4A 03 00 00 A0 73 04 65 6F 70 B2 B5 F9 24 C5 94 
+CC 51 BB 23 A9 C5 69 8A 1E 66 CF 36 0E 8F 84 12 3D F3 E2 E5 FE F6 FC CB 32 40 1B 65 F1 BC 1C AF 
+7E 44 8D 99 CE 6F 5F 85 68 F3 2D 8F 1F 3D FC B0 95 11 01 00 00 B0 16 04 65 57 34 6F F8 FF 34 C3 
+09 24 26 49 26 1B 87 47 82 87 01 A9 4C F1 1C E5 F5 10 AD FA BD BE 2B 43 B4 B2 2A ED CC F7 4C F5 
+04 00 00 E0 26 04 65 D7 34 9F 92 F9 34 C9 4E DB 63 A9 C9 71 8A 0A B3 E7 6D 0F 84 D5 A8 AC E0 99 
+9C ED 91 36 9E DF 8E 32 9C 40 6D 36 DF 92 45 A5 DA 99 70 CD 8A 9E 00 00 00 94 04 65 37 74 B2 B5 
+79 2F 45 60 B6 9B 61 34 63 2F A7 65 4E 36 0E 8F 54 E3 90 E4 CC 74 CF 6A AF B4 51 16 41 DA 90 16 
+23 98 CE 6F AB 41 DA 2C 8B A0 4D 1F 35 00 00 80 81 13 94 DD D2 C9 D6 E6 9D 14 D5 65 4F 33 9C A6 
+EB C7 29 9A FF 1F 68 FE CF 55 5D 10 AA 5D 14 B0 F5 DD 2C 8B 00 AD 9C F2 B9 FC 7D C1 1A 00 00 40 
+CF 08 CA 6A 74 B2 B5 79 3F 8B 69 99 43 A9 B2 99 A4 08 CC 3E 68 7B 20 0C 47 65 95 CF E4 E2 60 2D 
+19 4E 4F C0 6A 95 5A B2 A8 5E 4B 96 82 36 E1 1A 00 00 40 7B 04 65 0D 99 AF 96 B9 93 E1 F4 32 3B 
+4D 72 90 A2 9F 99 A9 99 AC 5C A5 62 2D 39 5B 9D B6 1C AE 0D 71 3A 68 72 B6 5A 6D F9 EF 2C 60 00 
+00 00 50 03 41 59 C3 E6 BD CC 76 52 F4 32 1B CA D4 CC 59 8A D0 4C 3F 33 3A 6D 69 E1 82 E4 F5 10 
+6D 5C F9 7A 39 70 EB B3 59 CE 86 6A CB 7F AE 56 B1 25 2A D9 00 00 00 92 08 CA 56 6A E0 A1 D9 C1 
+C6 E1 D1 87 2D 8F 05 6A B3 34 3D 34 79 BD C7 DA 79 C1 DA B8 C9 31 AD D0 F2 54 D1 E4 F5 70 ED DC 
+9F B1 8A 28 00 00 D0 67 82 B2 96 0C 34 34 2B A7 67 EA 69 06 49 5E BC DC BF 9F B3 15 6C E7 85 6B 
+A3 BC BE C8 C1 90 A6 8F 2E 07 6C 17 7D EF BC E0 2D 11 BE 01 00 00 2B 24 28 EB 80 4A 68 B6 93 E1 
+54 A4 24 45 68 36 4D 11 9C 99 D6 05 B7 70 4E E8 96 5C BC 92 E8 F8 9C EF 0D 69 6A 69 72 7E D8 96 
+BC 3E CD B4 6A 7A D9 FE 04 72 00 00 80 A0 AC 63 4E B6 36 EF 64 11 98 0D 69 F5 CC E3 2C 42 33 53 
+34 A1 23 CE E9 E3 56 75 59 65 DB F8 92 DD 8E 72 7E 80 D7 67 D3 9A 7E E6 A2 CA B9 0B 7F DE 42 0D 
+00 00 B0 3A 82 B2 8E 3B D9 DA DC CE 22 38 1B 4A 35 C8 69 8A 0B CA 69 54 9B C1 DA 39 A7 FF DB 79 
+AE 53 01 37 BE E6 10 86 34 B5 F5 4D 2E AA BC EB 83 EB 86 8A C9 C5 61 A5 05 2B 00 00 B8 12 41 59 
+8F CC A7 68 8E 33 BC 6A B3 59 CE 06 67 A6 3F 01 9D F5 86 2A 3C 16 4C 67 05 00 A0 77 04 65 3D 76 
+B2 B5 79 3F 8B D0 6C DC EA 60 EA 55 4E D3 9C 26 99 0A CE 00 00 00 80 55 10 94 0D C8 7C 9A E6 B8 
+B2 0D 85 E0 0C 00 00 00 68 9C A0 6C C0 06 1E 9C BD 0A CF F4 38 03 00 00 00 EA 20 28 5B 23 95 E0 
+EC C1 FC 76 48 3D CE AA C1 99 15 E2 00 00 00 80 6B 13 94 AD B1 79 8F B3 32 34 1B E7 CD AB D0 F5 
+C9 74 BE 1D 27 39 56 75 06 00 00 00 BC 89 A0 8C 57 4E B6 36 EF E4 6C C5 D9 83 0C AF EA EC 38 45 
+D5 D9 87 ED 0E 07 00 00 00 E8 1A 41 19 97 AA 54 9D 95 DB B8 D5 01 D5 EB B8 BA 09 CF 00 00 00 60 
+BD 09 CA B8 B6 79 AF B3 07 4B DB 50 08 CF 00 00 00 60 4D 09 CA A8 C5 52 78 36 CA 30 2B CF 66 99 
+F7 3D DB 38 3C FA A4 CD 01 01 00 00 00 F5 13 94 D1 98 73 A6 6D 0E AD E7 D9 2C 8B 05 03 66 56 DB 
+04 00 00 80 7E 13 94 B1 52 27 5B 9B F7 B2 A8 38 2B AB CF 86 34 75 73 9A B3 21 DA CC 8A 9B 00 00 
+00 D0 0F 82 32 3A 61 3E 75 73 94 45 88 56 7E 3D 04 A7 39 3B 7D B3 EC 7F 66 FA 26 00 00 00 74 88 
+A0 8C 4E 5B C3 00 4D 05 1A 00 00 00 B4 44 50 46 2F 0D 3C 40 4B CE 4E E1 D4 03 0D 00 00 00 56 40 
+50 C6 A0 CC 17 10 18 65 D1 FF 6C 94 61 AD C0 39 CB A2 FF 59 59 91 A6 0A 0D 00 00 00 6A 20 28 63 
+2D 9C 6C 6D DE C9 EB E1 D9 DD 0C 6F 21 81 57 E1 D9 7C D3 0B 0D 00 00 00 AE 48 50 C6 DA AB AC C4 
+F9 20 45 78 36 CE 30 43 B4 F2 56 25 1A 00 00 00 9C 43 50 06 97 A8 84 68 E5 56 86 69 E5 ED 10 CC 
+B2 E8 85 56 86 68 A7 1B 87 47 1F B6 38 26 00 00 00 58 39 41 19 DC C2 7C 51 81 64 D1 07 6D 9C 61 
+57 A3 BD BA 15 A4 01 00 00 30 34 82 32 68 48 A5 2F DA DD 0B 6E 87 62 BA 74 FB AA 32 4D 7F 34 00 
+00 00 FA 44 50 06 2D 3A A7 22 6D C8 53 3B CB AD 9C DE A9 2A 0D 00 00 80 4E 11 94 41 87 55 7A A4 
+55 AB D0 C6 F3 DB 21 85 69 65 15 DA 2C 4B 61 5A 54 A6 01 00 00 B0 22 82 32 E8 B9 0B C2 B4 32 44 
+1B CD B7 21 98 CD B7 64 31 CD B3 FC DE E9 C6 E1 D1 47 AB 1E 10 00 00 00 C3 22 28 83 35 51 99 E6 
+39 CA 22 3C 1B 9F F3 BD BE 9B E5 E2 40 2D 51 A1 06 00 00 C0 05 04 65 C0 19 17 04 6A D5 69 9E E3 
+D5 8E A8 31 D5 E9 9D B3 54 82 B4 F9 DF E9 A1 06 00 00 B0 66 04 65 C0 8D 54 56 F5 4C 2E 0E D5 86 
+D4 47 6D 7A CE D7 D5 B0 4D B0 06 00 00 D0 73 82 32 60 25 2A 95 6A C9 D9 AA B4 EA D7 43 0F D6 92 
+4A C5 5A 92 D9 C6 E1 D1 C7 AB 1A 10 00 00 00 97 13 94 01 9D 74 B2 B5 79 3F 8B D0 6C 94 45 C5 5A 
+75 D1 82 64 B8 E1 5A 35 50 3B 53 B9 16 01 1B 00 00 40 23 04 65 C0 60 54 56 00 2D 8D 2B 5F 0F 39 
+60 BB 2C 54 7B ED CF 56 08 05 00 00 38 9F A0 0C 20 AF 4D 0D 4D 2E 0F D9 96 FF BE CF 96 83 B4 E4 
+6C 65 5B 72 36 88 4B 84 6D 00 00 C0 40 09 CA 00 6A 70 4E D0 36 CA D9 EA B6 E4 F5 70 ED BC 9F E9 
+AB 59 16 2B 87 5E F7 7B 82 37 00 00 A0 13 04 65 00 1D B2 D4 9B AD 74 DE 34 D1 51 CE 0F D9 C6 B5 
+0F AA 3D CB 95 6C 6F FA FE 2C AF 87 70 49 AC 48 0A 00 00 5C 8D A0 0C 60 E0 CE E9 DD 56 1A 5D F0 
+FD E4 E2 C0 ED BC 69 A8 7D 37 BD E4 EF CE 9B 9A BA EC A2 E0 EE 0C 61 1D 00 00 74 9F A0 0C 80 DA 
+9C 33 05 75 D9 F8 0D 7F 7F 9D 20 EE 4D FB EA B3 2B 85 6F 0D FC DB 2E DD C7 79 46 B9 DA 74 E5 E9 
+D2 9F AD 14 0B 00 C0 95 08 CA 00 18 BC 93 AD CD 3B B9 5D 25 DC B8 A6 A1 5C D5 28 CD F6 AF 9B E5 
+82 69 AA 0D B9 4A 65 DE 85 54 E3 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 70 23 9F 6A 7B 00 40 B7 9D 6C 6D 
+5E F8 77 1B 87 47 2B 1C 09 00 00 00 34 4B 50 06 6B EA B2 00 EC 22 82 31 00 00 00 86 EC FF 07 D3 
+B8 30 23 21 39 E1 93 00 00 00 00 49 45 4E 44 AE 42 60 82 
+EndData
+$EndBitmap
 $EndSCHEMATC

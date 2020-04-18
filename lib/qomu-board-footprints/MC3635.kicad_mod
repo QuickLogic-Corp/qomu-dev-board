@@ -33,7 +33,7 @@
   (pad 8 smd rect (at 0.45 -0.23 90) (size 0.25 0.65) (layers F.Cu F.Paste F.Mask))
   (pad 9 smd rect (at 0.45 -0.625 90) (size 0.25 0.65) (layers F.Cu F.Paste F.Mask))
   (pad 10 smd rect (at -0.25 -0.72) (size 0.25 0.65) (layers F.Cu F.Paste F.Mask))
-  (model ${KIPRJMOD}/lib/3d-models/MC3635.step
+  (model ${KIPRJMOD}/qomu-board.pretty/MC3635.step
     (offset (xyz -0.275 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

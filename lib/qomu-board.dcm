@@ -1,3 +1,7 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP EOS-S3
+F https://dev.antmicro.com/attachments/download/9063/ql-eos-s3-datasheet.pdf
+$ENDCMP
+#
 #End Doc Library
