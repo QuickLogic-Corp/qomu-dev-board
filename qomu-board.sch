@@ -47,8 +47,8 @@ F 0 "U9" H 8900 1550 50  0000 C CNN
 F 1 "USB-B" H 8500 1550 50  0000 C CNN
 F 2 "qomu-board:USB-PCB" H 8650 1550 50  0001 C CNN
 F 3 "" H 8650 1550 50  0001 C CNN
-F 4 "N/A" H 8650 1550 50  0001 C CNN "MPN"
-F 5 "N/A" H 8650 1550 50  0001 C CNN "Manufacturer"
+F 4 "DNP" H 8650 1550 50  0001 C CNN "MPN"
+F 5 "DNP" H 8650 1550 50  0001 C CNN "Manufacturer"
 	1    8650 1550
 	-1   0    0    1   
 $EndComp
@@ -114,8 +114,8 @@ F 0 "SW2" V 5600 1500 50  0000 C CNN
 F 1 "Captouch Pads" V 5600 1050 50  0000 C CNN
 F 2 "qomu-board:captouch-edge" H 5500 900 50  0001 C CNN
 F 3 "" H 5500 900 50  0001 C CNN
-F 4 "N/A" H 5450 900 50  0001 C CNN "MPN"
-F 5 "N/A" H 5450 900 50  0001 C CNN "Manufacturer"
+F 4 "DNP" H 5450 900 50  0001 C CNN "MPN"
+F 5 "DNP" H 5450 900 50  0001 C CNN "Manufacturer"
 	1    5450 900 
 	0    1    -1   0   
 $EndComp
@@ -1407,13 +1407,9 @@ F 0 "Q2" H 10100 3250 50  0000 L CNN
 F 1 "RV1C002UN" V 10400 2850 50  0000 L CNN
 F 2 "qomu-board-footprints:VML0806" H 10400 2700 50  0001 L BNN
 F 3 "https://d1d2qsbl8m0m72.cloudfront.net/en/products/databook/datasheet/discrete/transistor/mosfet/rv1c002un-e.pdf" H 10425 2925 50  0001 L BNN
-F 4 "RV1C002UN" H 10425 3075 50  0001 L BNN "Field4"
-F 5 "Nch 20V 180mA Small Signal MOSFET" H 10400 2850 50  0001 L BNN "Field5"
-F 6 "None" H 10400 2775 50  0001 L BNN "Field6"
-F 7 "Unavailable" H 10400 2925 50  0001 L BNN "Field7"
-F 8 "Rohm" H 10425 3000 50  0001 L BNN "Field8"
-F 9 "RV1C002UN" H 0   0   50  0001 C CNN "MPN"
-F 10 "ROHM Semiconductor" H 0   0   50  0001 C CNN "Manufacturer"
+F 4 "Nch 20V 180mA Small Signal MOSFET" H 10400 2850 50  0001 L BNN "Description"
+F 5 "RV1C002UN" H 0   0   50  0001 C CNN "MPN"
+F 6 "ROHM Semiconductor" H 0   0   50  0001 C CNN "Manufacturer"
 	1    10200 3100
 	-1   0    0    -1  
 $EndComp
@@ -1425,13 +1421,9 @@ F 0 "Q3" H 10500 3250 50  0000 L CNN
 F 1 "RV1C002UN" V 10800 2850 50  0000 L CNN
 F 2 "qomu-board-footprints:VML0806" H 10800 2700 50  0001 L BNN
 F 3 "https://d1d2qsbl8m0m72.cloudfront.net/en/products/databook/datasheet/discrete/transistor/mosfet/rv1c002un-e.pdf" H 10825 2925 50  0001 L BNN
-F 4 "RV1C002UN" H 10825 3075 50  0001 L BNN "Field4"
-F 5 "Nch 20V 180mA Small Signal MOSFET" H 10800 2850 50  0001 L BNN "Field5"
-F 6 "None" H 10800 2775 50  0001 L BNN "Field6"
-F 7 "Unavailable" H 10800 2925 50  0001 L BNN "Field7"
-F 8 "Rohm" H 10825 3000 50  0001 L BNN "Vendor"
-F 9 "RV1C002UN" H 0   0   50  0001 C CNN "MPN"
-F 10 "ROHM Semiconductor" H 0   0   50  0001 C CNN "Manufacturer"
+F 4 "Nch 20V 180mA Small Signal MOSFET" H 10800 2850 50  0001 L BNN "Description"
+F 5 "RV1C002UN" H 0   0   50  0001 C CNN "MPN"
+F 6 "ROHM Semiconductor" H 0   0   50  0001 C CNN "Manufacturer"
 	1    10600 3100
 	-1   0    0    -1  
 $EndComp
@@ -1453,13 +1445,9 @@ F 0 "Q1" H 9700 3250 50  0000 L CNN
 F 1 "RV1C002UN" V 10050 2800 50  0000 L CNN
 F 2 "qomu-board-footprints:VML0806" H 10000 2700 50  0001 L BNN
 F 3 "https://d1d2qsbl8m0m72.cloudfront.net/en/products/databook/datasheet/discrete/transistor/mosfet/rv1c002un-e.pdf" H 10025 2925 50  0001 L BNN
-F 4 "RV1C002UN" H 10025 3075 50  0001 L BNN "Field4"
-F 5 "Nch 20V 180mA Small Signal MOSFET" H 10000 2850 50  0001 L BNN "Field5"
-F 6 "None" H 10000 2775 50  0001 L BNN "Field6"
-F 7 "Unavailable" H 10000 2925 50  0001 L BNN "Field7"
-F 8 "Rohm" H 10025 3000 50  0001 L BNN "Field8"
-F 9 "RV1C002UN" H 0   0   50  0001 C CNN "MPN"
-F 10 "ROHM Semiconductor" H 0   0   50  0001 C CNN "Manufacturer"
+F 4 "Nch 20V 180mA Small Signal MOSFET" H 10000 2850 50  0001 L BNN "Description"
+F 5 "RV1C002UN" H 0   0   50  0001 C CNN "MPN"
+F 6 "ROHM Semiconductor" H 0   0   50  0001 C CNN "Manufacturer"
 	1    9800 3100
 	-1   0    0    -1  
 $EndComp
@@ -1665,6 +1653,8 @@ F 0 "TP2" V 4100 3800 50  0000 R CNN
 F 1 "TP_SMD_0_75MM" H 4100 3750 50  0001 C CNN
 F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 4300 4050 60  0001 L CNN
 F 3 "" H 4300 4150 60  0001 L CNN
+F 4 "DNP" V 4100 3850 50  0001 C CNN "MPN"
+F 5 "DNP" V 4100 3850 50  0001 C CNN "Manufacturer"
 	1    4100 3850
 	0    -1   -1   0   
 $EndComp
@@ -1707,6 +1697,8 @@ F 0 "TP3" V 4100 4000 50  0000 R CNN
 F 1 "TP_SMD_0_75MM" H 4100 3950 50  0001 C CNN
 F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 4300 4250 60  0001 L CNN
 F 3 "" H 4300 4350 60  0001 L CNN
+F 4 "DNP" V 4100 4050 50  0001 C CNN "MPN"
+F 5 "DNP" V 4100 4050 50  0001 C CNN "Manufacturer"
 	1    4100 4050
 	0    -1   -1   0   
 $EndComp
@@ -1723,6 +1715,8 @@ F 0 "TP5" H 5500 3000 50  0000 R CNN
 F 1 "TP_SMD_0_75MM" H 5450 3000 50  0001 C CNN
 F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 5650 3300 60  0001 L CNN
 F 3 "" H 5650 3400 60  0001 L CNN
+F 4 "DNP" H 5450 3100 50  0001 C CNN "MPN"
+F 5 "DNP" H 5450 3100 50  0001 C CNN "Manufacturer"
 	1    5450 3100
 	-1   0    0    1   
 $EndComp
@@ -1734,6 +1728,8 @@ F 0 "TP4" H 5500 2650 50  0000 R CNN
 F 1 "TP_SMD_0_75MM" H 5450 2650 50  0001 C CNN
 F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 5650 2950 60  0001 L CNN
 F 3 "" H 5650 3050 60  0001 L CNN
+F 4 "DNP" H 5450 2750 50  0001 C CNN "MPN"
+F 5 "DNP" H 5450 2750 50  0001 C CNN "Manufacturer"
 	1    5450 2750
 	-1   0    0    1   
 $EndComp
@@ -1748,6 +1744,8 @@ F 0 "TP6" H 5400 3300 50  0000 L CNN
 F 1 "TP_SMD_0_75MM" H 5450 3300 50  0001 C CNN
 F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 5650 3600 60  0001 L CNN
 F 3 "" H 5650 3700 60  0001 L CNN
+F 4 "DNP" H 5450 3400 50  0001 C CNN "MPN"
+F 5 "DNP" H 5450 3400 50  0001 C CNN "Manufacturer"
 	1    5450 3400
 	1    0    0    -1  
 $EndComp
@@ -1773,6 +1771,8 @@ F 0 "TP1" H 1350 3500 50  0000 R CNN
 F 1 "TP_SMD_0_75MM" H 1300 3500 50  0001 C CNN
 F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 1500 3800 60  0001 L CNN
 F 3 "" H 1500 3900 60  0001 L CNN
+F 4 "DNP" H 1300 3600 50  0001 C CNN "MPN"
+F 5 "DNP" H 1300 3600 50  0001 C CNN "Manufacturer"
 	1    1300 3600
 	-1   0    0    1   
 $EndComp
@@ -1790,6 +1790,8 @@ F 0 "TP8" V 6850 3350 50  0000 R CNN
 F 1 "TP_SMD_0_75MM" H 6750 3200 50  0001 C CNN
 F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 6950 3500 60  0001 L CNN
 F 3 "" H 6950 3600 60  0001 L CNN
+F 4 "DNP" V 6750 3300 50  0001 C CNN "MPN"
+F 5 "DNP" V 6750 3300 50  0001 C CNN "Manufacturer"
 	1    6750 3300
 	0    -1   -1   0   
 $EndComp
@@ -1802,6 +1804,8 @@ F 0 "TP9" H 1150 4500 50  0000 R CNN
 F 1 "TP_SMD_0_75MM" H 1100 4500 50  0001 C CNN
 F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 1300 4800 60  0001 L CNN
 F 3 "" H 1300 4900 60  0001 L CNN
+F 4 "DNP" H 1100 4600 50  0001 C CNN "MPN"
+F 5 "DNP" H 1100 4600 50  0001 C CNN "Manufacturer"
 	1    1100 4600
 	-1   0    0    1   
 $EndComp
@@ -1834,6 +1838,8 @@ F 0 "TP10" V 4100 3900 50  0000 R CNN
 F 1 "TP_SMD_0_75MM" H 4100 3850 50  0001 C CNN
 F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 4300 4150 60  0001 L CNN
 F 3 "" H 4300 4250 60  0001 L CNN
+F 4 "DNP" V 4100 3950 50  0001 C CNN "MPN"
+F 5 "DNP" V 4100 3950 50  0001 C CNN "Manufacturer"
 	1    4100 3950
 	0    -1   -1   0   
 $EndComp
@@ -1904,6 +1910,8 @@ F 0 "N1" H 4884 6443 50  0000 L CNN
 F 1 "oshw_logo" H 4884 6352 50  0000 L CNN
 F 2 "qomu-board-footprints:OSHW-Logo2_7.3x6mm_Copper_Mask" H 4710 6200 50  0001 C CNN
 F 3 "" H 4690 6440 50  0001 C CNN
+F 4 "DNP" H 4690 6440 50  0001 C CNN "MPN"
+F 5 "DNP" H 4690 6440 50  0001 C CNN "Manufacturer"
 	1    4690 6440
 	1    0    0    -1  
 $EndComp
@@ -1915,6 +1923,8 @@ F 0 "N2" H 4894 6803 50  0000 L CNN
 F 1 "antmicro_logo" H 4894 6712 50  0000 L CNN
 F 2 "qomu-board-footprints:antmicro-logo_midlayer_4mm" H 4580 6960 50  0001 C CNN
 F 3 "" H 4680 7060 50  0001 C CNN
+F 4 "DNP" H 4680 6710 50  0001 C CNN "MPN"
+F 5 "DNP" H 4680 6710 50  0001 C CNN "Manufacturer"
 	1    4680 6710
 	1    0    0    -1  
 $EndComp
@@ -1926,6 +1936,8 @@ F 0 "N3" H 4894 6803 50  0000 L CNN
 F 1 "ql_logo" H 4894 6712 50  0000 L CNN
 F 2 "qomu-board-footprints:Ql_logo_mid_9mm" H 4720 6560 50  0001 C CNN
 F 3 "" H 4700 6800 50  0001 C CNN
+F 4 "DNP" H 4700 6800 50  0001 C CNN "MPN"
+F 5 "DNP" H 4700 6800 50  0001 C CNN "Manufacturer"
 	1    4700 6800
 	1    0    0    -1  
 $EndComp
@@ -3160,8 +3172,8 @@ F 0 "J4" H 8500 6065 50  0000 C CNN
 F 1 "USB-C" H 8500 5974 50  0000 C CNN
 F 2 "qomu-board-footprints:USB4085-GF-A" H 8200 4700 50  0001 C CNN
 F 3 "https://gct.co/files/drawings/usb4085.pdf" H 8250 4800 50  0001 C CNN
-F 4 "Global Connector Technology" H 8500 4700 50  0001 C CNN "Vendor"
-F 5 "USB4085-GF-A" H 8500 4650 50  0001 C CNN "MPN"
+F 4 "USB4085-GF-A" H 8500 4650 50  0001 C CNN "MPN"
+F 5 "Global Connector Technology" H 8500 4700 50  0001 C CNN "Manufacturer"
 	1    8500 5300
 	1    0    0    -1  
 $EndComp
@@ -3289,8 +3301,8 @@ F 0 "R7" V 6450 4900 50  0000 C CNN
 F 1 "0R, 0201" V 6400 5200 50  0000 C CNN
 F 2 "qomu-board-footprints:R_0201_0603Metric" H 6450 4900 50  0001 C CNN
 F 3 "" H 6450 4900 50  0001 C CNN
-F 4 "ANY / Multicomp" H 6450 4900 50  0001 C CNN "Manufacturer"
-F 5 "ANY / MCRE000086" H 6450 4900 50  0001 C CNN "MPN"
+F 4 "Multicomp" H 6450 4900 50  0001 C CNN "Manufacturer"
+F 5 "MCRE000086" H 6450 4900 50  0001 C CNN "MPN"
 	1    6450 4900
 	0    1    1    0   
 $EndComp
@@ -3302,8 +3314,8 @@ F 0 "R10" V 6450 5000 50  0000 C CNN
 F 1 "0R, 0201" V 6400 5300 50  0000 C CNN
 F 2 "qomu-board-footprints:R_0201_0603Metric" H 6450 5000 50  0001 C CNN
 F 3 "" H 6450 5000 50  0001 C CNN
-F 4 "ANY / Multicomp" H 6450 5000 50  0001 C CNN "Manufacturer"
-F 5 "ANY / MCRE000086" H 6450 5000 50  0001 C CNN "MPN"
+F 4 "Multicomp" H 6450 5000 50  0001 C CNN "Manufacturer"
+F 5 "MCRE000086" H 6450 5000 50  0001 C CNN "MPN"
 	1    6450 5000
 	0    1    1    0   
 $EndComp
