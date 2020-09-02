@@ -4,4 +4,9 @@ $CMP EOS-S3
 F https://dev.antmicro.com/attachments/download/9063/ql-eos-s3-datasheet.pdf
 $ENDCMP
 #
+$CMP USB-C
+D USB-C (USB TYPE-C) USB 2.0 Receptacle Connector 24 (16+8 Dummy) Position Through Hole, Right Angle
+F https://gct.co/files/drawings/usb4085.pdf
+$ENDCMP
+#
 #End Doc Library
