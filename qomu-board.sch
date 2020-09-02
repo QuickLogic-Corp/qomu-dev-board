@@ -1334,7 +1334,7 @@ Wire Notes Line
 Wire Notes Line
 	4600 3900 7600 3900
 Text Notes 4650 6300 0    50   ~ 0
-Programming and debug headers
+Programming and debug headers - breakaway PCB connection
 Wire Wire Line
 	3550 2950 3950 2950
 Wire Wire Line
