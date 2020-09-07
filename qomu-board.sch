@@ -1760,6 +1760,8 @@ F 0 "TP7" H 6750 2650 50  0000 R CNN
 F 1 "TP_SMD_0_75MM" H 6700 2650 50  0001 C CNN
 F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 6900 2950 60  0001 L CNN
 F 3 "" H 6900 3050 60  0001 L CNN
+F 4 "DNP" H 6700 2750 50  0001 C CNN "MPN"
+F 5 "DNP" H 6700 2750 50  0001 C CNN "Manufacturer"
 	1    6700 2750
 	-1   0    0    1   
 $EndComp
