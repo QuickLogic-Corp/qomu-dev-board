@@ -525,8 +525,6 @@ Text Label 3650 4850 0    50   ~ 0
 R_USB_P
 Wire Wire Line
 	3550 4550 4000 4550
-Text Label 3650 4050 0    50   ~ 0
-PU_CTRL_USBP
 Wire Wire Line
 	9600 2100 10350 2100
 Wire Notes Line
@@ -561,6 +559,8 @@ F 2 "qomu-board-footprints:Texas_X2SON-4_1x1mm_P0.65mm" H 1900 1200 50  0001 C C
 F 3 "" H 1900 1200 50  0001 C CNN
 F 4 "MIC5504-3.3YMT" H 250 -100 50  0001 C CNN "MPN"
 F 5 "Microchip" H 250 -100 50  0001 C CNN "Manufacturer"
+F 6 "https://item.szlcsc.com/86372.html" H 1900 1200 50  0001 C CNN "SZLCSC_URL"
+F 7 "0.5733" H 1900 1200 50  0001 C CNN "SZLCSC_1k_RMB"
 	1    1900 1200
 	1    0    0    -1  
 $EndComp
@@ -773,6 +773,8 @@ F 2 "qomu-board-footprints:Texas_X2SON-4_1x1mm_P0.65mm" H 1900 1700 50  0001 C C
 F 3 "" H 1900 1700 50  0001 C CNN
 F 4 "MIC5504-3.3YMT" H 250 400 50  0001 C CNN "MPN"
 F 5 "Microchip" H 250 400 50  0001 C CNN "Manufacturer"
+F 6 "https://item.szlcsc.com/86372.html" H 1900 1700 50  0001 C CNN "SZLCSC_URL"
+F 7 "0.5733" H 1900 1700 50  0001 C CNN "SZLCSC_1k_RMB"
 	1    1900 1700
 	1    0    0    -1  
 $EndComp
@@ -1070,7 +1072,7 @@ Wire Wire Line
 	4900 4450 4900 4700
 Connection ~ 4900 4700
 Wire Wire Line
-	5950 5100 7400 5100
+	5950 5100 7500 5100
 Wire Wire Line
 	5950 4800 6400 4800
 Wire Wire Line
@@ -1079,15 +1081,15 @@ Wire Wire Line
 	6400 4600 6400 4800
 Connection ~ 6400 4800
 Wire Wire Line
-	6400 4800 7400 4800
+	6400 4800 7500 4800
 Wire Wire Line
 	6700 4600 6700 4700
 Connection ~ 6700 4700
 Wire Wire Line
-	6700 4700 7400 4700
-Text Label 7000 4700 0    50   ~ 0
+	6700 4700 7500 4700
+Text Label 7150 4700 0    50   ~ 0
 SWD_IO
-Text Label 7000 4800 0    50   ~ 0
+Text Label 7150 4800 0    50   ~ 0
 SWD_CLK
 Wire Wire Line
 	6950 5950 6800 5950
@@ -1111,6 +1113,7 @@ F 2 "qomu-board-footprints:SOD-323-SD05" H 5400 5150 60  0001 L CNN
 F 3 "https://www.mouser.com/datasheet/2/761/sdxxc-1277747.pdf" H 5400 5250 60  0001 L CNN
 F 4 "Semtec" H 5400 5550 60  0001 L CNN "Manufacturer"
 F 5 "SD05C.TCT" H 5400 5450 60  0001 L CNN "MPN"
+F 6 "X" V 5200 4950 50  0001 C CNN "DEBUG"
 	1    5200 4950
 	0    -1   -1   0   
 $EndComp
@@ -1124,6 +1127,7 @@ F 2 "qomu-board-footprints:TE_825437-4" H 6850 5950 60  0001 L CNN
 F 3 "https://www.te.com/usa-en/product-825437-4.datasheet.pdf" H 6850 6050 60  0001 L CNN
 F 4 "825437-4" H 6850 6150 60  0001 L CNN "MPN"
 F 5 "TE Connectivity" H 6850 6250 60  0001 L CNN "Manufacturer"
+F 6 "X" V 6650 5650 50  0001 C CNN "DEBUG"
 	1    6650 5650
 	0    1    1    0   
 $EndComp
@@ -1137,6 +1141,7 @@ F 2 "qomu-board-footprints:PinHeader_2x5_P1.27_SMD" H 5950 5100 60  0001 L CNN
 F 3 "http://suddendocs.samtec.com/prints/ftsh-1xx-xx-xxx-dv-xxx-xxx-mkt.pdf" H 5950 5200 60  0001 L CNN
 F 4 "FTSH-105-01-L-DV-K" H 5950 5400 60  0001 L CNN "MPN"
 F 5 "Samtec Inc." H 5950 6000 60  0001 L CNN "Manufacturer"
+F 6 "X" H 5750 4900 50  0001 C CNN "DEBUG"
 	1    5750 4900
 	1    0    0    -1  
 $EndComp
@@ -1150,6 +1155,7 @@ F 2 "qomu-board-footprints:R_0201_0603Metric" H 6700 4500 50  0001 C CNN
 F 3 "" H 6700 4500 50  0001 C CNN
 F 4 "ERJ1GNF1002C" H -2050 2800 50  0001 C CNN "MPN"
 F 5 "Panasonic" H 0   -50 50  0001 C CNN "Manufacturer"
+F 6 "X" V 6700 4500 50  0001 C CNN "DEBUG"
 	1    6700 4500
 	-1   0    0    1   
 $EndComp
@@ -1163,6 +1169,7 @@ F 2 "qomu-board-footprints:R_0201_0603Metric" H 6400 4500 50  0001 C CNN
 F 3 "" H 6400 4500 50  0001 C CNN
 F 4 "ERJ1GNF1002C" H -2350 2800 50  0001 C CNN "MPN"
 F 5 "Panasonic" H 0   -50 50  0001 C CNN "Manufacturer"
+F 6 "X" V 6400 4500 50  0001 C CNN "DEBUG"
 	1    6400 4500
 	-1   0    0    1   
 $EndComp
@@ -1183,6 +1190,7 @@ F 2 "qomu-board-footprints:C_0201_0603Metric" H 4900 4900 50  0001 C CNN
 F 3 "" H 4900 4900 50  0001 C CNN
 F 4 "GRM033R60J104KE19D " H 0   0   50  0001 C CNN "MPN"
 F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "X" H 4900 4900 50  0001 C CNN "DEBUG"
 	1    4900 4900
 	1    0    0    -1  
 $EndComp
@@ -1265,7 +1273,7 @@ F 3 "" H 6400 4250 50  0001 C CNN
 	1    6400 4250
 	1    0    0    -1  
 $EndComp
-Text Label 7250 5100 2    50   ~ 0
+Text Label 7150 5100 0    50   ~ 0
 RST_N
 Wire Wire Line
 	6500 1600 6500 1250
@@ -1552,6 +1560,7 @@ F 2 "qomu-board-footprints:R_0201_0603Metric" H 5750 5850 50  0001 C CNN
 F 3 "" H 5750 5850 50  0001 C CNN
 F 4 "ERJ1GNF1002C" H -3000 4150 50  0001 C CNN "MPN"
 F 5 "Panasonic" H -650 1300 50  0001 C CNN "Manufacturer"
+F 6 "X" V 5750 5850 50  0001 C CNN "DEBUG"
 	1    5750 5850
 	0    1    1    0   
 $EndComp
@@ -1614,6 +1623,8 @@ F 2 "qomu-board-footprints:XTAL_ECS-.327-12.5-1210-TR" H 1150 4050 60  0001 L CN
 F 3 "https://ecsxtal.com/store/pdf/ECX-1210.pdf" H 1150 4150 60  0001 L CNN
 F 4 "ECS-.327-12.5-1210-TR" H 1158 4224 60  0001 L CNN "MPN"
 F 5 "ECS Inc." H 1174 4302 60  0001 L CNN "Manufacturer"
+F 6 "https://item.szlcsc.com/432480.html" H 950 3850 50  0001 C CNN "SZLCSC_URL"
+F 7 "6.28" H 950 3850 50  0001 C CNN "SZLCSC_1k_RMB"
 	1    950  3850
 	1    0    0    -1  
 $EndComp
@@ -1777,6 +1788,7 @@ F 2 "qomu-board-footprints:PinHeader_1x2_P1.27mm_Drill.7mm_with_622002115121_plu
 F 3 "" H 5450 6150 60  0001 L CNN
 F 4 "MC-HVT1-S02-G" H 5450 6250 60  0001 L CNN "MPN"
 F 5 "Multicomp" H 5450 6350 60  0001 L CNN "Manufacturer"
+F 6 "X" V 5250 5750 50  0001 C CNN "DEBUG"
 	1    5250 5750
 	0    1    1    0   
 $EndComp
@@ -1790,21 +1802,22 @@ F 2 "qomu-board-footprints:Switch_Slide_MSS3" H 5050 6050 50  0001 L CNN
 F 3 "https://pl.mouser.com/datasheet/2/910/605_MSS34-1571494.pdf" H 5050 6150 60  0001 L CNN
 F 4 "MSS3-V-T/R" H 5050 6350 60  0001 L CNN "MPN"
 F 5 "Diptronics" H 5050 6470 60  0001 L CNN "Manufacturer"
+F 6 "X" V 4850 5850 50  0001 C CNN "DEBUG"
 	1    4850 5850
 	0    -1   -1   0   
 $EndComp
-Text Label 7000 4900 0    50   ~ 0
+Text Label 7150 4900 0    50   ~ 0
 UART_TX
-Text Label 7000 5000 0    50   ~ 0
+Text Label 7150 5000 0    50   ~ 0
 UART_RX
 Wire Wire Line
 	5950 4900 6350 4900
 Wire Wire Line
 	5950 5000 6350 5000
 Wire Wire Line
-	6550 4900 7400 4900
+	6550 4900 7500 4900
 Wire Wire Line
-	6550 5000 7400 5000
+	6550 5000 7500 5000
 Text Notes 6050 4900 0    50   ~ 0
 DNP
 Text Notes 6050 5000 0    50   ~ 0
@@ -3101,6 +3114,7 @@ F 2 "qomu-board-footprints:USB4085-GF-A" H 8100 4700 50  0001 C CNN
 F 3 "https://gct.co/files/drawings/usb4085.pdf" H 8150 4800 50  0001 C CNN
 F 4 "USB4085-GF-A" H 8400 4650 50  0001 C CNN "MPN"
 F 5 "Global Connector Technology" H 8400 4700 50  0001 C CNN "Manufacturer"
+F 6 "X" H 8400 5300 50  0001 C CNN "DEBUG"
 	1    8400 5300
 	1    0    0    -1  
 $EndComp
@@ -3170,6 +3184,7 @@ F 2 "qomu-board-footprints:R_0201_0603Metric" H 9000 5950 50  0001 C CNN
 F 3 "" H 9000 5950 50  0001 C CNN
 F 4 "ERJ1GNF1002C " H 250 4250 50  0001 C CNN "MPN"
 F 5 "Panasonic" H 5150 2700 50  0001 C CNN "Manufacturer"
+F 6 "X" V 9000 5950 50  0001 C CNN "DEBUG"
 	1    9000 5950
 	-1   0    0    1   
 $EndComp
@@ -3189,6 +3204,7 @@ F 2 "qomu-board-footprints:R_0201_0603Metric" H 9300 5800 50  0001 C CNN
 F 3 "" H 9300 5800 50  0001 C CNN
 F 4 "ERJ1GNF1002C " H 550 4100 50  0001 C CNN "MPN"
 F 5 "Panasonic" H 5450 2550 50  0001 C CNN "Manufacturer"
+F 6 "X" V 9300 5800 50  0001 C CNN "DEBUG"
 	1    9300 5800
 	-1   0    0    1   
 $EndComp
@@ -3223,11 +3239,12 @@ L qomu-board:R_0R_0201 R7
 U 1 1 5E182D81
 P 6450 4900
 F 0 "R7" V 6450 4900 50  0000 C CNN
-F 1 "0R, 0201" V 6400 5200 50  0000 C CNN
+F 1 "DNP, 0R, 0201" V 6400 5300 50  0000 C CNN
 F 2 "qomu-board-footprints:R_0201_0603Metric" H 6450 4900 50  0001 C CNN
 F 3 "" H 6450 4900 50  0001 C CNN
 F 4 "Multicomp" H 6450 4900 50  0001 C CNN "Manufacturer"
 F 5 "MCRE000086" H 6450 4900 50  0001 C CNN "MPN"
+F 6 "X" V 6450 4900 50  0001 C CNN "DEBUG"
 	1    6450 4900
 	0    1    1    0   
 $EndComp
@@ -3236,11 +3253,12 @@ L qomu-board:R_0R_0201 R10
 U 1 1 5E19188E
 P 6450 5000
 F 0 "R10" V 6450 5000 50  0000 C CNN
-F 1 "0R, 0201" V 6400 5300 50  0000 C CNN
+F 1 "DNP, 0R, 0201" V 6400 5400 50  0000 C CNN
 F 2 "qomu-board-footprints:R_0201_0603Metric" H 6450 5000 50  0001 C CNN
 F 3 "" H 6450 5000 50  0001 C CNN
 F 4 "Multicomp" H 6450 5000 50  0001 C CNN "Manufacturer"
 F 5 "MCRE000086" H 6450 5000 50  0001 C CNN "MPN"
+F 6 "X" V 6450 5000 50  0001 C CNN "DEBUG"
 	1    6450 5000
 	0    1    1    0   
 $EndComp
@@ -3288,7 +3306,6 @@ F 5 "DNP" V 4150 4150 50  0001 C CNN "Manufacturer"
 	1    4150 4150
 	0    -1   -1   0   
 $EndComp
-NoConn ~ 3550 4250
 NoConn ~ 3550 3850
 Wire Wire Line
 	4000 3650 3550 3650
@@ -3302,6 +3319,9 @@ Text Notes 4250 5550 1    39   ~ 0
 Note: the VCCIOB connection here\nhelps alleviate tight PCB routing
 Wire Wire Line
 	3550 4150 4050 4150
+NoConn ~ 3550 4050
 Wire Wire Line
-	3550 4050 4250 4050
+	3550 4250 4200 4250
+Text Label 3650 4250 0    50   ~ 0
+PU_CTRL_USBP
 $EndSCHEMATC
