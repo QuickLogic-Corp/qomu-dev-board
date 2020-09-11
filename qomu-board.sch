@@ -440,7 +440,7 @@ U 1 1 5DD5D055
 P 5800 2600
 F 0 "U4" H 6175 2765 50  0000 C CNN
 F 1 "GD25Q16CEIGR" H 6175 2674 50  0000 C CNN
-F 2 "qomu-board:GD25Q16CEIGR" H 5750 2550 50  0001 C CNN
+F 2 "qomu-board-footprints:GD25Q16CEIGR" H 5750 2550 50  0001 C CNN
 F 3 "http://www.gigadevice.com/datasheet/gd25q16c/" H 5850 2650 50  0001 C CNN
 F 4 "GD25Q16CEIGR" H 0   0   50  0001 C CNN "MPN"
 F 5 "GigaDevice Semiconductor" H 0   0   50  0001 C CNN "Manufacturer"
@@ -525,7 +525,7 @@ Text Label 3650 4850 0    50   ~ 0
 R_USB_P
 Wire Wire Line
 	3550 4550 4000 4550
-Text Label 3650 4250 0    50   ~ 0
+Text Label 3650 4050 0    50   ~ 0
 PU_CTRL_USBP
 Wire Wire Line
 	9600 2100 10350 2100
@@ -1509,8 +1509,6 @@ LED_R
 Wire Wire Line
 	3550 4350 4000 4350
 Wire Wire Line
-	3550 4450 4000 4450
-Wire Wire Line
 	3550 4750 4000 4750
 Wire Wire Line
 	6500 1250 6950 1250
@@ -1535,7 +1533,7 @@ Wire Wire Line
 	4300 3250 4300 3350
 Text Label 3650 3050 0    50   ~ 0
 TOUCH_1
-Text Label 3650 5350 0    50   ~ 0
+Text Label 3650 3650 0    50   ~ 0
 TOUCH_3
 Text Label 3650 4650 0    50   ~ 0
 TOUCH_4
@@ -1543,7 +1541,7 @@ Wire Wire Line
 	3550 3350 3950 3350
 Wire Wire Line
 	3550 3050 3950 3050
-NoConn ~ 3550 3950
+NoConn ~ 3550 4450
 $Comp
 L qomu-board:R_10k_0201 R6
 U 1 1 5E151CF7
@@ -1642,22 +1640,7 @@ F 3 "" H 1100 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3550 5350 4000 5350
-Wire Wire Line
 	3550 4850 4000 4850
-$Comp
-L qomu-board:TP_SMD_0_75MM TP2
-U 1 1 5E378204
-P 4100 3850
-F 0 "TP2" V 4100 3800 50  0000 R CNN
-F 1 "TP_SMD_0_75MM" H 4100 3750 50  0001 C CNN
-F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 4300 4050 60  0001 L CNN
-F 3 "" H 4300 4150 60  0001 L CNN
-F 4 "DNP" V 4100 3850 50  0001 C CNN "MPN"
-F 5 "DNP" V 4100 3850 50  0001 C CNN "Manufacturer"
-	1    4100 3850
-	0    -1   -1   0   
-$EndComp
 $Comp
 L qomu-board:EOS-S3 IC1
 U 1 1 5DCB0652
@@ -1665,7 +1648,7 @@ P 1600 2700
 F 0 "IC1" H 1650 2850 50  0000 C CNN
 F 1 "EOS-S3" H 1750 2750 50  0000 C CNN
 F 2 "qomu-board:42-WLCSP" H 3250 -400 50  0001 C CNN
-F 3 "https://dev.antmicro.com/attachments/download/9063/ql-eos-s3-datasheet.pdf" H 3350 -300 50  0001 C CNN
+F 3 "https://www.quicklogic.com/wp-content/uploads/2019/05/QL_EOS_S3_Sensor_Processing_Platform_Datasheet_V1.0_No_NDA_Required.pdf" H 3350 -300 50  0001 C CNN
 F 4 "Quicklogic" H 1600 2700 50  0001 C CNN "Manufacturer"
 F 5 "EOS-S3-42-WLCSP" H 1600 2700 50  0001 C CNN "MPN"
 	1    1600 2700
@@ -1677,31 +1660,10 @@ Wire Wire Line
 	5450 5750 5450 5650
 Wire Wire Line
 	5850 5850 6100 5850
-Wire Wire Line
-	3550 4150 4000 4150
-Wire Wire Line
-	3550 4250 4200 4250
 Text Label 3650 4150 0    50   ~ 0
 C1
 Text Label 6000 5850 0    50   ~ 0
 C1
-Wire Wire Line
-	3550 3850 4000 3850
-Wire Wire Line
-	4000 4150 4000 4050
-$Comp
-L qomu-board:TP_SMD_0_75MM TP3
-U 1 1 5E492FD8
-P 4100 4050
-F 0 "TP3" V 4100 4000 50  0000 R CNN
-F 1 "TP_SMD_0_75MM" H 4100 3950 50  0001 C CNN
-F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 4300 4250 60  0001 L CNN
-F 3 "" H 4300 4350 60  0001 L CNN
-F 4 "DNP" V 4100 4050 50  0001 C CNN "MPN"
-F 5 "DNP" V 4100 4050 50  0001 C CNN "Manufacturer"
-	1    4100 4050
-	0    -1   -1   0   
-$EndComp
 Wire Notes Line
 	4450 2300 4450 7700
 Connection ~ 5450 3200
@@ -1713,7 +1675,7 @@ U 1 1 5E4D1EDD
 P 5450 3100
 F 0 "TP5" H 5500 3000 50  0000 R CNN
 F 1 "TP_SMD_0_75MM" H 5450 3000 50  0001 C CNN
-F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 5650 3300 60  0001 L CNN
+F 2 "qomu-board-footprints:Testpoint_pad_1mm" H 5650 3300 60  0001 L CNN
 F 3 "" H 5650 3400 60  0001 L CNN
 F 4 "DNP" H 5450 3100 50  0001 C CNN "MPN"
 F 5 "DNP" H 5450 3100 50  0001 C CNN "Manufacturer"
@@ -1726,7 +1688,7 @@ U 1 1 5E4EF31B
 P 5450 2750
 F 0 "TP4" H 5500 2650 50  0000 R CNN
 F 1 "TP_SMD_0_75MM" H 5450 2650 50  0001 C CNN
-F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 5650 2950 60  0001 L CNN
+F 2 "qomu-board-footprints:Testpoint_pad_1mm" H 5650 2950 60  0001 L CNN
 F 3 "" H 5650 3050 60  0001 L CNN
 F 4 "DNP" H 5450 2750 50  0001 C CNN "MPN"
 F 5 "DNP" H 5450 2750 50  0001 C CNN "Manufacturer"
@@ -1742,7 +1704,7 @@ U 1 1 5E509DA9
 P 5450 3400
 F 0 "TP6" H 5400 3300 50  0000 L CNN
 F 1 "TP_SMD_0_75MM" H 5450 3300 50  0001 C CNN
-F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 5650 3600 60  0001 L CNN
+F 2 "qomu-board-footprints:Testpoint_pad_1mm" H 5650 3600 60  0001 L CNN
 F 3 "" H 5650 3700 60  0001 L CNN
 F 4 "DNP" H 5450 3400 50  0001 C CNN "MPN"
 F 5 "DNP" H 5450 3400 50  0001 C CNN "Manufacturer"
@@ -1758,7 +1720,7 @@ U 1 1 5E52A8DA
 P 6700 2750
 F 0 "TP7" H 6750 2650 50  0000 R CNN
 F 1 "TP_SMD_0_75MM" H 6700 2650 50  0001 C CNN
-F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 6900 2950 60  0001 L CNN
+F 2 "qomu-board-footprints:Testpoint_pad_1mm" H 6900 2950 60  0001 L CNN
 F 3 "" H 6900 3050 60  0001 L CNN
 F 4 "DNP" H 6700 2750 50  0001 C CNN "MPN"
 F 5 "DNP" H 6700 2750 50  0001 C CNN "Manufacturer"
@@ -1771,7 +1733,7 @@ U 1 1 5E53D85B
 P 1300 3600
 F 0 "TP1" H 1350 3500 50  0000 R CNN
 F 1 "TP_SMD_0_75MM" H 1300 3500 50  0001 C CNN
-F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 1500 3800 60  0001 L CNN
+F 2 "qomu-board-footprints:Testpoint_pad_1mm" H 1500 3800 60  0001 L CNN
 F 3 "" H 1500 3900 60  0001 L CNN
 F 4 "DNP" H 1300 3600 50  0001 C CNN "MPN"
 F 5 "DNP" H 1300 3600 50  0001 C CNN "Manufacturer"
@@ -1784,20 +1746,6 @@ Wire Wire Line
 Connection ~ 6700 2850
 Wire Wire Line
 	6700 2850 7100 2850
-$Comp
-L qomu-board:TP_SMD_0_75MM TP8
-U 1 1 5E562531
-P 6750 3300
-F 0 "TP8" V 6850 3350 50  0000 R CNN
-F 1 "TP_SMD_0_75MM" H 6750 3200 50  0001 C CNN
-F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 6950 3500 60  0001 L CNN
-F 3 "" H 6950 3600 60  0001 L CNN
-F 4 "DNP" V 6750 3300 50  0001 C CNN "MPN"
-F 5 "DNP" V 6750 3300 50  0001 C CNN "Manufacturer"
-	1    6750 3300
-	0    -1   -1   0   
-$EndComp
-Connection ~ 6650 3300
 $Comp
 L qomu-board:TP_SMD_0_75MM TP9
 U 1 1 5E5F7FB2
@@ -1817,7 +1765,7 @@ Text Notes 5800 3500 0    50   ~ 0
 16Mbit (2Mx8)
 Text Label 3650 3350 0    50   ~ 0
 LED_G
-Text Label 3650 4450 0    50   ~ 0
+Text Label 3650 3950 0    50   ~ 0
 TOUCH_2
 $Comp
 L qomu-board:MC-HVT1-S02-G J3
@@ -1832,29 +1780,6 @@ F 5 "Multicomp" H 5450 6350 60  0001 L CNN "Manufacturer"
 	1    5250 5750
 	0    1    1    0   
 $EndComp
-$Comp
-L qomu-board:TP_SMD_0_75MM TP10
-U 1 1 5E0E4725
-P 4100 3950
-F 0 "TP10" V 4100 3900 50  0000 R CNN
-F 1 "TP_SMD_0_75MM" H 4100 3850 50  0001 C CNN
-F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 4300 4150 60  0001 L CNN
-F 3 "" H 4300 4250 60  0001 L CNN
-F 4 "DNP" V 4100 3950 50  0001 C CNN "MPN"
-F 5 "DNP" V 4100 3950 50  0001 C CNN "Manufacturer"
-	1    4100 3950
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3550 4050 3900 4050
-Wire Wire Line
-	3900 4050 3900 3950
-Wire Wire Line
-	3900 3950 4000 3950
-Text Label 3650 4050 0    50   ~ 0
-F2
-Text Label 3650 3850 0    50   ~ 0
-E1
 $Comp
 L qomu-board:MSS3-V-T_R S1
 U 1 1 5E181EDA
@@ -3347,8 +3272,36 @@ Text Label 9100 5100 0    50   ~ 0
 USB_P
 NoConn ~ 3550 3450
 NoConn ~ 3550 3550
-NoConn ~ 3550 3650
 NoConn ~ 4950 5650
 Wire Wire Line
 	7900 5650 7750 5650
+$Comp
+L qomu-board:TP_SMD_0_75MM TP3
+U 1 1 5E492FD8
+P 4150 4150
+F 0 "TP3" V 4150 4100 50  0000 R CNN
+F 1 "TP_SMD_0_75MM" H 4150 4050 50  0001 C CNN
+F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 4350 4350 60  0001 L CNN
+F 3 "" H 4350 4450 60  0001 L CNN
+F 4 "DNP" V 4150 4150 50  0001 C CNN "MPN"
+F 5 "DNP" V 4150 4150 50  0001 C CNN "Manufacturer"
+	1    4150 4150
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 3550 4250
+NoConn ~ 3550 3850
+Wire Wire Line
+	4000 3650 3550 3650
+Wire Wire Line
+	3550 3950 4000 3950
+Text Label 3650 5350 0    50   ~ 0
+VCCIOB
+Wire Wire Line
+	3550 5350 4000 5350
+Text Notes 4250 5550 1    39   ~ 0
+Note: the VCCIOB connection here\nhelps alleviate tight PCB routing
+Wire Wire Line
+	3550 4150 4050 4150
+Wire Wire Line
+	3550 4050 4250 4050
 $EndSCHEMATC
