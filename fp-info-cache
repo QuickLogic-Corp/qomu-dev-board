@@ -1,4 +1,4 @@
-97536998676690
+100737271761978
 qomu-board-footprints
 42-WLCSP
 
@@ -55,6 +55,13 @@ capacitor handsolder
 0
 2
 2
+qomu-board-footprints
+Castellated_Via
+
+
+0
+0
+0
 qomu-board-footprints
 GD25Q16CEIGR
 
@@ -269,6 +276,13 @@ qomu-board-footprints
 TestPoint_Pad_D1.5mm
 SMD pad as test Point, diameter 1.5mm
 test point SMD pad
+0
+1
+1
+qomu-board-footprints
+Testpoint_pad_1mm
+
+
 0
 1
 1
