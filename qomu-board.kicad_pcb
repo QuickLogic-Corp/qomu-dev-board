@@ -20,7 +20,7 @@
   )
 
   (layers
-    (0 Top signal hide)
+    (0 Top signal)
     (1 In1.Cu signal)
     (2 In2.Cu signal)
     (31 Bottom signal)
