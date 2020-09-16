@@ -1757,21 +1757,6 @@ Wire Wire Line
 Connection ~ 6700 2850
 Wire Wire Line
 	6700 2850 7100 2850
-$Comp
-L qomu-board:TP_SMD_0_75MM TP9
-U 1 1 5E5F7FB2
-P 1100 4600
-F 0 "TP9" H 1150 4500 50  0000 R CNN
-F 1 "TP_SMD_0_75MM" H 1100 4500 50  0001 C CNN
-F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 1300 4800 60  0001 L CNN
-F 3 "" H 1300 4900 60  0001 L CNN
-F 4 "DNP" H 1100 4600 50  0001 C CNN "MPN"
-F 5 "DNP" H 1100 4600 50  0001 C CNN "Manufacturer"
-	1    1100 4600
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1100 4700 1300 4700
 Text Notes 5800 3500 0    50   ~ 0
 16Mbit (2Mx8)
 Text Label 3650 3350 0    50   ~ 0
@@ -3324,4 +3309,30 @@ Wire Wire Line
 	3550 4250 4200 4250
 Text Label 3650 4250 0    50   ~ 0
 PU_CTRL_USBP
+$Comp
+L qomu-board:TP_SMD_0_75MM TP2
+U 1 1 5F628747
+P 4050 2850
+F 0 "TP2" V 4050 2800 50  0000 R CNN
+F 1 "TP_SMD_0_75MM" H 4050 2750 50  0001 C CNN
+F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 4250 3050 60  0001 L CNN
+F 3 "" H 4250 3150 60  0001 L CNN
+F 4 "DNP" V 4050 2850 50  0001 C CNN "MPN"
+F 5 "DNP" V 4050 2850 50  0001 C CNN "Manufacturer"
+	1    4050 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L qomu-board:TP_SMD_0_75MM TP8
+U 1 1 5F629928
+P 4050 2950
+F 0 "TP8" V 4050 2900 50  0000 R CNN
+F 1 "TP_SMD_0_75MM" H 4050 2850 50  0001 C CNN
+F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 4250 3150 60  0001 L CNN
+F 3 "" H 4250 3250 60  0001 L CNN
+F 4 "DNP" V 4050 2950 50  0001 C CNN "MPN"
+F 5 "DNP" V 4050 2950 50  0001 C CNN "Manufacturer"
+	1    4050 2950
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
