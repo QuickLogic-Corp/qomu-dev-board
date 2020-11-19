@@ -336,32 +336,32 @@ Wire Wire Line
 	1350 3000 1350 2850
 Connection ~ 1350 2850
 Wire Wire Line
-	1350 2850 1100 2850
+	1350 2850 1000 2850
 Wire Wire Line
-	1500 3700 1300 3700
+	1500 3700 1200 3700
 Text Label 1000 3700 2    50   ~ 0
 RST_N
 $Comp
 L qomu-board:R_10k_0201 R1
 U 1 1 5DC70040
-P 1100 3450
-F 0 "R1" V 1100 3450 50  0000 C CNN
-F 1 "10k, 1%, 0201" V 1000 3300 50  0000 C CNN
-F 2 "qomu-board-footprints:R_0201_0603Metric" H 1100 3450 50  0001 C CNN
-F 3 "" H 1100 3450 50  0001 C CNN
-F 4 "ERJ1GNF1002C " H -7650 1750 50  0001 C CNN "MPN"
-F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
-	1    1100 3450
+P 1000 3450
+F 0 "R1" V 1000 3450 50  0000 C CNN
+F 1 "10k, 1%, 0201" V 900 3300 50  0000 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 1000 3450 50  0001 C CNN
+F 3 "" H 1000 3450 50  0001 C CNN
+F 4 "ERJ1GNF1002C " H -7750 1750 50  0001 C CNN "MPN"
+F 5 "Panasonic" H -100 0   50  0001 C CNN "Manufacturer"
+	1    1000 3450
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1100 3350 1100 2850
-Connection ~ 1100 2850
+	1000 3350 1000 2850
+Connection ~ 1000 2850
 Wire Wire Line
-	1100 3550 1100 3700
-Connection ~ 1100 3700
+	1000 3550 1000 3700
+Connection ~ 1000 3700
 Wire Wire Line
-	1100 3700 750  3700
+	1000 3700 750  3700
 $Comp
 L qomu-board:R_22R_0201 R11
 U 1 1 5DC79766
@@ -648,7 +648,7 @@ F 3 "" H 1650 7100 50  0001 C CNN
 	1    1650 7100
 	1    0    0    -1  
 $EndComp
-Text Notes 1450 7000 1    50   ~ 0
+Text Notes 1550 7000 1    50   ~ 0
 AVDD
 Text Notes 2600 7000 1    50   ~ 0
 VCCIOA
@@ -915,18 +915,16 @@ Wire Wire Line
 Wire Wire Line
 	1350 3150 1350 3000
 Connection ~ 1350 3000
-NoConn ~ 1500 3450
-NoConn ~ 1500 3550
 NoConn ~ 1500 4100
 $Comp
 L qomu-board:+3V3 #PWR0102
 U 1 1 5DF228AE
-P 1100 2800
-F 0 "#PWR0102" H 1100 2800 50  0001 C CNN
-F 1 "+3V3" H 1085 2923 50  0000 C CNN
-F 2 "" H 1100 2800 50  0001 C CNN
-F 3 "" H 1100 2800 50  0001 C CNN
-	1    1100 2800
+P 1000 2800
+F 0 "#PWR0102" H 1000 2800 50  0001 C CNN
+F 1 "+3V3" H 985 2923 50  0000 C CNN
+F 2 "" H 1000 2800 50  0001 C CNN
+F 3 "" H 1000 2800 50  0001 C CNN
+	1    1000 2800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1741,19 +1739,19 @@ $EndComp
 $Comp
 L qomu-board:TP_SMD_0_75MM TP1
 U 1 1 5E53D85B
-P 1300 3600
-F 0 "TP1" H 1350 3500 50  0000 R CNN
-F 1 "TP_SMD_0_75MM" H 1300 3500 50  0001 C CNN
-F 2 "qomu-board-footprints:Testpoint_pad_1mm" H 1500 3800 60  0001 L CNN
-F 3 "" H 1500 3900 60  0001 L CNN
-F 4 "DNP" H 1300 3600 50  0001 C CNN "MPN"
-F 5 "DNP" H 1300 3600 50  0001 C CNN "Manufacturer"
-	1    1300 3600
+P 1200 3600
+F 0 "TP1" H 1250 3500 50  0000 R CNN
+F 1 "TP_SMD_0_75MM" H 1200 3500 50  0001 C CNN
+F 2 "qomu-board-footprints:Testpoint_pad_1mm" H 1400 3800 60  0001 L CNN
+F 3 "" H 1400 3900 60  0001 L CNN
+F 4 "DNP" H 1200 3600 50  0001 C CNN "MPN"
+F 5 "DNP" H 1200 3600 50  0001 C CNN "Manufacturer"
+	1    1200 3600
 	-1   0    0    1   
 $EndComp
-Connection ~ 1300 3700
+Connection ~ 1200 3700
 Wire Wire Line
-	1300 3700 1100 3700
+	1200 3700 1000 3700
 Connection ~ 6700 2850
 Wire Wire Line
 	6700 2850 7100 2850
@@ -3335,4 +3333,72 @@ F 5 "DNP" V 4050 2950 50  0001 C CNN "Manufacturer"
 	1    4050 2950
 	0    -1   -1   0   
 $EndComp
+$Comp
+L qomu-board:C_100n_0201 C4
+U 1 1 5FE32672
+P 850 6850
+F 0 "C4" H 900 6750 50  0000 L CNN
+F 1 "1u, 6.3V, X5R, 0201" V 700 6400 50  0000 L CNN
+F 2 "qomu-board-footprints:C_0201_0603Metric" H 850 6850 50  0001 C CNN
+F 3 "" H 850 6850 50  0001 C CNN
+F 4 "GRM033R60J105MEA2D" H -800 0   50  0001 C CNN "MPN"
+F 5 "Murata" H -800 0   50  0001 C CNN "Manufacturer"
+	1    850  6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:GND #PWR017
+U 1 1 5FE42687
+P 1200 7100
+F 0 "#PWR017" H 1200 6850 50  0001 C CNN
+F 1 "GND" H 1205 6927 50  0000 C CNN
+F 2 "" H 1200 7100 50  0001 C CNN
+F 3 "" H 1200 7100 50  0001 C CNN
+	1    1200 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:GND #PWR015
+U 1 1 5FE427E2
+P 850 7100
+F 0 "#PWR015" H 850 6850 50  0001 C CNN
+F 1 "GND" H 855 6927 50  0000 C CNN
+F 2 "" H 850 7100 50  0001 C CNN
+F 3 "" H 850 7100 50  0001 C CNN
+	1    850  7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:C_100n_0201 C15
+U 1 1 5FE321B2
+P 1200 6850
+F 0 "C15" H 1250 6750 50  0000 L CNN
+F 1 "1u, 6.3V, X5R, 0201" V 1050 6400 50  0000 L CNN
+F 2 "qomu-board-footprints:C_0201_0603Metric" H 1200 6850 50  0001 C CNN
+F 3 "" H 1200 6850 50  0001 C CNN
+F 4 "GRM033R60J105MEA2D" H -450 0   50  0001 C CNN "MPN"
+F 5 "Murata" H -450 0   50  0001 C CNN "Manufacturer"
+	1    1200 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 6950 1200 7100
+Wire Wire Line
+	850  6950 850  7100
+Text Label 1300 3450 0    50   ~ 0
+VDD1
+Text Label 1300 3550 0    50   ~ 0
+VDD2
+Wire Wire Line
+	1500 3450 1300 3450
+Wire Wire Line
+	1300 3550 1500 3550
+Text Label 850  6600 1    50   ~ 0
+VDD1
+Text Label 1200 6600 1    50   ~ 0
+VDD2
+Wire Wire Line
+	1200 6400 1200 6750
+Wire Wire Line
+	850  6400 850  6750
 $EndSCHEMATC
