@@ -5,12 +5,12 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Qomu Board"
-Date ""
-Rev "1.2"
+Date "2020-12-05"
+Rev "1.3"
 Comp ""
 Comment1 "Antmicro Ltd."
 Comment2 "Quicklogic Corp."
-Comment3 ""
+Comment3 "Foosn PTE Ltd"
 Comment4 ""
 $EndDescr
 Wire Wire Line
@@ -1742,7 +1742,7 @@ U 1 1 5E53D85B
 P 1200 3600
 F 0 "TP1" H 1250 3500 50  0000 R CNN
 F 1 "TP_SMD_0_75MM" H 1200 3500 50  0001 C CNN
-F 2 "qomu-board-footprints:Testpoint_pad_1mm" H 1400 3800 60  0001 L CNN
+F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 1400 3800 60  0001 L CNN
 F 3 "" H 1400 3900 60  0001 L CNN
 F 4 "DNP" H 1200 3600 50  0001 C CNN "MPN"
 F 5 "DNP" H 1200 3600 50  0001 C CNN "Manufacturer"
@@ -3442,7 +3442,7 @@ F 0 "U3" H 10425 4385 50  0000 C CNN
 F 1 "NCP803" H 10425 4476 50  0000 C CNN
 F 2 "qomu-board-footprints:SC-70_SOT-323" H 10600 4200 50  0001 C CNN
 F 3 "" H 10450 4650 50  0001 C CNN
-F 4 "NCP803SN160T1G" H 10500 4400 50  0001 C CNN "MPN"
+F 4 "MAX803SQ120T1G" H 10500 4400 50  0001 C CNN "MPN"
 F 5 "On Semiconductor" H 10500 4300 50  0001 C CNN "Manufacturer"
 	1    10450 4650
 	-1   0    0    1   
