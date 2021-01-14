@@ -18,6 +18,8 @@ Makefile text eol=lf
 .gitattributes text eol=lf
 *.sch text eol=lf
 *.lib text eol=lf
+*.step text eol=lf
+*.stp text eol=lf
 *.pro text eol=lf
 *.kicad_pcb text eol=lf
 *.pdf binary
