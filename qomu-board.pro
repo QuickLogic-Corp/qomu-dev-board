@@ -1,4 +1,4 @@
-update=Thu Feb 13 13:18:02 2020
+update=12/05/20 12:46:11
 version=1
 last_client=kicad
 [general]
@@ -16,13 +16,13 @@ LibDir=
 version=1
 PageLayoutDescrFile=
 LastNetListRead=
-CopperLayerCount=6
+CopperLayerCount=4
 BoardThickness=0.6
 AllowMicroVias=1
 AllowBlindVias=1
 RequireCourtyardDefinitions=0
 ProhibitOverlappingCourtyards=1
-MinTrackWidth=0.07619999999999999
+MinTrackWidth=0
 MinViaDiameter=0.25
 MinViaDrill=0.09999999999999999
 MinMicroViaDiameter=0.25
@@ -38,12 +38,8 @@ ViaDiameter1=0.25
 ViaDrill1=0.1
 ViaDiameter2=0.25
 ViaDrill2=0.1
-ViaDiameter3=0.3
-ViaDrill3=0.15
-ViaDiameter4=0.35
-ViaDrill4=0.15
-ViaDiameter5=0.5
-ViaDrill5=0.2
+ViaDiameter3=0.5
+ViaDrill3=0.2
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
@@ -67,8 +63,8 @@ OthersTextSizeH=1
 OthersTextSizeThickness=0.15
 OthersTextItalic=0
 OthersTextUpright=1
-SolderMaskClearance=0.051
-SolderMaskMinWidth=0.25
+SolderMaskClearance=0
+SolderMaskMinWidth=0
 SolderPasteClearance=0
 SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
@@ -86,11 +82,11 @@ Enabled=1
 [pcbnew/Layer.In3.Cu]
 Name=In3.Cu
 Type=0
-Enabled=1
+Enabled=0
 [pcbnew/Layer.In4.Cu]
 Name=In4.Cu
 Type=0
-Enabled=1
+Enabled=0
 [pcbnew/Layer.In5.Cu]
 Name=In5.Cu
 Type=0
@@ -252,7 +248,7 @@ dPairViaGap=0.25
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=.
+PlotDirectoryName=fab/pvt1b/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew
